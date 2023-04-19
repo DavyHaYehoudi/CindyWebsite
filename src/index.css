@@ -1,13 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Vollkorn:ital@1&display=swap');
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont,'Montserrat', 'Roboto','Vollkorn', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+:root {
+  --main-color: #8ba79e; /* Couleur principale */
+  --sec-color: #4d4d4d; /* bkg adages accueil */
+  --ter-color: #c7aa8b; /* color adages accueil */
+  --four-color: #5f4f4f; /* bkg listes massages */
+  --five-color: #ededed; /* écriture principale" */
+  --six-color: #333; /* écriture secondaire" */
+
+
+  --fs-1:1rem;
+  --fs-2:1.2rem;
+  --fs-3:1.5rem;
+  --fs-4:1.7rem;
+  --fs-5:2rem;
+}
+
+
+/* classes bootstrap par défaut */
+.nav-link, .navbar-brand{
+   color:var(--five-color) !important;
+}
+
+.nav-link{
+  font-size: var(--fs-2) !important;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-link:hover{
+  border-bottom: 3px solid var(--five-color);
+}
+
+.socialButtons {
+  transition: transform 400ms ease !important;
+}
+
+.socialButtons:hover {
+  transform: scale(1.15); 
 }
