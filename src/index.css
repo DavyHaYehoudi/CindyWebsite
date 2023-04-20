@@ -16,6 +16,7 @@ body {
   --four-color: #5f4f4f; /* bkg listes massages */
   --five-color: #ededed; /* écriture principale" */
   --six-color: #333; /* écriture secondaire" */
+  --sept-color:#295f00; /* titre accueil */
 
   --fs-1: 1rem;
   --fs-2: 1.2rem;
@@ -64,7 +65,7 @@ a:hover{
   letter-spacing: 2px;
 }
 .nav-link:hover {
-  border-bottom: 3px solid var(--five-color);
+  border-bottom: 3px solid var(--four-color);
 }
 .navbar-collapse {
   flex-grow: inherit !important;
@@ -86,6 +87,19 @@ a:hover{
 .navbar-toggler {
   box-shadow: inherit !important;
 }
+/********************************HOMEPAGE********************************/
+.homePage h1{
+color: var(--sept-color);
+font-weight: 700;
+font-size: var(--fs-6);
+text-align: center;
+padding: 50px;
+}
+.subtitle_homePage{
+  font-weight: 500;
+  font-size: var(--fs-5);
+}
+
 
 /********************************FOOTER********************************/
 .footer {
