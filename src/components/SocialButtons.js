@@ -1,11 +1,11 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import facebook from "./medias/facebook48.png";
-import instagram from "./medias/instagram48.png";
+import facebook from "../medias/facebook48.png";
+import instagram from "../medias/instagram48.png";
 
 const SocialButtons = () => {
   return (
-    <>
+    <div className="socialZone">
       <Button
         className="socialButtons"
         variant="link"
@@ -20,7 +20,7 @@ const SocialButtons = () => {
       >
         <img src={facebook} />
       </Button>
-    </>
+    </div>
   );
 };
 

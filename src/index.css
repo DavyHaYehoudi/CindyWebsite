@@ -1,17 +1,13 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Vollkorn:ital@1&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&family=Vollkorn:ital,wght@1,400;1,500;1,600;1,700;1,800&display=swap");
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont,'Montserrat', 'Roboto','Vollkorn', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto",
+    "Roboto Condensed", "Vollkorn", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 :root {
   --main-color: #8ba79e; /* Couleur principale */
@@ -21,27 +17,55 @@ body {
   --five-color: #ededed; /* écriture principale" */
   --six-color: #333; /* écriture secondaire" */
 
+  --fs-1: 1rem;
+  --fs-2: 1.2rem;
+  --fs-3: 1.5rem;
+  --fs-4: 1.7rem;
+  --fs-5: 2rem;
+  --fs-6: 2.2rem;
 
-  --fs-1:1rem;
-  --fs-2:1.2rem;
-  --fs-3:1.5rem;
-  --fs-4:1.7rem;
-  --fs-5:2rem;
+  --main-font: "Montserrat";
+  --sec-font: "Roboto Condensed";
+  --ter-font: "Vollkorn";
+}
+a {
+  text-decoration: none !important;
+  color: var(--five-color);
+  cursor: pointer;
+}
+a:visited {
+  color: var(--five-color) !important;
 }
 
-
+/********************************NAVIGATION********************************
 /* classes bootstrap par défaut */
-.nav-link, .navbar-brand{
-   color:var(--five-color) !important;
+.navbar {
+  min-height: 100px;
+  font-family: var(--sec-font);
+}
+.container {
+  max-width: 900px !important;
+}
+.navbar-brand {
+  font-size: var(--fs-4) !important;
+}
+.nav-link,
+.navbar-brand {
+  color: var(--five-color) !important;
 }
 
-.nav-link{
-  font-size: var(--fs-2) !important;
+.nav-link {
+  font-size: var(--fs-1) !important;
   border-bottom: 3px solid transparent;
+  font-weight: 700 !important;
+  letter-spacing: 2px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   border-bottom: 3px solid var(--five-color);
+}
+.navbar-collapse {
+  flex-grow: inherit !important;
 }
 
 .socialButtons {
@@ -49,5 +73,86 @@ body {
 }
 
 .socialButtons:hover {
-  transform: scale(1.15); 
+  transform: scale(1.15);
+}
+.navbar-toggler {
+  background-color: var(--five-color) !important;
+}
+.navbar-toggler {
+  box-shadow: inherit !important;
+}
+
+/********************************FOOTER********************************/
+.footer{
+padding: 50px;
+  background-color: var(--main-color);
+  color: var(--five-color);
+}
+.sub-footer1{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.sub-footer2{
+text-align: center;
+font-size: var(--fs-2);
+}
+.footer_block1,.footer_block3{
+  font-weight: 600;
+  font-size: var(--fs-2);
+  margin: 10px;
+}
+.footer_block2{
+  margin: 10px;
+}
+.footer_adr_precision{
+  font-weight: 300;
+}
+.footer_tel{
+  font-size: var(--fs-3);
+  font-weight: 700;
+}
+.contactButton {
+  max-width: 400px;
+  font-weight: 700 ;
+  font-size: var(--fs-3);
+  color: var(--five-color);
+  background-color: var(--main-color) ;
+  border-radius: 10px;
+  border: 2px var(--four-color) solid;
+  padding: 5px;
+  box-shadow: 1px 1px 1px 1px;
+}
+.contactButton:hover{
+  color: var(--six-color);
+  background-color: var(--ter-color);
+  transition: 400ms;
+}
+
+/********************************RESPONSIVE********************************/
+
+@media screen and (max-width: 500px) {
+  .socialZone {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .contactButton{
+    max-width: 320px;
+  }
+
+}
+@media screen and (max-width: 1250px) {
+  .footer_block1,.footer_block2,.footer_block3{
+    width: 100%;
+  }
+
+  .sub-footer1{
+    display: flex;
+    justify-content: center;
+  }
+  .footer{
+    text-align: center;
+  }
 }
