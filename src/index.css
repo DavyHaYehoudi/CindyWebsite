@@ -30,11 +30,13 @@ body {
 }
 a {
   text-decoration: none !important;
-  color: var(--five-color);
-  cursor: pointer;
+  color: var(--five-color) !important;
 }
 a:visited {
   color: var(--five-color) !important;
+}
+a:hover{
+  color: var(--four-color) !important;
 }
 
 /********************************NAVIGATION********************************
@@ -48,24 +50,27 @@ a:visited {
 }
 .navbar-brand {
   font-size: var(--fs-4) !important;
+  display: flex;
+  align-items: center;
 }
 .nav-link,
 .navbar-brand {
   color: var(--five-color) !important;
 }
-
 .nav-link {
   font-size: var(--fs-1) !important;
   border-bottom: 3px solid transparent;
   font-weight: 700 !important;
   letter-spacing: 2px;
 }
-
 .nav-link:hover {
   border-bottom: 3px solid var(--five-color);
 }
 .navbar-collapse {
   flex-grow: inherit !important;
+}
+.dropdown-menu{
+  background-color:var(--main-color) !important;
 }
 
 .socialButtons {
@@ -83,48 +88,49 @@ a:visited {
 }
 
 /********************************FOOTER********************************/
-.footer{
-padding: 50px;
+.footer {
+  padding: 50px;
   background-color: var(--main-color);
   color: var(--five-color);
 }
-.sub-footer1{
+.sub-footer1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
-.sub-footer2{
-text-align: center;
-font-size: var(--fs-2);
+.sub-footer2 {
+  text-align: center;
+  font-size: var(--fs-2);
 }
-.footer_block1,.footer_block3{
+.footer_block1,
+.footer_block3 {
   font-weight: 600;
   font-size: var(--fs-2);
   margin: 10px;
 }
-.footer_block2{
+.footer_block2 {
   margin: 10px;
 }
-.footer_adr_precision{
+.footer_adr_precision {
   font-weight: 300;
 }
-.footer_tel{
+.footer_tel {
   font-size: var(--fs-3);
   font-weight: 700;
 }
 .contactButton {
   max-width: 400px;
-  font-weight: 700 ;
+  font-weight: 700;
   font-size: var(--fs-3);
   color: var(--five-color);
-  background-color: var(--main-color) ;
+  background-color: var(--main-color);
   border-radius: 10px;
   border: 2px var(--four-color) solid;
   padding: 5px;
   box-shadow: 1px 1px 1px 1px;
 }
-.contactButton:hover{
+.contactButton:hover {
   color: var(--six-color);
   background-color: var(--ter-color);
   transition: 400ms;
@@ -138,21 +144,22 @@ font-size: var(--fs-2);
     justify-content: center;
     width: 100%;
   }
-  .contactButton{
+  .contactButton {
     max-width: 320px;
   }
-
 }
 @media screen and (max-width: 1250px) {
-  .footer_block1,.footer_block2,.footer_block3{
+  .footer_block1,
+  .footer_block2,
+  .footer_block3 {
     width: 100%;
   }
 
-  .sub-footer1{
+  .sub-footer1 {
     display: flex;
     justify-content: center;
   }
-  .footer{
+  .footer {
     text-align: center;
   }
 }

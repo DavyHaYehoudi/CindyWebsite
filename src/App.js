@@ -6,6 +6,7 @@ import Massages from "./pages/Massages";
 import Contact from "./pages/Contact";
 import Footer from "./Layout/Footer";
 import MentionsLegales from "./pages/MentionsLegales";
+import Rebozo from "./pages/Rebozo";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/consultations" element={<Consultations />} />
         <Route path="/massages" element={<Massages />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/rebozo" element={<Rebozo />} />
         <Route path="/mentions_legales" element={<MentionsLegales />} />
       </Routes>
       <Footer />
