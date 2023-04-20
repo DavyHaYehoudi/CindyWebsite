@@ -65,7 +65,7 @@ const Navigation = () => {
                 </NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link className="mx-2">
+              <Nav.Link to="rebozo" className="mx-2">
                 <Link to="rebozo">REBOZO</Link>{" "}
               </Nav.Link>
               <Nav.Link className="mx-2">
