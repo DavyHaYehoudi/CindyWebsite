@@ -1,7 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
-import cascade from '../medias/cascade1920.jpg';
+import cascade from '../medias/cascade.jpg';
 import chamane from '../medias/chamane.jpeg';
 import cailloux from '../medias/cailloux1920.jpg';
+// import insta from '../medias/instagram48.png'
 
 function CarouselHome() {
   return (

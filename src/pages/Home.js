@@ -1,5 +1,11 @@
 import React from "react";
 import CarouselHome from "../components/CarouselHome";
+import cheminForet from "../medias/cheminForet.jpg";
+import ImageParagraph from "../components/ImageParagraph";
+import cindyPortrait from "../medias/cindyPortrait.jpeg";
+import { paragraph1, paragraph2 } from "../textes/home/paragraph";
+import FollowMe from "../components/FollowMe";
+import Adage from "../components/Adage";
 
 const Home = () => {
   return (
@@ -14,6 +20,20 @@ const Home = () => {
         </span>
       </h1>
       <CarouselHome />
+      <ImageParagraph
+        imageSrc={cheminForet}
+        imageAlt="chemin de foret"
+        imagePosition="left"
+        paragraphText={paragraph1}
+      />
+      <ImageParagraph
+        imageSrc={cindyPortrait}
+        imageAlt="portrait de Cindy"
+        imagePosition="right"
+        paragraphText={paragraph2}
+      />
+      <FollowMe />
+      <Adage />
     </div>
   );
 };

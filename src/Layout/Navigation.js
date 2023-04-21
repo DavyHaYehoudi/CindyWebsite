@@ -13,7 +13,7 @@ const Navigation = () => {
         <Container>
           <Navbar.Brand>
             <Link to="/" className="navbar-brand">
-              <img src={logo} alt="logo" className="mx-2" />
+              <img src={logo} alt="logo" className="mx-2 logo" />
               BIENVENUE
             </Link>
           </Navbar.Brand>
