@@ -173,7 +173,7 @@ blockquote {
 .adages {
   background-color: var(--huit-color);
   text-align: center;
-  padding: var(--paddingheightSection);
+  padding: var(--paddingheightSection) 0;
 }
 .citations {
   display: flex;
@@ -198,8 +198,29 @@ cite{
   font-weight: 700;
   font-style: normal;
 }
-
-
+/********************************CONSULTATIONS********************************/
+.bandeauConsultations{
+background-color: var(--main-color);
+color: var(--five-color);
+border: 1px solid var(--five-color);
+padding: 3.5rem 1.25rem;
+margin:var(--interSection) 0;
+}
+.accroche{
+  font-family: var(--ter-font);
+  font-size: var(--fs-2);
+}
+.custom-hr{
+  border-width: 2px;
+  border-color: var(--five-color) ;
+  width: 10%;
+}
+.tabs{
+  background-color: var(--main-color);
+}
+.tab{
+  color: var(--four-color) !important;
+}
 /********************************FOOTER********************************/
 .footer {
   padding: 50px;
@@ -288,5 +309,12 @@ cite{
   }
   .image-paragraph {
     flex-wrap: wrap;
+  }
+  .citations {
+    flex-wrap: wrap;
+  }
+  .adage1,
+  .adage2 {
+    width: 100%;
   }
 }
