@@ -47,7 +47,7 @@ Je me suis découvert un réel intérêt pour les <b>massages bien-être</b> qui
 J'ai donc décidé de me former auprès de différents organismes réputés afin de vous offrir une expérience unique en la matière.
 ‍<br />
 ‍<br /> 
-<b>Massage doux drainant, Belly Revolution®, massage des 5 Continents® et massage du visage japonais façon Kobido</b> vous attendent dans un espace dédié et propice à la détente.
+<b>Massage drainant méthode Vodder, Belly Revolution®, massage des 5 Continents®, massage aux pochons d'herbes et massage du visage japonais façon Kobido</b> vous attendent dans un espace dédié et propice à la détente.
 ‍‍<br />
 ‍<br /> 
  Au plaisir de vous rencontrer.

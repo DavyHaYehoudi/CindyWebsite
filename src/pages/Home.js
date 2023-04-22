@@ -9,7 +9,7 @@ import Adage from "../components/Adage";
 
 const Home = () => {
   return (
-    <div className="homePage">
+    <div className="homePage" id="homePage">
       <h1>
         <i>Cindy PANTOUSTIER</i>
         <br />

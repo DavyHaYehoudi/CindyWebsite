@@ -2,7 +2,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import cascade from '../medias/cascade.jpg';
 import chamane from '../medias/chamane.jpeg';
 import cailloux from '../medias/cailloux1920.jpg';
+import cheminForet from '../medias/cheminForet.jpg'
 // import insta from '../medias/instagram48.png'
+import caroussel1 from '../medias/caroussel1.jpg'
 
 function CarouselHome() {
   return (
@@ -10,8 +12,8 @@ function CarouselHome() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={cascade}
-          alt="cascade"
+          src={caroussel1}
+          alt="caroussel1"
         />
         <Carousel.Caption>
           <h3>First slide label</h3>
@@ -21,7 +23,7 @@ function CarouselHome() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={chamane}
+          src={caroussel1}
           alt="chamane"
         />
 
@@ -33,7 +35,7 @@ function CarouselHome() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={cailloux}
+          src={caroussel1}
           alt="cailloux"
         />
 

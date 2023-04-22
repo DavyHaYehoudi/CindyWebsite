@@ -1,14 +1,10 @@
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 
-function Table({ title, composant, illustrations, tarifs }) {
+function Table({ title, composant, illustrations, tarifs, id }) {
+  // L'id dans ce composant Bootstrap ajoute derrière -tab-description, attention à l'ancre dans l'url de navigation 
   return (
-    <Tabs
-      defaultActiveKey="description"
-      id="fill-tab-example"
-      className="mb-3 tabs"
-      fill
-    >
+    <Tabs defaultActiveKey="description" id={id} className="mb-3 tabs" fill>
       <Tab eventKey="description" title={title} tabClassName="tab">
         {composant}
       </Tab>
@@ -20,7 +16,10 @@ function Table({ title, composant, illustrations, tarifs }) {
         )}
       </Tab>
       <Tab eventKey="tarifs" title="Tarifs" tabClassName="tab">
-        <div className="text-center" dangerouslySetInnerHTML={{ __html: tarifs }}></div>
+        <div
+          className="text-center"
+          dangerouslySetInnerHTML={{ __html: tarifs }}
+        ></div>
       </Tab>
     </Tabs>
   );

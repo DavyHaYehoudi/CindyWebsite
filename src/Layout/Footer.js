@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../medias/logo.png";
 import ContactButton from "../components/ContactButton";
 import { Link, useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   const location = useLocation();
@@ -10,8 +11,10 @@ const Footer = () => {
     <div className="footer">
       <div className="sub-footer1">
         <div className="footer_block1">
-          <img src={logo} className="mx-2" />
-          2023 Cindy Pantoustier - Naturopathe
+          <HashLink to='/#homePage'>
+            <img src={logo} className="mx-2" />
+            2023 Cindy Pantoustier - Naturopathe
+          </HashLink>
         </div>
         {location.pathname !== "/contact" && (
           <div className="footer_block2">
@@ -36,7 +39,7 @@ const Footer = () => {
       <div className="sub-footer2">
         <p>
           {" "}
-          <Link to="mentions_legales">Mentions légales</Link>{" "}
+          <Link to="/mentions_legales#presentation">Mentions légales</Link>{" "}
         </p>
       </div>
     </div>

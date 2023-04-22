@@ -5,6 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../medias/logo.png";
 import SocialButtons from "../components/SocialButtons";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navigation = () => {
   return (
@@ -27,10 +28,10 @@ const Navigation = () => {
               >
                 <NavDropdown.Item>
                   {" "}
-                  <Link to="consultations">Naturopathie</Link>
+                  <HashLink to="consultations#naturopathie-tab-description">Naturopathie</HashLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <Link to="consultations">Fleurs de Bach</Link>{" "}
+                  <HashLink to="consultations#fleursdebach-tab-description">Fleurs de Bach</HashLink>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>
@@ -44,10 +45,10 @@ const Navigation = () => {
                 className="mx-2"
               >
                 <NavDropdown.Item>
-                  <Link to="massages">Les 5 continents®</Link>
+                  <Link to="massages">Massage des 5 continents®</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <Link to="massages">Le visage japonais</Link>
+                  <Link to="massages">Massage du visage japonais</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
                   <Link to="massages">Belly Revolution®</Link>{" "}
@@ -57,7 +58,7 @@ const Navigation = () => {
                   <Link to="massages">Drainage Vodder</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <Link to="massages">Aux pochons</Link>{" "}
+                  <Link to="massages">Massage aux pochons</Link>{" "}
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>
@@ -66,7 +67,7 @@ const Navigation = () => {
               </NavDropdown>
 
               <Nav.Link to="rebozo" className="mx-2">
-                <Link to="rebozo">REBOZO</Link>{" "}
+                <Link to="rebozo">SOIN REBOZO</Link>{" "}
               </Nav.Link>
               <Nav.Link className="mx-2">
                 <Link to="contact">CONTACT</Link>{" "}

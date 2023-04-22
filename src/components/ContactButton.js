@@ -4,7 +4,7 @@ const ContactButton = () => {
   return (
     <Link to='/contact' >
       <button
-        className="contactButton"
+        className="Button contactButton"
       >VOUS SOUHAITEZ ME CONTACTER</button>
     </Link>
   );

@@ -1,22 +1,25 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Table from "../components/Table";
 import ImageParagraph from "../components/ImageParagraph";
 import bureau from "../medias/bureau.jpg";
-import fdb from "../medias/fdb.jpg"
-import { paragraph1, paragraph2, tarifs2 } from "../textes/consultations/paragraph";
+import fdb from "../medias/fdb.jpg";
+import {
+  paragraph1,
+  paragraph2,
+  tarifs2,
+} from "../textes/consultations/paragraph";
 import { tarifs1 } from "../textes/consultations/paragraph";
+import Bandeau from "../components/Bandeau";
 
 const Consultations = () => {
+
   return (
     <div>
-      <div className="bandeauConsultations">
-        <h1>LES CONSULTATIONS</h1>
-        <hr className="custom-hr"></hr>
-        <p className="accroche">Retrouvez et préservez votre santé</p>
-      </div>
+      <Bandeau title="LES CONSULTATIONS" accroche="Retrouvez et préservez votre santé" />
       <div>
         <Table
           title="Consultation de naturopathie"
+          id="naturopathie"
           composant={
             <ImageParagraph
               imageSrc={bureau}
@@ -49,17 +52,20 @@ const Consultations = () => {
           </b>
         </p>
       </div>
-      <Table  title="Consultation de fleur de Bach"
-          composant={
-            <ImageParagraph
-              imageSrc={fdb}
-              imageAlt="fleurs de Bach"
-              imagePosition="left"
-              paragraphText={paragraph2}
-            />
-          }
-          illustrations={null}
-          tarifs={tarifs2}/>
+      <Table
+        title="Consultation de fleurs de Bach"
+        id="fleursdebach"
+        composant={
+          <ImageParagraph
+            imageSrc={fdb}
+            imageAlt="fleurs de Bach"
+            imagePosition="left"
+            paragraphText={paragraph2}
+          />
+        }
+        illustrations={null}
+        tarifs={tarifs2}
+      />
     </div>
   );
 };
