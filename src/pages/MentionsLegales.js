@@ -24,7 +24,7 @@ const MentionsLegales = () => {
         Responsable publication : Cindy Pantoustier
         – contact@cindy-naturopathe.com‍
         <br />
-        Webmaster : Davy Sebbah‍
+        Programmeur : Davy Sebbah‍ d.sebbah@yahoo.fr
         <br />
         Hébergeur: OVH - 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1
       </p>

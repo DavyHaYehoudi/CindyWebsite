@@ -1,8 +1,7 @@
 import React from "react";
-import CarouselHome from "../components/CarouselHome";
-import cheminForet from "../medias/cheminForet.jpg";
 import ImageParagraph from "../components/ImageParagraph";
-import cindyPortrait from "../medias/cindyPortrait.jpeg";
+import homenaturo from "../medias/home/home-naturo.jpg"
+import profilhome from "../medias/home/profil-home.jpg"
 import { paragraph1, paragraph2 } from "../textes/home/paragraph";
 import FollowMe from "../components/FollowMe";
 import Adage from "../components/Adage";
@@ -10,25 +9,26 @@ import Adage from "../components/Adage";
 const Home = () => {
   return (
     <div className="homePage" id="homePage">
-      <h1>
-        <i>Cindy PANTOUSTIER</i>
-        <br />
-        <span className="subtitle_homePage">
-          NATUROPATHE | MASSAGES
+      <div className="hero">
+        <h1>
+          <i>Cindy PANTOUSTIER</i>
           <br />
-          BIEN-ETRE
-        </span>
-      </h1>
-      <CarouselHome />
+          <span className="subtitle_homePage">
+            NATUROPATHE | MASSAGES
+            <br />
+            BIEN-ETRE
+          </span>
+        </h1>
+      </div>
       <ImageParagraph
-        imageSrc={cheminForet}
-        imageAlt="chemin de foret"
+        imageSrc={homenaturo}
+        imageAlt="tablée de plusieurs bols d'ingrédients naturels"
         imagePosition="left"
         paragraphText={paragraph1}
       />
       <ImageParagraph
-        imageSrc={cindyPortrait}
-        imageAlt="portrait de Cindy"
+        imageSrc={profilhome}
+        imageAlt="portrait de Cindy et de ses deux enfants"
         imagePosition="right"
         paragraphText={paragraph2}
       />

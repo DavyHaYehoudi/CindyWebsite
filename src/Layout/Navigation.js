@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import logo from "../medias/logo.png";
+import logo from "../medias/icons/logo.png";
 import SocialButtons from "../components/SocialButtons";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
@@ -28,10 +28,14 @@ const Navigation = () => {
               >
                 <NavDropdown.Item>
                   {" "}
-                  <HashLink to="consultations#naturopathie-tab-description">Naturopathie</HashLink>
+                  <HashLink to="consultations#naturopathie-tab-description">
+                    Naturopathie
+                  </HashLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <HashLink to="consultations#fleursdebach-tab-description">Fleurs de Bach</HashLink>
+                  <HashLink to="consultations#fleursdebach-tab-description">
+                    Fleurs de Bach
+                  </HashLink>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>
@@ -45,20 +49,28 @@ const Navigation = () => {
                 className="mx-2"
               >
                 <NavDropdown.Item>
-                  <Link to="massages">Massage des 5 continents®</Link>
+                  <HashLink to="massages#5continents-tab-description">
+                    Massage des 5 continents®
+                  </HashLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <Link to="massages">Massage du visage japonais</Link>
+                  <HashLink to="massages#visageJaponais-tab-description">
+                    Massage du visage japonais
+                  </HashLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <Link to="massages">Belly Revolution®</Link>{" "}
+                  <HashLink to="massages#belly-tab-description">
+                    Belly Revolution®
+                  </HashLink>{" "}
                 </NavDropdown.Item>
                 <NavDropdown.Item>
                   {" "}
-                  <Link to="massages">Drainage Vodder</Link>
+                  <HashLink to="massages#vodder-tab-description">
+                    Drainage Vodder
+                  </HashLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <Link to="massages">Massage aux pochons</Link>{" "}
+                  <HashLink to="massages#pochons-tab-description">Massage aux pochons</HashLink>{" "}
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>

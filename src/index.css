@@ -72,7 +72,7 @@ blockquote {
   font-family: var(--ter-font);
   font-weight: 800;
 }
-.Button{
+.Button {
   color: var(--five-color);
   background-color: var(--main-color);
   border-radius: var(--br);
@@ -83,6 +83,13 @@ blockquote {
   color: var(--six-color);
   background-color: var(--ter-color);
   transition: 400ms;
+}
+.tab-content {
+  min-height: 500px;
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+  background-color: var(--main-color);
 }
 /********************************NAVIGATION********************************
 /* classes bootstrap par défaut */
@@ -124,7 +131,7 @@ blockquote {
   transition: transform 400ms ease !important;
 }
 .socialButtons:hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
 }
 .navbar-toggler {
   background-color: var(--five-color) !important;
@@ -134,14 +141,28 @@ blockquote {
 }
 
 /********************************HOMEPAGE********************************/
-.homePage h1 {
-  color: var(--sept-color);
-  font-weight: 700;
+.hero {
   text-align: center;
+  height: 600px;
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("/public/images/homeBg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: end;
   padding: 50px;
 }
+.homePage h1 {
+  color: var(--five-color);
+  font-weight: 700;
+}
 .subtitle_homePage {
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--fs-5);
 }
 .image-paragraph {
@@ -238,9 +259,16 @@ cite {
 }
 /********************************MASSAGES********************************/
 .remarques {
+  text-align: center;
+  font-weight: 800;
+  padding: var(--interSection);
+}
+.massage_img_Bg {
   width: 100%;
-  height: 400px;
-  background-image: -o-linear-gradient();
+  height: 350px;
+  background-image: url("/public/images/massageBg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 /********************************CONTACT********************************/
 .textContact {
@@ -277,6 +305,7 @@ textarea:focus {
 /********************************FOOTER********************************/
 .footer {
   padding: 50px;
+  margin-top: var(--interSection);
   background-color: var(--main-color);
   color: var(--five-color);
 }
@@ -335,6 +364,9 @@ textarea:focus {
   .contactButton {
     max-width: 320px;
   }
+  .tab-content {
+    min-height: inherit;
+  }
 }
 @media screen and (max-width: 1250px) {
   .footer_block1,
@@ -358,5 +390,10 @@ textarea:focus {
   .adage1,
   .adage2 {
     width: 100%;
+  }
+  .hero,
+  .massage_img_Bg {
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }

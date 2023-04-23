@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import facebook from "../medias/facebook48.png";
-import instagram from "../medias/instagram48.png";
+import facebook from "../medias/icons/facebook48.png";
+import instagram from "../medias/icons/instagram48.png";
 
 const SocialButtons = () => {
   return (

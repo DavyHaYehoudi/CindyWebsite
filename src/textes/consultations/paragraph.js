@@ -1,4 +1,4 @@
-export const paragraph1=`<h2 >CONSULTATION DE NATUROPATHIE</h2>
+export const paragraph1=`<h2>CONSULTATION DE NATUROPATHIE</h2>
 <p><u><b>LA PREMIÈRE CONSULTATION DE NATUROPATHIE</b></u>
 <br />
 <br />
@@ -57,4 +57,4 @@ Pour aider à passer une étape importante, un changement :
 
 </p>`
 
-export const tarifs2=`<p>Tarif : <b>40€ (45mn)<br />30€ pour les enfants</b></p>`
+export const tarifs2=`<p>Tarif : <b>40€ (45mn)<br />30€</b> pour les enfants</p>`

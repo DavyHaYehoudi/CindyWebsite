@@ -1,5 +1,5 @@
 import React from "react";
-import instagram512 from "../medias/instagram256.png";
+import instagram512 from "../medias/icons/instagram256.png";
 import { Link } from "react-router-dom";
 
 const FollowMe = () => {
