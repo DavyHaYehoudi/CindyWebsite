@@ -1,0 +1,46 @@
+.navbar {
+    min-height: 100px;
+    font-family: var(--sec-font);
+  }
+  .container {
+    max-width: 1200px !important;
+  }
+  .navbar-brand {
+    font-size: var(--fs-4) !important;
+    display: flex;
+    align-items: center;
+  }
+  .nav-link,
+  .navbar-brand {
+    color: var(--five-color) !important;
+  }
+  .nav-link {
+    font-size: var(--fs-1) !important;
+    border-bottom: 3px solid transparent;
+    font-weight: 700 !important;
+    letter-spacing: 2px;
+  }
+  .nav-link:hover {
+    border-bottom: 3px solid var(--four-color);
+  }
+  .navbar-collapse {
+    flex-grow: inherit !important;
+  }
+  .dropdown-menu {
+    background-color: var(--main-color) !important;
+  }
+  .dropdown-menu a {
+    background-color: var(--main-color) !important;
+  }
+  .socialButtons {
+    transition: transform 400ms ease !important;
+  }
+  .socialButtons:hover {
+    transform: scale(1.05);
+  }
+  .navbar-toggler {
+    background-color: var(--five-color) !important;
+  }
+  .navbar-toggler {
+    box-shadow: inherit !important;
+  }
