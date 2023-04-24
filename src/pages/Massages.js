@@ -13,7 +13,6 @@ import {
   tarifs5,
 } from "../textes/massages/paragraph";
 import ImageParagraph from "../components/ImageParagraph";
-import Table from "../components/Table";
 import massage from "../medias/massages/m5c-main.jpg";
 import massageill1 from "../medias/massages/m5c-ill1.jpg";
 import massageill2 from "../medias/massages/m5c-ill2.jpg";
@@ -34,8 +33,9 @@ import pochon from "../medias/massages/pochons-main.jpg";
 import pochonill1 from "../medias/massages/pochons-ill1.jpg";
 import pochonill2 from "../medias/massages/pochons-ill2.jpg";
 import pochonill3 from "../medias/massages/pochons-ill3.jpg";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import Tabbs from "../components/Tabbs";
+import TableComp from "../components/TableComp";
 
 const Massages = () => {
   return (
@@ -44,19 +44,22 @@ const Massages = () => {
         <div class="scroll-box">
           <ul>
             <li>
-            <HashLink to="#5continents-tab-description">Section 1</HashLink>
+            <HashLink to="#5continents-tab-description">Massage des 5 continents®</HashLink>
             </li>
             <li>
-            <HashLink to="#visageJaponais-tab-description">Section 2</HashLink>
+            <HashLink to="#visageJaponais-tab-description">Massage du visage japonais</HashLink>
             </li>
             <li>
-              <HashLink to="#belly-tab-description">Section 3</HashLink>
+              <HashLink to="#belly-tab-description">Belly Revolution®</HashLink>
             </li>
             <li>
-            <HashLink to="#vodder-tab-description">Section 4</HashLink>
+            <HashLink to="#vodder-tab-description">Massage drainage méthode Vodder</HashLink>
             </li>
             <li>
-            <HashLink to="#pochons-tab-description">Section 5</HashLink>
+            <HashLink to="#pochons-tab-description">Massage aux pochons</HashLink>
+            </li>
+            <li>
+            <HashLink to="#comparatif">Tableau comparatif</HashLink>
             </li>
           </ul>
         </div>
@@ -77,7 +80,7 @@ const Massages = () => {
           peuvent vous être suggérés.
         </div>
       </div>
-      <Table
+      <Tabbs
         title="MASSAGE DES 5 CONTINENTS®"
         tarifs={tarifs1}
         id="5continents"
@@ -91,7 +94,7 @@ const Massages = () => {
           />
         }
       />
-      <Table
+      <Tabbs
         title="MASSAGE DU VISAGE JAPONAIS"
         tarifs={tarifs2}
         id="visageJaponais"
@@ -105,7 +108,7 @@ const Massages = () => {
           />
         }
       />
-      <Table
+      <Tabbs
         title="BELLY REVOLUTION ®"
         tarifs={tarifs3}
         id="belly"
@@ -119,7 +122,7 @@ const Massages = () => {
           />
         }
       />
-      <Table
+      <Tabbs
         title="MASSAGE DRAINANT METHODE VODDER"
         tarifs={tarifs4}
         id="vodder"
@@ -133,7 +136,7 @@ const Massages = () => {
           />
         }
       />
-      <Table
+      <Tabbs
         title="MASSAGE AUX POCHONS"
         tarifs={tarifs5}
         id="pochons"
@@ -147,6 +150,7 @@ const Massages = () => {
           />
         }
       />
+      <TableComp />
     </>
   );
 };

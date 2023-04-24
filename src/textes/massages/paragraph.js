@@ -136,5 +136,5 @@ Originaire d'Asie, ce soin ancestral s'effectue à l'aide de pochons remplis de 
 <br />
 <br /> Je vous suggère de faire un gommage du corps avant votre rendez-vous, pour permettre une meilleure pénétration des principes actifs de l'huile de sésame ainsi que des plantes.  `
 
-export const tarifs5=`Tarif <b>85€</b><br /> - FORFAIT 3 SOINS <b>225€</b>
+export const tarifs5=`Tarif <b>85€</b><br /> Le forfait de 3 SOINS <b>225€</b>
 Durée 1h30`

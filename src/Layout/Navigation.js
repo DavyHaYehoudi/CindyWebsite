@@ -72,6 +72,9 @@ const Navigation = () => {
                 <NavDropdown.Item>
                   <HashLink to="massages#pochons-tab-description">Massage aux pochons</HashLink>{" "}
                 </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <HashLink to="massages#comparatif">Tableau comparatif</HashLink>{" "}
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>
                   <Link to="massages">Tous les massages</Link>

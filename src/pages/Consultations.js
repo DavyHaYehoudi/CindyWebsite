@@ -1,5 +1,4 @@
 import React from "react";
-import Table from "../components/Table";
 import ImageParagraph from "../components/ImageParagraph";
 import naturo from "../medias/consultations/naturo-main.jpg"
 import naturoill1 from "../medias/consultations/naturo-ill1.jpg"
@@ -16,6 +15,7 @@ import {
 } from "../textes/consultations/paragraph";
 import { tarifs1 } from "../textes/consultations/paragraph";
 import Bandeau from "../components/Bandeau";
+import Tabbs from "../components/Tabbs";
 
 const Consultations = () => {
 
@@ -23,7 +23,7 @@ const Consultations = () => {
     <div>
       <Bandeau title="LES CONSULTATIONS" accroche="Retrouvez et préservez votre santé" />
       <div>
-        <Table
+        <Tabbs
           title="Consultation de naturopathie"
           id="naturopathie"
           composant={
@@ -58,7 +58,7 @@ const Consultations = () => {
           </b>
         </p>
       </div>
-      <Table
+      <Tabbs
         title="Consultation de fleurs de Bach"
         id="fleursdebach"
         composant={
