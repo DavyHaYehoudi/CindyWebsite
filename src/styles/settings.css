@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&family=Vollkorn:ital,wght@1,400;1,500;1,600;1,700;1,800&display=swap");
+:root {
+  --main-color: #8ba79e; /* Couleur principale */
+  --sec-color: #4d4d4d; /* bkg adages accueil */
+  --ter-color: #c7aa8b; /* color adages accueil */
+  --four-color: #5f4f4f; /* bkg listes massages */
+  --five-color: #ededed; /* écriture principale" */
+  --six-color: #333; /* écriture secondaire" */
+  --sept-color: #295f00; /* titre accueil */
+  --huit-color: #f7f7f7; /* citations */
+
+  /* Font Size */
+  --fs-1: 1rem;
+  --fs-2: 1.2rem;
+  --fs-3: 1.5rem;
+  --fs-4: 1.7rem;
+  --fs-5: 2rem;
+  --fs-6: 2.2rem;
+
+  /* Font */
+  --main-font: "Montserrat";
+  --sec-font: "Roboto Condensed";
+  --ter-font: "Vollkorn";
+
+  /* Sections */
+  --interSection: 2.5rem;
+  --paddingLateralSection: 1.25rem;
+  --paddingheightSection: 5rem;
+
+  /* Cadres */
+  --br: 1.25rem;
+  --separateBlock: 4rem;
+  --borderBlock: 2px solid #ededed;
+  --paddingBlock: 1.25rem;
+  --marginBlock: 1.25rem;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, var(--main-font) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--five-color) !important;
+}
+a:visited {
+  color: var(--five-color) !important;
+}
+a:hover {
+  color: var(--four-color) !important;
+}
+img {
+  border-radius: var(--br);
+  max-width: 100%;
+}
+h1 {
+  font-size: var(--fs-6) !important;
+  color: var(--five-color);
+}
+h2 {
+  font-size: var(--fs-5) !important;
+  color: var(--five-color);
+  font-weight: 700 !important;
+}
+ul {
+  list-style-type: none;
+}
+blockquote {
+  font-family: var(--ter-font);
+  font-weight: 800;
+}
+.Button {
+  color: var(--five-color);
+  background-color: var(--main-color);
+  border-radius: var(--br);
+  border: 2px var(--four-color) solid;
+  padding: 5px;
+}
+.Button:hover {
+  color: var(--six-color);
+  background-color: var(--ter-color);
+  transition: 400ms;
+}
+.tab-content {
+  min-height: 500px;
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+  background-color: var(--main-color);
+}

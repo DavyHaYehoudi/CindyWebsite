@@ -1,0 +1,13 @@
+.pageML {
+    padding: 10px;
+  }
+  .pageML h1 {
+    color: var(--five-color);
+    background-color: var(--main-color);
+    font-size: 3rem;
+    text-align: center;
+    font-family: var(--sec-font);
+  }
+  .pageML h2 {
+    color: var(--four-color);
+  }
