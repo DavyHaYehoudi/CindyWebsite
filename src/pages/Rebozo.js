@@ -34,7 +34,7 @@ const Rebozo = () => {
             </blockquote>
             <cite>Cindy Pantoustier</cite>
             <p className="rebozoTarifs">
-              Durée : 3h (compter 4h avec le temps d'installation, d'échanges et
+              Durée : <b>3h</b> (compter 4h avec le temps d'installation, d'échanges et
               de désinstallation)
               <br />
               Tarif : <b>290€</b> (espèces, chèques ou Paypal)
