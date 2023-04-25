@@ -160,12 +160,12 @@ const Rebozo = () => {
         </article>
         <div className="containerText mentions">
           <blockquote>
-            Bonjour, je souhaiterai partager mon expérience avec vous, car j'ai
+            " Bonjour, je souhaiterai partager mon expérience avec vous, car j'ai
             eu l’opportunité et la chance de recevoir ce soin par Cindy et
             Julia, et je peux vous dire que c'était un moment très intense,
             magique et d’introspection positive. Elles sont douces, à l'écoute,
             elles accompagnent très bien le moment et le soin est juste
-            fabuleux. Je recommande vivement ! Merci à vous deux.
+            fabuleux. Je recommande vivement ! Merci à vous deux. "
           </blockquote>
           <cite>Témoignage d'une cliente ayant reçu le soin rituel Rebozo</cite>
         </div>
