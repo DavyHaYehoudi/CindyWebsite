@@ -154,7 +154,7 @@ const Rebozo = () => {
               terminée pour les accouchements par césarienne. Le rituel est
               adapté en fonction du vécu de chacune. Cependant, Julia et
               moi-même conseillons de le faire lorsque vous et votre enfant
-              puissiez être séparés durant 4h (durée approximative du soin).
+              pouvez être séparés durant 4h (durée approximative du soin).
             </p>
           </div>
         </article>
