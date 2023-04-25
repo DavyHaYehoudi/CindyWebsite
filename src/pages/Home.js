@@ -5,6 +5,8 @@ import profilhome from "../medias/home/profil-home.jpg"
 import { paragraph1, paragraph2 } from "../textes/home/paragraph";
 import FollowMe from "../components/FollowMe";
 import Adage from "../components/Adage";
+import Testimonies from "../components/Testimonies";
+import { all_testimonies } from "../textes/temoignages/temoignages";
 
 const Home = () => {
   return (
@@ -34,6 +36,7 @@ const Home = () => {
       />
       <FollowMe />
       <Adage />
+      <Testimonies name="Témoignages" testimonies={all_testimonies} />
     </div>
   );
 };

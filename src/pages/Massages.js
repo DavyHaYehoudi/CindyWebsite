@@ -1,5 +1,4 @@
-import React from "react";
-import Bandeau from "../components/Bandeau";
+import Headband from "../components/Headband";
 import {
   massage1,
   massage2,
@@ -22,13 +21,13 @@ import kobidoill1 from "../medias/massages/kobido-ill1.jpg";
 import kobidoill2 from "../medias/massages/kobido-ill2.jpg";
 import kobidoill3 from "../medias/massages/kobido-ill3.jpg";
 import belly from "../medias/massages/Belly-main.png";
-import bellyill1 from "../medias/massages/belly-ill1.jpg"
-import bellyill2 from "../medias/massages/belly-ill2.jpg"
-import bellyill3 from "../medias/massages/belly-ill3.jpg"
+import bellyill1 from "../medias/massages/belly-ill1.jpg";
+import bellyill2 from "../medias/massages/belly-ill2.jpg";
+import bellyill3 from "../medias/massages/belly-ill3.jpg";
 import vodder from "../medias/massages/vodder-main.jpg";
-import vodderill1 from "../medias/massages/vodder-ill1.jpg"
-import vodderill2 from "../medias/massages/vodder-ill2.jpg"
-import vodderill3 from "../medias/massages/vodder-ill3.jpg"
+import vodderill1 from "../medias/massages/vodder-ill1.jpg";
+import vodderill2 from "../medias/massages/vodder-ill2.jpg";
+import vodderill3 from "../medias/massages/vodder-ill3.jpg";
 import pochon from "../medias/massages/pochons-main.jpg";
 import pochonill1 from "../medias/massages/pochons-ill1.jpg";
 import pochonill2 from "../medias/massages/pochons-ill2.jpg";
@@ -38,34 +37,43 @@ import Tabbs from "../components/Tabbs";
 import TableComp from "../components/TableComp";
 
 const Massages = () => {
+ 
   return (
     <>
-      <div class="box-nav-massages">
-        <div class="scroll-box">
+      <div>
+        <div className="scroll-box">
           <ul>
             <li>
-            <HashLink to="#5continents-tab-description">Massage des 5 continents®</HashLink>
+              <HashLink to="#5continents-tab-description">
+                Massage des 5 continents®
+              </HashLink>
             </li>
             <li>
-            <HashLink to="#visageJaponais-tab-description">Massage du visage japonais</HashLink>
+              <HashLink to="#visageJaponais-tab-description">
+                Massage du visage japonais
+              </HashLink>
             </li>
             <li>
               <HashLink to="#belly-tab-description">Belly Revolution®</HashLink>
             </li>
             <li>
-            <HashLink to="#vodder-tab-description">Massage drainage méthode Vodder</HashLink>
+              <HashLink to="#vodder-tab-description">
+                Massage drainage méthode Vodder
+              </HashLink>
             </li>
             <li>
-            <HashLink to="#pochons-tab-description">Massage aux pochons</HashLink>
+              <HashLink to="#pochons-tab-description">
+                Massage aux pochons
+              </HashLink>
             </li>
             <li>
-            <HashLink to="#comparatif">Tableau comparatif</HashLink>
+              <HashLink to="#comparatif">Tableau comparatif</HashLink>
             </li>
           </ul>
         </div>
       </div>
       <div>
-        <Bandeau
+        <Headband
           title="LES MASSAGES"
           accroche="Apaisez les tensions pour libérer votre esprit"
         />

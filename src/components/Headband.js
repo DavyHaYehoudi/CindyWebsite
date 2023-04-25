@@ -1,6 +1,6 @@
 import React from "react";
 
-const Bandeau = ({ title, accroche }) => {
+const Headband = ({ title, accroche }) => {
   return (
     <div>
       <div className="bandeau">
@@ -12,4 +12,4 @@ const Bandeau = ({ title, accroche }) => {
   );
 };
 
-export default Bandeau;
+export default Headband;

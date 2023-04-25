@@ -14,14 +14,14 @@ import {
   tarifs2,
 } from "../textes/consultations/paragraph";
 import { tarifs1 } from "../textes/consultations/paragraph";
-import Bandeau from "../components/Bandeau";
+import Headband from "../components/Headband";
 import Tabbs from "../components/Tabbs";
 
 const Consultations = () => {
 
   return (
     <div>
-      <Bandeau title="LES CONSULTATIONS" accroche="Retrouvez et préservez votre santé" />
+      <Headband title="LES CONSULTATIONS" accroche="Retrouvez et préservez votre santé" />
       <div>
         <Tabbs
           title="Consultation de naturopathie"

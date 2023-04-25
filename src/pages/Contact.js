@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Bandeau from "../components/Bandeau";
+import Headband from "../components/Headband";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileScreen } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
@@ -33,7 +33,7 @@ const Contact = () => {
 
   return (
     <div>
-      <Bandeau title="POUR ME CONTACTER" accroche="Soyez acteur de votre vie" />
+      <Headband title="POUR ME CONTACTER" accroche="Soyez acteur de votre vie" />
       <p className="textContact">
         Les informations saisies sur cette page sont confidentielles et
         sécurisées
@@ -47,8 +47,8 @@ const Contact = () => {
                 icon={faMobileScreen}
                 alt="icône d'un mobile"
                 size="3x"
-              />
-              <p>06 18 01 05 04</p>{" "}
+              />{" "}
+              06 18 01 05 04
             </Link>
           </div>
           <div>
@@ -62,7 +62,7 @@ const Contact = () => {
                 alt="icône de boîte mail"
                 size="3x"
               />{" "}
-              <p>contact@cindy-naturopathe.com</p>{" "}
+              contact@cindy-naturopathe.com
             </Link>
           </div>
           <div>
@@ -70,59 +70,53 @@ const Contact = () => {
               to="https://www.google.com/maps/place/555+Av.+de+la+R%C3%A9publique,+83560+Vinon-sur-Verdon,+France/@43.7237412,5.8085825,17z/data=!3m1!4b1!4m5!3m4!1s0x12cbd3fe914b43cf:0x375d962996198d12!8m2!3d43.7237412!4d5.8107712"
               rel="noopener noreferrer"
               target="_blanck"
+              className="d-flex"
             >
               <FontAwesomeIcon
                 icon={faLocationDot}
                 alt="icône de localisation"
                 size="3x"
               />{" "}
-              <p>
-                555, avenue de la république
-                <br />
-                83 560 Vinon-sur-Verdon
-              </p>{" "}
+              <p className="mx-1">555, avenue de la république
+              <br />
+              83 560 Vinon-sur-Verdon{" "}</p>
             </Link>
           </div>
         </div>
-        <form className="form" ref={form} onSubmit={sendEmail}>
-          <fieldset className="formBlock">
+        <form className="form" id="form" ref={form} onSubmit={sendEmail}>
+          {successForm && (
+            <p className="successForm">
+              Les données ont bien été envoyées, je reviens vers vous rapidement
+            </p>
+          )}
+          <fieldset className={successForm && "d-none"}>
             <legend>Formulaire de contact</legend>
 
-            <input type="text" id="nom" name="name" placeholder="NOM" />
-            <br />
-
+            <input
+              type="text"
+              id="nom"
+              name="name"
+              placeholder="NOM"
+              autoFocus
+            />
             <input
               type="text"
               id="prenom"
               name="firstname"
               placeholder="PRENOM"
             />
-            <br />
-
             <input
               type="text"
               id="telephone"
               name="tel"
               placeholder="TELEPHONE"
             />
-            <br />
-            <input type="email" id="email" name="email" placeholder="EMAIL" />
-            <br />
-
             <textarea
               id="message"
               name="message"
               placeholder="MESSAGE"
             ></textarea>
-            <br />
-
             <input type="submit" value="ENVOYER" className="Button" />
-            {successForm && (
-              <p>
-                Les données ont bien été envoyées, je reviens vers vous
-                rapidement
-              </p>
-            )}
           </fieldset>
         </form>
       </div>
