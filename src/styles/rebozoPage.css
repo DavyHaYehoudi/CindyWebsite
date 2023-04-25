@@ -1,0 +1,34 @@
+.containerRebozo{
+    text-align: center;
+    color: var(--five-color);
+}
+.section1,.section2{
+    background-color: var(--main-color);
+    border-radius: var(--br);
+    padding: var(--paddingBlock);
+    margin: var(--marginBlock) 0;
+}
+.setImages{
+    display: flex;
+    justify-content: center;
+}
+.setImages img{
+    margin: var(--marginBlock);
+}
+.mentions{
+    margin: var(--marginBlock);
+    background-color: var(--five-color);
+    color: var(--four-color);
+    border-radius: var(--br);
+    padding: var(--paddingBlock);
+}
+.rebozoTarifs{
+    margin: var(--marginBlock);
+}
+.containerText{
+    max-width: 1200px;
+    margin: var(--marginBlock) auto;
+}
+.rebozoDef,.rebozoApport,.rebozoDeroulement,.rebozoBenef{
+margin: var(--separateBlock) auto;
+}
