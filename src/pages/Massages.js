@@ -64,7 +64,7 @@ const Massages = () => {
             </li>
             <li>
               <HashLink to="#vodder-tab-description">
-                Massage drainage méthode Vodder
+                Massage drainant méthode Vodder
               </HashLink>
             </li>
             <li>

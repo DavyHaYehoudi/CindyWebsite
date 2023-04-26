@@ -9,7 +9,11 @@
 /coverage
 
 # production
-/build
+/build  
+.firebase/  
+.firebaserc  
+.firebase.json  
+
 
 # misc
 .env
@@ -22,3 +26,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
