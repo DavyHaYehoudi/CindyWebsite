@@ -40,7 +40,7 @@ textarea {
 .form input::placeholder,
 textarea::placeholder {
   color: var(--four-color);
-  padding: 0 var(--fs-1) ;
+  padding: 10px var(--fs-1) ;
 }
 
 .form input:focus,

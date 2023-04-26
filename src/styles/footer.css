@@ -34,6 +34,8 @@
     max-width: 400px;
     font-weight: 500;
     font-size: var(--fs-3);
+    letter-spacing: var(--ls);
+    padding: var(--paddingBlock);
     animation: myAnim 2s ease 0s 1 normal forwards;
     opacity: 0;
   }

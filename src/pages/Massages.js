@@ -39,17 +39,15 @@ import useDrag from "../utils/useDrag";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowsUpDownLeftRight } from "@fortawesome/free-solid-svg-icons";
 const Massages = () => {
+  const { position, handleMouseDown } = useDrag(350, 100);
 
-  const { position, handleMouseDown } = useDrag(350,100); 
-  
-   return (
+  return (
     <>
       <div
         style={{ position: "fixed", left: position.x, top: position.y }}
         onMouseDown={handleMouseDown}
       >
-        <div className="scroll-box">
-          <div className="text-center all-scroll"><FontAwesomeIcon icon={faArrowsUpDownLeftRight} className="text-white" /></div>
+        <div className="scroll-box all-scroll">
           <ul>
             <li>
               <HashLink to="#5continents-tab-description">
@@ -90,7 +88,7 @@ const Massages = () => {
           id="massages"
         />
         <div className="massage_img_Bg"></div>
-        <div className="remarques">
+        <div className="remarques containerText">
           Les séances de massages commencent toutes par un échange de quelques
           minutes sur vos attentes ainsi que vos éventuelles sensibilités (ex:
           cervicales sensibles, peau réactive, etc). Je vous conseille de

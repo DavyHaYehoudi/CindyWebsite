@@ -16,6 +16,7 @@
   --fs-4: 1.7rem;
   --fs-5: 2rem;
   --fs-6: 2.2rem;
+  --ls:.5rem;
 
   /* Font */
   --main-font: "Montserrat";
@@ -57,6 +58,9 @@ img {
   border-radius: var(--br);
   max-width: 100%;
 }
+h1,h2,h3{
+  letter-spacing: var(--ls);
+}
 h1 {
   font-size: var(--fs-6) !important;
   color: var(--five-color);
@@ -86,11 +90,11 @@ blockquote {
 .tab-content {
   min-height: 500px;
   display: flex;
-  justify-content: space-around ;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--main-color);
 }
-.containerText{
+.containerText {
   max-width: 1200px;
   margin: var(--marginBlock) auto;
 }

@@ -82,22 +82,24 @@ cite {
   font-weight: 800;
   text-decoration: underline;
 }
-.testimony-button {
-  text-transform: uppercase;
-  background-color: rgba(95, 79, 79, 0);
-  padding: 5px;
-  border:none;
-  color: var(--five-color);
-  margin: var(--marginBlock);
-}
-.grip-testimony{
-  line-height: 0;
+.grip-testimony {
   text-align: center;
-  cursor: all-scroll;
-  background-color: rgba(95, 79, 79, .8);
+  background-color: rgba(95, 79, 79, 0.7);
+  border-radius: var(--br);
+  padding: var(--paddingBlock);
   opacity: 0;
   animation: homeTestimonies 1s ease 0s 1 normal forwards;
   animation-delay: 3s;
+}
+.testimony-button {
+  text-transform: uppercase;
+  letter-spacing: var(--ls);
+  background-color: rgba(95, 79, 79, 0.7);
+  padding: 10px;
+  border: none;
+  color: var(--five-color);
+  font-weight: 700;
+  margin: var(--marginBlock);
 }
 @keyframes homeTestimonies {
   0% {

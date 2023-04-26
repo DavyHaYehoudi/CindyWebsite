@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import useDrag from "../utils/useDrag";
-import { faArrowsUpDownLeftRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Testimonies({ name, testimonies }) {
   const [show, setShow] = useState(false);
@@ -16,16 +14,10 @@ function Testimonies({ name, testimonies }) {
       style={{ position: "fixed", left: position.x, top: position.y }}
       onMouseDown={handleMouseDown}
     >
-      <div className="grip-testimony Button">
-        <FontAwesomeIcon
-          icon={faArrowsUpDownLeftRight}
-          className="text-white grip"
-        />
-        <div>
-          <button className="testimony-button me-2" onClick={handleShow}>
+      <div className="grip-testimony all-scroll">
+          <button className="testimony-button " onClick={handleShow}>
             {name}
           </button>
-        </div>
       </div>
 
       <Offcanvas show={show} onHide={handleClose}>

@@ -24,7 +24,7 @@
   padding: 0;
 }
 .scroll-box ul li {
-  margin-bottom: 5px;
+  margin: 15px;
 }
 .scroll-box ul li a:hover {
   color: var(--main-color) !important;
