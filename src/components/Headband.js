@@ -1,14 +1,14 @@
 import React from "react";
 
-const Headband = ({ title, accroche }) => {
+const Headband = ({ title, accroche, id }) => {
   return (
-    <div>
-      <div className="bandeau">
+    <>
+      <div className="bandeau" id={id}>
         <h1>{title} </h1>
         <hr className="custom-hr"></hr>
         <p className="accroche">{accroche} </p>
       </div>
-    </div>
+    </>
   );
 };
 

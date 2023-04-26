@@ -1,41 +1,51 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import React, { useState } from "react";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import useDrag from "../utils/useDrag";
+import { faArrowsUpDownLeftRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Testimonies({ name, testimonies }) {
   const [show, setShow] = useState(false);
+  const { position, handleMouseDown } = useDrag(350, 100, { x: 20, y: 150 });
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   return (
-    <>
-      <button className="Button testimony-button me-2" onClick={handleShow}>
-        {name}
-      </button>
+    <div
+      style={{ position: "fixed", left: position.x, top: position.y }}
+      onMouseDown={handleMouseDown}
+    >
+      <div className="grip-testimony Button">
+        <FontAwesomeIcon
+          icon={faArrowsUpDownLeftRight}
+          className="text-white grip"
+        />
+        <div>
+          <button className="testimony-button me-2" onClick={handleShow}>
+            {name}
+          </button>
+        </div>
+      </div>
+
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title className='title-testimonies'>TEMOIGNAGES</Offcanvas.Title>
+          <Offcanvas.Title className="title-testimonies">
+            TEMOIGNAGES
+          </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          {testimonies.map((t,i)=>
-          <p dangerouslySetInnerHTML={{__html:t}} key={i} className='box-testimony'></p>
-          )}
+          {testimonies.map((t, i) => (
+            <p
+              dangerouslySetInnerHTML={{ __html: t }}
+              key={i}
+              className="box-testimony"
+            ></p>
+          ))}
         </Offcanvas.Body>
       </Offcanvas>
-    </>
+    </div>
   );
 }
 
-function Example() {
-  return (
-    <>
-      {['start', 'end', 'top', 'bottom'].map((placement, idx) => (
-        <Testimonies key={idx} placement={placement} name={placement} />
-      ))}
-    </>
-  );
-}
-
-export default Testimonies
-// render(<Example />);
+export default Testimonies;

@@ -35,13 +35,21 @@ import pochonill3 from "../medias/massages/pochons-ill3.jpg";
 import { HashLink } from "react-router-hash-link";
 import Tabbs from "../components/Tabbs";
 import TableComp from "../components/TableComp";
-
+import useDrag from "../utils/useDrag";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowsUpDownLeftRight } from "@fortawesome/free-solid-svg-icons";
 const Massages = () => {
- 
-  return (
+
+  const { position, handleMouseDown } = useDrag(350,100); 
+  
+   return (
     <>
-      <div>
+      <div
+        style={{ position: "fixed", left: position.x, top: position.y }}
+        onMouseDown={handleMouseDown}
+      >
         <div className="scroll-box">
+          <div className="text-center all-scroll"><FontAwesomeIcon icon={faArrowsUpDownLeftRight} className="text-white" /></div>
           <ul>
             <li>
               <HashLink to="#5continents-tab-description">
@@ -69,6 +77,9 @@ const Massages = () => {
             <li>
               <HashLink to="#comparatif">Tableau comparatif</HashLink>
             </li>
+            <li>
+              <HashLink to="#massages">Haut de la page</HashLink>
+            </li>
           </ul>
         </div>
       </div>
@@ -76,6 +87,7 @@ const Massages = () => {
         <Headband
           title="LES MASSAGES"
           accroche="Apaisez les tensions pour libérer votre esprit"
+          id="massages"
         />
         <div className="massage_img_Bg"></div>
         <div className="remarques">

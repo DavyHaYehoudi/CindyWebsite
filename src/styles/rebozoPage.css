@@ -16,18 +16,10 @@
     margin: var(--marginBlock);
 }
 .mentions{
-    margin: var(--marginBlock);
     background-color: var(--five-color);
     color: var(--four-color);
     border-radius: var(--br);
     padding: var(--paddingBlock);
-}
-.rebozoTarifs{
-    margin: var(--marginBlock);
-}
-.containerText{
-    max-width: 1200px;
-    margin: var(--marginBlock) auto;
 }
 .rebozoDef,.rebozoApport,.rebozoDeroulement,.rebozoBenef{
 margin: var(--separateBlock) auto;

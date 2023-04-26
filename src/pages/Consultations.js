@@ -21,7 +21,7 @@ const Consultations = () => {
 
   return (
     <div>
-      <Headband title="LES CONSULTATIONS" accroche="Retrouvez et préservez votre santé" />
+      <Headband title="LES CONSULTATIONS" accroche="Retrouvez et préservez votre santé" id="consultations" />
       <div>
         <Tabbs
           title="Consultation de naturopathie"

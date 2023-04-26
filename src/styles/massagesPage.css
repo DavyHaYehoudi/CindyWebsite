@@ -11,14 +11,13 @@
   background-attachment: fixed;
 }
 .scroll-box {
-  position: fixed;
-  top: 25%;
-  right: 20px;
-  transform: translateY(-50%);
   background-color: rgba(95, 79, 79, 0.8);
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: var(--br);
+  animation: dragScrollBox 2s ease 0s 1 normal forwards;
+  animation-delay: 3s;
+  opacity: 0;
 }
 .scroll-box ul {
   margin: 0;
@@ -29,4 +28,19 @@
 }
 .scroll-box ul li a:hover {
   color: var(--main-color) !important;
+}
+@keyframes dragScrollBox {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.tabComp {
+  padding: 10px;
+  border-collapse: inherit;
 }

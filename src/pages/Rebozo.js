@@ -16,6 +16,7 @@ const Rebozo = () => {
       <Headband
         title="RITUEL REBOZO"
         accroche="Plus qu'un soin, une expérience sensorielle inoubliable"
+        id="rebozo"
       />
       <section className="containerRebozo">
         <div className="section1">

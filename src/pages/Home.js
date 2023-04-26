@@ -36,7 +36,7 @@ const Home = () => {
       />
       <FollowMe />
       <Adage />
-      <Testimonies name="Témoignages" testimonies={all_testimonies} />
+      <Testimonies name="Temoignages" testimonies={all_testimonies} />
     </div>
   );
 };

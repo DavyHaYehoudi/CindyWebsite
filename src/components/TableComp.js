@@ -2,10 +2,10 @@ import Table from "react-bootstrap/Table";
 
 function TableComp() {
   return (
-    <Table striped id="comparatif">
+    <Table striped id="comparatif" className="tabComp" >
       <thead>
         <tr>
-          <th>#</th>
+          <th></th>
           <th>MASSAGE</th>
           <th>TARIFS</th>
         </tr>
@@ -44,7 +44,7 @@ function TableComp() {
           <td>
             Ce massage se pratique à la carte ou en cure : Tarif = 50€ (1H00)
             <br />
-            Le forfait de 5 massages = 210€
+            Le forfait de 5 massages : 210€
           </td>
         </tr>
         <tr>
@@ -53,7 +53,7 @@ function TableComp() {
           <td>
             Tarif 85€
             <br />
-            Le forfait de 3 SOINS 225€ Durée 1h30
+            Le forfait de 3 soins : 225€ (1H30)
           </td>
         </tr>
       </tbody>

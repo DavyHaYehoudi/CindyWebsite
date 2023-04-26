@@ -4,7 +4,7 @@ function ImageParagraph({ imageSrc, imageAlt, imagePosition, paragraphText }) {
   return (
     <div className={`image-paragraph ${imagePosition}`}>
       <img src={imageSrc} alt={imageAlt} />
-        <div className="cadre-paragraph" dangerouslySetInnerHTML={{ __html: paragraphText }}></div>
+        <div className="cadre-paragraph containerText" dangerouslySetInnerHTML={{ __html: paragraphText }}></div>
     </div>
   );
 }
