@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Headband from "../components/Headband";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileScreen } from "@fortawesome/free-solid-svg-icons";
@@ -30,6 +30,13 @@ const Contact = () => {
         }
       );
   };
+  // L autofocus ne fonctionne pas toujours au chargement de la page
+  useEffect(() => {
+    setTimeout(() => {
+      document.getElementById('nom').focus();
+    }, 0);
+  }, []);
+  
 
   return (
     <div>

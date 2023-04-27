@@ -1,16 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 const MentionsLegales = () => {
-  const presentationRef = useRef(null);
 
-  useEffect(() => {
-    if (window.location.hash === "#presentation") {
-      presentationRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, []);
   return (
-    <div className="pageML">
-      <h1 ref={presentationRef} >MENTIONS LEGALES</h1>
+    <div className="pageML" id="mleg">
+      <h1>MENTIONS LEGALES</h1>
       <h2>1.Présentation du site</h2>
       <p>
         En vertu de l’article 6 de la loi n° 2004-575 du 21 juin 2004 pour la

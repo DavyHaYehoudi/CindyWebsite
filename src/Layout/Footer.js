@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../medias/icons/logo.png";
 import ContactButton from "../components/ContactButton";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
@@ -39,7 +39,7 @@ const Footer = () => {
       <div className="sub-footer2">
         <p>
           {" "}
-          <Link to="/mentions_legales#presentation">Mentions légales</Link>{" "}
+          <HashLink to="/mentions_legales#mleg">Mentions légales</HashLink>{" "}
         </p>
       </div>
     </div>
