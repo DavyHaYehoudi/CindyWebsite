@@ -1,0 +1,59 @@
+[debug] [2023-04-27T16:46:17.961Z] ----------------------------------------------------------------------
+[debug] [2023-04-27T16:46:17.962Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-04-27T16:46:17.962Z] CLI Version:   10.7.2
+[debug] [2023-04-27T16:46:17.963Z] Platform:      darwin
+[debug] [2023-04-27T16:46:17.963Z] Node Version:  v14.16.1
+[debug] [2023-04-27T16:46:17.963Z] Time:          Thu Apr 27 2023 19:46:17 GMT+0300 (heure d’été d’Israël)
+[debug] [2023-04-27T16:46:17.963Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-27T16:46:18.005Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/undefined [none]
+[debug] [2023-04-27T16:46:18.554Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/undefined 403
+[debug] [2023-04-27T16:46:18.554Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/undefined {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-04-27T16:46:18.555Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-04-27T16:46:18.789Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:47:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:286:39)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[error] 
+[error] Error: Failed to get Firebase project undefined. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-04-27T16:52:13.802Z] ----------------------------------------------------------------------
+[debug] [2023-04-27T16:52:13.803Z] Command:       /usr/local/bin/node /usr/local/bin/firebase login:ci --debug
+[debug] [2023-04-27T16:52:13.804Z] CLI Version:   10.7.2
+[debug] [2023-04-27T16:52:13.804Z] Platform:      darwin
+[debug] [2023-04-27T16:52:13.804Z] Node Version:  v14.16.1
+[debug] [2023-04-27T16:52:13.804Z] Time:          Thu Apr 27 2023 19:52:13 GMT+0300 (heure d’été d’Israël)
+[debug] [2023-04-27T16:52:13.805Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=5473313&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-04-27T16:52:26.596Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/0AVHEtk6GBaZx3UPqQDdFRGsr5eDXCryKkFNdAOgRimbch1upLWrVp1TC4ID6XxpoLhopBA","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"http://localhost:9005","grant_type":"authorization_code"}
+[debug] [2023-04-27T16:52:26.815Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 27 Apr 2023 16:52:27 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] ✔  Success! Use this token to login on a CI server:
+
+1//03IMihUettyh4CgYIARAAGAMSNwF-L9IrR7YmaBFszGFr_mLlj6jP_IXeAS095w9YqBPBKoP3R4rtOK1OiwHrnC4bMej794-ZafA
+
+Example: firebase deploy --token "$FIREBASE_TOKEN"
+ 
+[debug] [2023-04-27T16:52:37.695Z] ----------------------------------------------------------------------
+[debug] [2023-04-27T16:52:37.697Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-04-27T16:52:37.697Z] CLI Version:   10.7.2
+[debug] [2023-04-27T16:52:37.697Z] Platform:      darwin
+[debug] [2023-04-27T16:52:37.697Z] Node Version:  v14.16.1
+[debug] [2023-04-27T16:52:37.698Z] Time:          Thu Apr 27 2023 19:52:37 GMT+0300 (heure d’été d’Israël)
+[debug] [2023-04-27T16:52:37.698Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-27T16:52:37.746Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/undefined [none]
+[debug] [2023-04-27T16:52:38.111Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/undefined 403
+[debug] [2023-04-27T16:52:38.111Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/undefined {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-04-27T16:52:38.112Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-04-27T16:52:38.259Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:47:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:286:39)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[error] 
+[error] Error: Failed to get Firebase project undefined. Please make sure the project exists and your account has permission to access it.
