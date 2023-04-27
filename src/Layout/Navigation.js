@@ -6,8 +6,19 @@ import logo from "../medias/icons/logo.png";
 import SocialButtons from "../components/SocialButtons";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { useState } from "react";
 
 const Navigation = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleMouseEnter = () => {
+    setShowDropdown(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowDropdown(false);
+  };
+
   return (
     <>
       <Navbar style={{ backgroundColor: "var(--main-color)" }} expand="lg" fixed="top">
@@ -25,6 +36,9 @@ const Navigation = () => {
                 title="CONSULTATIONS"
                 id="basic-nav-dropdown2"
                 className="mx-2"
+                show={showDropdown}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
                 <NavDropdown.Item>
                   {" "}
