@@ -1,6 +1,5 @@
 import React from "react";
 import Headband from "../components/Headband";
-import rousse from "../medias/rebozo/rousse.jpg";
 import tissage from "../medias/rebozo/tissage.jpg";
 import tasse from "../medias/rebozo/tasse.jpg";
 import bougie from "../medias/rebozo/bougie.jpg";
@@ -28,7 +27,6 @@ const Rebozo = () => {
             <b>Bienveillance, Respect et Accompagnement</b> sont les
             maîtres-mots de notre rituel.
           </p>
-          <img src={rousse} alt="visage d'une fille rousse" />
           <div className="mentions containerText">
             <blockquote>
               C'est une reconnexion, un temps pour soi afin de célébrer la femme
@@ -36,8 +34,7 @@ const Rebozo = () => {
             </blockquote>
             <cite>Cindy Pantoustier</cite>
             <p className="rebozoTarifs">
-              Durée : <b>3h</b> (compter 4h avec le temps d'installation, d'échanges et
-              de désinstallation)
+              Durée : <b>4h</b> 
               <br />
               Tarif : <b>290€</b> (espèces, chèques ou Paypal)
             </p>
