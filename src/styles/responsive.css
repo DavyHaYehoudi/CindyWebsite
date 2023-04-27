@@ -34,6 +34,15 @@
   .adage2 {
     width: 100%;
   }
+  /* .hero,
+  .massage_img_Bg,
+  .consultation_img_Bg,
+  .rebozo_img_Bg {
+    background-size: contain;
+    background-repeat: no-repeat;
+  } */
+}
+@media screen and (max-width: 1900px){
   .hero,
   .massage_img_Bg,
   .consultation_img_Bg,

@@ -1,7 +1,7 @@
 
 .consultation_img_Bg {
   width: 100%;
-  height: 350px;
+  height: var(--height-Bg-img);
   background-image: url("/public/images/consultationBg.jpg");
   background-size: cover;
   background-attachment: fixed;

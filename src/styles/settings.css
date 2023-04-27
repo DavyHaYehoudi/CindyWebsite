@@ -34,6 +34,9 @@
   --borderBlock: 2px solid #ededed;
   --paddingBlock: 1.25rem;
   --marginBlock: 1.25rem;
+
+  /* background image */
+  --height-Bg-img: 500px;
 }
 
 body {
