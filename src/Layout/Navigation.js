@@ -10,13 +10,13 @@ import { HashLink } from "react-router-hash-link";
 const Navigation = () => {
   return (
     <>
-      <Navbar style={{ backgroundColor: "var(--main-color)" }} expand="lg">
+      <Navbar style={{ backgroundColor: "var(--main-color)" }} expand="lg" fixed="top">
         <Container>
           <Navbar.Brand>
-            <Link to="/" className="navbar-brand">
+            <HashLink to="/#homePage" className="navbar-brand">
               <img src={logo} alt="logo" className="mx-2 logo" />
               BIENVENUE
-            </Link>
+            </HashLink>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -39,7 +39,7 @@ const Navigation = () => {
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>
-                  <Link to="consultations">Toutes les consultations</Link>
+                  <HashLink to="consultations#consultations">Toutes les consultations</HashLink>
                 </NavDropdown.Item>
               </NavDropdown>
 
@@ -77,15 +77,15 @@ const Navigation = () => {
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>
-                  <Link to="massages">Tous les massages</Link>
+                  <HashLink to="massages#massages">Tous les massages</HashLink>
                 </NavDropdown.Item>
               </NavDropdown>
 
               <Nav.Link to="rebozo" className="mx-2">
-                <Link to="rebozo">SOIN REBOZO</Link>{" "}
+                <HashLink to="rebozo#rebozoPage">SOIN REBOZO</HashLink>{" "}
               </Nav.Link>
               <Nav.Link className="mx-2">
-                <Link to="contact">CONTACT</Link>{" "}
+                <HashLink to="contact#contact">CONTACT</HashLink>{" "}
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

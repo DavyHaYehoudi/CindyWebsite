@@ -1,13 +1,13 @@
 import React from "react";
 import ImageParagraph from "../components/ImageParagraph";
-import naturo from "../medias/consultations/naturo-main.jpg"
-import naturoill1 from "../medias/consultations/naturo-ill1.jpg"
-import naturoill2 from "../medias/consultations/naturo-ill2.jpg"
-import naturoill3 from "../medias/consultations/naturo-ill3.jpg"
+import naturo from "../medias/consultations/naturo-main.jpg";
+import naturoill1 from "../medias/consultations/naturo-ill1.jpg";
+import naturoill2 from "../medias/consultations/naturo-ill2.jpg";
+import naturoill3 from "../medias/consultations/naturo-ill3.jpg";
 import fdb from "../medias/consultations/fdb-main.jpg";
-import fdbill1 from "../medias/consultations/fdb-ill1.jpg"
-import fdbill2 from "../medias/consultations/fdb-ill2.jpg"
-import fdbill3 from "../medias/consultations/fdb-ill3.jpg"
+import fdbill1 from "../medias/consultations/fdb-ill1.jpg";
+import fdbill2 from "../medias/consultations/fdb-ill2.jpg";
+import fdbill3 from "../medias/consultations/fdb-ill3.jpg";
 import {
   paragraph1,
   paragraph2,
@@ -18,10 +18,15 @@ import Headband from "../components/Headband";
 import Tabbs from "../components/Tabbs";
 
 const Consultations = () => {
-
   return (
     <div>
-      <Headband title="LES CONSULTATIONS" accroche="Retrouvez et préservez votre santé" id="consultations" />
+      <Headband
+        title="LES CONSULTATIONS"
+        accroche="Retrouvez et préservez votre santé"
+        id="consultations"
+      />
+      <div className="consultation_img_Bg"></div>
+
       <div>
         <Tabbs
           title="Consultation de naturopathie"
@@ -34,7 +39,7 @@ const Consultations = () => {
               paragraphText={paragraph1}
             />
           }
-          illustrations={[naturoill1,naturoill2,naturoill3]}
+          illustrations={[naturoill1, naturoill2, naturoill3]}
           tarifs={tarifs1}
         />
         <p
@@ -69,7 +74,7 @@ const Consultations = () => {
             paragraphText={paragraph2}
           />
         }
-        illustrations={[fdbill1,fdbill2,fdbill3]}
+        illustrations={[fdbill1, fdbill2, fdbill3]}
         tarifs={tarifs2}
       />
     </div>

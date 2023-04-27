@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
+import { HashLink } from "react-router-hash-link";
 
 const ContactButton = () => {
   const [animate, setAnimate] = useState(false);
@@ -17,13 +18,13 @@ const ContactButton = () => {
   }, [inView]);
 
   return (
-    <Link to="/contact#form">
+    <HashLink to="/contact">
       <div className={animate && "contactButtonAnimated"} ref={ref}>
         <button className="Button contactButton">
           VOUS SOUHAITEZ ME CONTACTER
         </button>
       </div>
-    </Link>
+    </HashLink>
   );
 };
 

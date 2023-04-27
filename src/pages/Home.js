@@ -10,8 +10,8 @@ import { all_testimonies } from "../textes/temoignages/temoignages";
 
 const Home = () => {
   return (
-    <div className="homePage" id="homePage">
-      <div className="hero">
+    <div className="homePage" >
+      <div className="hero" id="homePage">
         <h1>
           <i>Cindy PANTOUSTIER</i>
           <br />
@@ -36,7 +36,7 @@ const Home = () => {
       />
       <FollowMe />
       <Adage />
-      <Testimonies name="Temoignages" testimonies={all_testimonies} />
+      <Testimonies name="Témoignages" testimonies={all_testimonies} />
     </div>
   );
 };

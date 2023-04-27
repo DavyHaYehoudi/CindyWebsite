@@ -1,26 +1,37 @@
-.containerRebozo{
-    text-align: center;
-    color: var(--five-color);
+.rebozo_img_Bg {
+  width: 100%;
+  height: 350px;
+  background-image: url("/public/images/rebozoBg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
-.section1,.section2{
-    background-color: var(--main-color);
-    border-radius: var(--br);
-    padding: var(--paddingBlock);
-    margin: var(--marginBlock) 0;
+.containerRebozo {
+  text-align: center;
+  color: var(--five-color);
 }
-.setImages{
-    display: flex;
-    justify-content: center;
+.section1,
+.section2 {
+  background-color: var(--main-color);
+  border-radius: var(--br);
+  padding: var(--paddingBlock);
+  margin: var(--marginBlock) 0;
 }
-.setImages img{
-    margin: var(--marginBlock);
+.setImages {
+  display: flex;
+  justify-content: center;
 }
-.mentions{
-    background-color: var(--five-color);
-    color: var(--four-color);
-    border-radius: var(--br);
-    padding: var(--paddingBlock);
+.setImages img {
+  margin: var(--marginBlock);
 }
-.rebozoDef,.rebozoApport,.rebozoDeroulement,.rebozoBenef{
-margin: var(--separateBlock) auto;
+.mentions {
+  background-color: var(--five-color);
+  color: var(--four-color);
+  border-radius: var(--br);
+  padding: var(--paddingBlock);
+}
+.rebozoDef,
+.rebozoApport,
+.rebozoDeroulement,
+.rebozoBenef {
+  margin: var(--separateBlock) auto;
 }

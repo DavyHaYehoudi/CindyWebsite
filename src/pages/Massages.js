@@ -32,55 +32,12 @@ import pochon from "../medias/massages/pochons-main.jpg";
 import pochonill1 from "../medias/massages/pochons-ill1.jpg";
 import pochonill2 from "../medias/massages/pochons-ill2.jpg";
 import pochonill3 from "../medias/massages/pochons-ill3.jpg";
-import { HashLink } from "react-router-hash-link";
 import Tabbs from "../components/Tabbs";
 import TableComp from "../components/TableComp";
-import useDrag from "../utils/useDrag";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowsUpDownLeftRight } from "@fortawesome/free-solid-svg-icons";
-const Massages = () => {
-  const { position, handleMouseDown } = useDrag(350, 100);
 
+const Massages = () => {
   return (
     <>
-      <div
-        style={{ position: "fixed", left: position.x, top: position.y }}
-        onMouseDown={handleMouseDown}
-      >
-        <div className="scroll-box all-scroll">
-          <ul>
-            <li>
-              <HashLink to="#5continents-tab-description">
-                Massage des 5 continents®
-              </HashLink>
-            </li>
-            <li>
-              <HashLink to="#visageJaponais-tab-description">
-                Massage du visage japonais
-              </HashLink>
-            </li>
-            <li>
-              <HashLink to="#belly-tab-description">Belly Revolution®</HashLink>
-            </li>
-            <li>
-              <HashLink to="#vodder-tab-description">
-                Massage drainant méthode Vodder
-              </HashLink>
-            </li>
-            <li>
-              <HashLink to="#pochons-tab-description">
-                Massage aux pochons
-              </HashLink>
-            </li>
-            <li>
-              <HashLink to="#comparatif">Tableau comparatif</HashLink>
-            </li>
-            <li>
-              <HashLink to="#massages">Haut de la page</HashLink>
-            </li>
-          </ul>
-        </div>
-      </div>
       <div>
         <Headband
           title="LES MASSAGES"

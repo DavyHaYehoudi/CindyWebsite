@@ -1,6 +1,6 @@
 .hero {
   text-align: center;
-  height: 600px;
+  height: 700px;
   background-image: linear-gradient(
       to top,
       rgba(255, 255, 255, 0),
@@ -76,83 +76,17 @@ cite {
   box-shadow: 2px 2px 2px 2px;
   background-color: var(--main-color);
   color: var(--five-color);
-}
-.title-testimonies {
-  color: var(--four-color);
-  font-weight: 800;
-  text-decoration: underline;
-}
-.grip-testimony {
-  text-align: center;
-  background-color: rgba(95, 79, 79, 0.7);
-  border-radius: var(--br);
-  padding: var(--paddingBlock);
-  opacity: 0;
-  animation: homeTestimonies 1s ease 0s 1 normal forwards;
-  animation-delay: 3s;
-}
-.testimony-button {
-  text-transform: uppercase;
-  letter-spacing: var(--ls);
-  background-color: rgba(95, 79, 79, 0.7);
-  padding: 10px;
-  border: none;
-  color: var(--five-color);
-  font-weight: 700;
   margin: var(--marginBlock);
 }
-@keyframes homeTestimonies {
-  0% {
-    animation-timing-function: ease-in;
-    opacity: 0;
-    transform: translateY(-250px);
-  }
-
-  38% {
-    animation-timing-function: ease-out;
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  55% {
-    animation-timing-function: ease-in;
-    transform: translateY(-65px);
-    opacity: 1;
-    opacity: 1;
-  }
-
-  72% {
-    animation-timing-function: ease-out;
-    transform: translateY(0);
-    opacity: 1;
-    opacity: 1;
-  }
-
-  81% {
-    animation-timing-function: ease-in;
-    transform: translateY(-28px);
-    opacity: 1;
-    opacity: 1;
-  }
-
-  90% {
-    animation-timing-function: ease-out;
-    transform: translateY(0);
-    opacity: 1;
-    opacity: 1;
-  }
-
-  95% {
-    animation-timing-function: ease-in;
-    transform: translateY(-8px);
-    opacity: 1;
-    opacity: 1;
-  }
-
-  100% {
-    animation-timing-function: ease-out;
-    transform: translateY(0);
-    opacity: 1;
-    opacity: 1;
-  }
+.btn-testimony {
+  position: absolute;
+  top: 120px;
+  right: 10px;
+  z-index: 1100;
+  letter-spacing: var(--ls);
+}
+.title-testimony {
+  text-transform: uppercase;
+  color: var(--four-color);
+  margin: auto;
 }

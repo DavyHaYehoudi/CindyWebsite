@@ -33,7 +33,7 @@ const Contact = () => {
 
   return (
     <div>
-      <Headband title="POUR ME CONTACTER" accroche="Soyez acteur de votre vie" />
+      <Headband title="POUR ME CONTACTER" accroche="Soyez acteur de votre vie" id="contact" />
       <p className="textContact">
         Les informations saisies sur cette page sont confidentielles et
         sécurisées
