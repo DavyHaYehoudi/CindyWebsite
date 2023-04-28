@@ -34,6 +34,7 @@
 .subtitle_homePage {
   font-weight: 600;
   font-size: var(--fs-5);
+  text-transform: uppercase;
 }
 .followMe {
   text-align: center;

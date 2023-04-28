@@ -18,7 +18,7 @@ const Home = () => {
           <span className="subtitle_homePage">
             NATUROPATHE | MASSAGES
             <br />
-            BIEN-ETRE
+            bien-être
           </span>
         </h1>
       </div>

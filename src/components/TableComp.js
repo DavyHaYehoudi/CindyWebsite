@@ -6,7 +6,7 @@ function TableComp() {
       <thead>
         <tr>
           <th></th>
-          <th>MASSAGE</th>
+          <th>MASSAGES</th>
           <th>TARIFS</th>
         </tr>
       </thead>
