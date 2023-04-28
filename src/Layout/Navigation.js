@@ -4,7 +4,6 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../medias/icons/logo.png";
 import SocialButtons from "../components/SocialButtons";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { useEffect, useRef, useState } from "react";
 

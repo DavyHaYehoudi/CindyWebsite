@@ -85,6 +85,10 @@ cite {
   right: 10px;
   z-index: 1100;
   letter-spacing: var(--ls);
+  text-transform: uppercase;
+}
+.btn-testimony-toggle{
+  z-index: -1;
 }
 .title-testimony {
   text-transform: uppercase;

@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { HashLink } from "react-router-hash-link";
 
