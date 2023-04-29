@@ -13,3 +13,12 @@
   .pageML h2 {
     color: var(--four-color);
   }
+  .linksML1{
+    color: red !important;
+  }
+  .linksML2:visited{
+    color: red !important;
+  }
+  .linksML3:visited{
+    color: blue !important;
+  }

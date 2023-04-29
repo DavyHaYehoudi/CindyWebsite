@@ -5,8 +5,8 @@
 .container {
   max-width: 1200px !important;
   border: 1px solid var(--five-color);
-border-radius: var(--br);
-box-shadow: 1px 1px 1px var(--five-color);
+  border-radius: var(--br);
+  box-shadow: 1px 1px 1px var(--five-color);
 }
 .navbar-brand {
   font-size: var(--fs-4) !important;
@@ -19,11 +19,13 @@ box-shadow: 1px 1px 1px var(--five-color);
 }
 .nav-link {
   font-size: var(--fs-1) !important;
-  border-bottom: 3px solid transparent;
   font-weight: 700 !important;
   letter-spacing: 2px;
 }
-.nav-link:hover {
+.navlink{
+  border-bottom: 3px solid transparent;
+}
+.navlink:hover{
   border-bottom: 3px solid var(--four-color);
 }
 .navbar-collapse {
