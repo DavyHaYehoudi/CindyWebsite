@@ -4,9 +4,8 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../medias/icons/logo.png";
 import SocialButtons from "../components/SocialButtons";
-import { HashLink } from "react-router-hash-link";
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const [expanded, setExpanded] = useState(false);
@@ -19,14 +18,14 @@ const Navigation = () => {
 
   // En responsive la gestion du toogle de la Navbar apparemment du fait de l'utilisation de balises HashLink
   const closeNavbar = () => setExpanded(false);
-  const handleResize = () => {
-    if (window.innerWidth <= 991) {
+  useEffect(() => {
+    if (expanded && window.innerWidth <= 991) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
     }
-  };
-  window.addEventListener("resize", handleResize);
+  }, [expanded]);
+  
 
   // Empêcher que le menu déroulé ne se ferme trop vite au hover du NavDropdown
   const handleMouseEnter = (dropdown) => {
@@ -47,7 +46,7 @@ const Navigation = () => {
     const element = hash ? document.getElementById(hash.substring(1)) : null;
     if (element) {
       setTimeout(() => {
-        window.scrollTo({ top: element.offsetTop , behavior: "smooth" });
+        window.scrollTo({ top: element.offsetTop, behavior: "smooth" });
       }, 500); // délai de 500 millisecondes
     } else {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -61,18 +60,16 @@ const Navigation = () => {
         expand="lg"
         fixed="top"
         expanded={expanded}
-   onToggle={() => setExpanded(!expanded)}
+        onToggle={() => setExpanded(!expanded)}
       >
         <Container>
-          <Navbar.Brand>
-            <HashLink
-              to="/#homePage"
-              className="navbar-brand"
-              onClick={closeNavbar}
-            >
-              <img src={logo} alt="logo" className="mx-2 logo" />
-              BIENVENUE
-            </HashLink>
+          <Navbar.Brand
+            href="/#homePage"
+            // onClick={closeNavbar}
+            className="navbar-brand"
+          >
+            <img src={logo} alt="logo" className="mx-2 logo" />
+            BIENVENUE
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -82,13 +79,13 @@ const Navigation = () => {
                   isMobile ? (
                     "CONSULTATIONS"
                   ) : (
-                    <HashLink
+                    <Link
                       to="consultations#consultations"
                       id="basic-nav-dropdown1"
                       className="mx-2"
                     >
                       CONSULTATIONS
-                    </HashLink>
+                    </Link>
                   )
                 }
                 show={showDropdown.consultations}
@@ -96,32 +93,24 @@ const Navigation = () => {
                 onMouseLeave={() => handleMouseLeave("consultations")}
               >
                 {isMobile && (
-                  <NavDropdown.Item>
-                    {" "}
-                    <HashLink
-                      to="consultations#consultations"
-                      onClick={closeNavbar}
-                    >
-                      Haut de page
-                    </HashLink>
+                  <NavDropdown.Item
+                    href="consultations#consultations"
+                    onClick={closeNavbar}
+                  >
+                    Haut de page
                   </NavDropdown.Item>
                 )}
-                <NavDropdown.Item>
-                  {" "}
-                  <HashLink
-                    to="consultations#naturopathie-tab-description"
-                    onClick={closeNavbar}
-                  >
-                    Naturopathie
-                  </HashLink>
+                <NavDropdown.Item
+                  href="consultations#naturopathie-tab-description"
+                  onClick={closeNavbar}
+                >
+                  Naturopathie
                 </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <HashLink
-                    to="consultations#fleursdebach-tab-description"
-                    onClick={closeNavbar}
-                  >
-                    Fleurs de Bach
-                  </HashLink>
+                <NavDropdown.Item
+                  href="consultations#fleursdebach-tab-description"
+                  onClick={closeNavbar}
+                >
+                  Fleurs de Bach
                 </NavDropdown.Item>
               </NavDropdown>
 
@@ -130,13 +119,13 @@ const Navigation = () => {
                   isMobile ? (
                     "MASSAGES"
                   ) : (
-                    <HashLink
+                    <Link
                       to="massages#massages"
                       id="basic-nav-dropdown2"
                       className="mx-2"
                     >
                       MASSAGES
-                    </HashLink>
+                    </Link>
                   )
                 }
                 show={showDropdown.massages}
@@ -144,72 +133,65 @@ const Navigation = () => {
                 onMouseLeave={() => handleMouseLeave("massages")}
               >
                 {isMobile && (
-                  <NavDropdown.Item>
-                    {" "}
-                    <HashLink to="massages#massages" onClick={closeNavbar}>
-                      Haut de page
-                    </HashLink>
+                  <NavDropdown.Item
+                    href="massages#massages"
+                    onClick={closeNavbar}
+                  >
+                    Haut de page
                   </NavDropdown.Item>
                 )}
-                <NavDropdown.Item>
-                  <HashLink
-                    to="massages#5continents-tab-description"
-                    onClick={closeNavbar}
-                  >
-                    Massage des 5 continents®
-                  </HashLink>
+                <NavDropdown.Item
+                  href="massages#5continents-tab-description"
+                  onClick={closeNavbar}
+                >
+                  Massage des 5 continents®
                 </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <HashLink
-                    to="massages#visageJaponais-tab-description"
-                    onClick={closeNavbar}
-                  >
-                    Massage du visage japonais
-                  </HashLink>
+                <NavDropdown.Item
+                  href="massages#visageJaponais-tab-description"
+                  onClick={closeNavbar}
+                >
+                  Massage du visage japonais
                 </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <HashLink
-                    to="massages#belly-tab-description"
-                    onClick={closeNavbar}
-                  >
-                    Belly Revolution®
-                  </HashLink>{" "}
+                <NavDropdown.Item
+                  href="massages#belly-tab-description"
+                  onClick={closeNavbar}
+                >
+                  Belly Revolution®
                 </NavDropdown.Item>
-                <NavDropdown.Item>
-                  {" "}
-                  <HashLink
-                    to="massages#vodder-tab-description"
-                    onClick={closeNavbar}
-                  >
-                    Drainage Vodder
-                  </HashLink>
+                <NavDropdown.Item
+                  href="massages#vodder-tab-description"
+                  onClick={closeNavbar}
+                >
+                  Drainage Vodder
                 </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <HashLink
-                    to="massages#pochons-tab-description"
-                    onClick={closeNavbar}
-                  >
-                    Massage aux pochons
-                  </HashLink>{" "}
+                <NavDropdown.Item
+                  href="massages#pochons-tab-description"
+                  onClick={closeNavbar}
+                >
+                  Massage aux pochons
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item>
-                  <HashLink to="massages#comparatif" onClick={closeNavbar}>
-                    Tous les massages
-                  </HashLink>
+                <NavDropdown.Item
+                  href="massages#comparatif"
+                  onClick={closeNavbar}
+                >
+                  Tous les massages
                 </NavDropdown.Item>
               </NavDropdown>
 
-            
-              <Nav.Link to="rebozo" className="navlink">
-                <HashLink to="rebozo#rebozoPage" onClick={closeNavbar}>
-                  SOIN REBOZO
-                </HashLink>{" "}
-              </Nav.Link> 
-              <Nav.Link className="navlink">
-                <HashLink to="contact#contact" onClick={closeNavbar}>
-                  CONTACT
-                </HashLink>{" "}
+              <Nav.Link
+                href="rebozo#rebozoPage"
+                className="navlink"
+                onClick={closeNavbar}
+              >
+                SOIN REBOZO
+              </Nav.Link>
+              <Nav.Link
+                className="navlink"
+                href="contact#contact"
+                onClick={closeNavbar}
+              >
+                CONTACT
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
