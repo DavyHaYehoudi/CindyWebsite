@@ -5,7 +5,8 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../medias/icons/logo.png";
 import SocialButtons from "../components/SocialButtons";
 import { HashLink } from "react-router-hash-link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const [expanded, setExpanded] = useState(false);
@@ -39,6 +40,21 @@ const Navigation = () => {
     }, 10);
     setTimeoutId(id);
   };
+
+  // Ancres sur mobiles de page à page. Le code pour faire défiler la page vers l'ancre se déclenche avant que l'ancre ne soit pleinement visible à l'écran.
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    const element = hash ? document.getElementById(hash.substring(1)) : null;
+    if (element) {
+      setTimeout(() => {
+        window.scrollTo({ top: element.offsetTop - 70, behavior: "smooth" });
+      }, 500); // délai de 500 millisecondes
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [pathname, hash]);
+
+
 
   return (
     <>
