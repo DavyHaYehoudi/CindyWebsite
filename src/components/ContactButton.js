@@ -18,7 +18,7 @@ const ContactButton = () => {
 
   return (
     <HashLink to="/contact">
-      <div className={animate && "contactButtonAnimated"} ref={ref}>
+      <div className={animate ? "contactButtonAnimated":undefined} ref={ref}>
         <button className="Button contactButton">
           VOUS SOUHAITEZ ME CONTACTER
         </button>

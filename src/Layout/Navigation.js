@@ -47,7 +47,7 @@ const Navigation = () => {
     const element = hash ? document.getElementById(hash.substring(1)) : null;
     if (element) {
       setTimeout(() => {
-        window.scrollTo({ top: element.offsetTop - 70, behavior: "smooth" });
+        window.scrollTo({ top: element.offsetTop , behavior: "smooth" });
       }, 500); // délai de 500 millisecondes
     } else {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -61,7 +61,7 @@ const Navigation = () => {
         expand="lg"
         fixed="top"
         expanded={expanded}
-        onToggle={() => setExpanded(!expanded)}
+   onToggle={() => setExpanded(!expanded)}
       >
         <Container>
           <Navbar.Brand>

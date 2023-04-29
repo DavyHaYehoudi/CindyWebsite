@@ -21,6 +21,7 @@
   font-size: var(--fs-1) !important;
   font-weight: 700 !important;
   letter-spacing: 2px;
+  margin: 0 10px;
 }
 .navlink{
   border-bottom: 3px solid transparent;
