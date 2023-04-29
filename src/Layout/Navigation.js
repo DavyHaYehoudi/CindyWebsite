@@ -37,7 +37,7 @@ const Navigation = () => {
   const handleMouseLeave = (dropdown) => {
     const id = setTimeout(() => {
       setShowDropdown((prev) => ({ ...prev, [dropdown]: false }));
-    }, 10);
+    }, 30);
     setTimeoutId(id);
   };
 
@@ -53,8 +53,6 @@ const Navigation = () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [pathname, hash]);
-
-
 
   return (
     <>
@@ -97,6 +95,17 @@ const Navigation = () => {
                 onMouseEnter={() => handleMouseEnter("consultations")}
                 onMouseLeave={() => handleMouseLeave("consultations")}
               >
+                {isMobile && (
+                  <NavDropdown.Item>
+                    {" "}
+                    <HashLink
+                      to="consultations#consultations"
+                      onClick={closeNavbar}
+                    >
+                      Haut de page
+                    </HashLink>
+                  </NavDropdown.Item>
+                )}
                 <NavDropdown.Item>
                   {" "}
                   <HashLink
@@ -134,6 +143,14 @@ const Navigation = () => {
                 onMouseEnter={() => handleMouseEnter("massages")}
                 onMouseLeave={() => handleMouseLeave("massages")}
               >
+                {isMobile && (
+                  <NavDropdown.Item>
+                    {" "}
+                    <HashLink to="massages#massages" onClick={closeNavbar}>
+                      Haut de page
+                    </HashLink>
+                  </NavDropdown.Item>
+                )}
                 <NavDropdown.Item>
                   <HashLink
                     to="massages#5continents-tab-description"
@@ -183,12 +200,13 @@ const Navigation = () => {
                 </NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link to="rebozo" className="mx-2 navlink">
+            
+              <Nav.Link to="rebozo" className="navlink">
                 <HashLink to="rebozo#rebozoPage" onClick={closeNavbar}>
                   SOIN REBOZO
                 </HashLink>{" "}
-              </Nav.Link>
-              <Nav.Link className="mx-2 navlink">
+              </Nav.Link> 
+              <Nav.Link className="navlink">
                 <HashLink to="contact#contact" onClick={closeNavbar}>
                   CONTACT
                 </HashLink>{" "}
