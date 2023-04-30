@@ -2,8 +2,6 @@
   width: 100%;
   height: var(--height-Bg-img);
   background-image: url("/public/images/rebozo.jpg");
-  background-size: cover;
-  background-attachment: fixed;
 }
 .containerRebozo {
   text-align: center;
@@ -15,13 +13,6 @@
   border-radius: var(--br);
   padding: var(--paddingBlock);
   margin: var(--marginBlock) 0;
-}
-.setImages {
-  display: flex;
-  justify-content: center;
-}
-.setImages img {
-  margin: var(--marginBlock);
 }
 .mentions {
   background-color: var(--five-color);

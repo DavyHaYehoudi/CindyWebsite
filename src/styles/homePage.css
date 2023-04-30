@@ -1,18 +1,16 @@
 .hero {
   text-align: center;
-  height: 700px;
+  height: 70vh;
   background-image: linear-gradient(
       to top,
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0.5)
     ),
     url("/public/images/homeBg.jpg");
-  background-size: cover;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
-  align-items: end;
-  padding: 50px;
+  align-items: flex-end;
+  padding: 50px ;
 }
 .homePage h1 {
   color: var(--five-color);
@@ -36,6 +34,32 @@
   font-size: var(--fs-5);
   text-transform: uppercase;
 }
+.box-testimony {
+  border: 1px solid var(--main-color);
+  border-radius: var(--br);
+  padding: var(--paddingBlock);
+  box-shadow: 2px 2px 2px 2px;
+  background-color: var(--main-color);
+  color: var(--five-color);
+  margin: var(--marginBlock);
+}
+.btn-testimony {
+  position: absolute;
+  top: 120px;
+  right: 10px;
+  z-index: 1100;
+  letter-spacing: var(--ls);
+  text-transform: uppercase;
+}
+.btn-testimony-toggle {
+  z-index: -1;
+}
+.title-testimony {
+  text-transform: uppercase;
+  color: var(--four-color);
+  margin: auto;
+}
+
 .followMe {
   text-align: center;
 }
@@ -69,29 +93,4 @@ cite {
   color: var(--ter-color);
   font-weight: 700;
   font-style: normal;
-}
-.box-testimony {
-  border: 1px solid var(--main-color);
-  border-radius: var(--br);
-  padding: var(--paddingBlock);
-  box-shadow: 2px 2px 2px 2px;
-  background-color: var(--main-color);
-  color: var(--five-color);
-  margin: var(--marginBlock);
-}
-.btn-testimony {
-  position: absolute;
-  top: 120px;
-  right: 10px;
-  z-index: 1100;
-  letter-spacing: var(--ls);
-  text-transform: uppercase;
-}
-.btn-testimony-toggle{
-  z-index: -1;
-}
-.title-testimony {
-  text-transform: uppercase;
-  color: var(--four-color);
-  margin: auto;
 }

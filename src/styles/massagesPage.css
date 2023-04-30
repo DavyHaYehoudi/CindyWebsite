@@ -7,8 +7,6 @@
   width: 100%;
   height: var(--height-Bg-img);
   background-image: url("/public/images/massageBg.jpg");
-  background-size: cover;
-  background-attachment: fixed;
 }
 .massageNav-btn{
   position: fixed;

@@ -4,15 +4,15 @@ import Tabs from "react-bootstrap/Tabs";
 function Tabbs({ title, composant, illustrations, tarifs, id }) {
   // L'id dans ce composant Bootstrap ajoute derrière -tab-description, attention à l'ancre dans l'url de navigation
   return (
-    <Tabs defaultActiveKey="description" id={id} className="mb-3 tabs" fill>
+    <Tabs defaultActiveKey="description" id={id} className="mb-3 tabs custom-tabs-fill" fill>
       <Tab eventKey="description" title={title} tabClassName="tab">
         {composant}
       </Tab>
       <Tab eventKey="illustrations" title="Illustrations" tabClassName="tab">
-        <div className="min-vh-25">
+        <div className="min-vh-25 setImages">
           {illustrations ? (
             illustrations.map((item, i) => (
-              <img key={i} src={item} alt={item} className="m-5"/>
+              <img key={i} src={item} alt={item} className=""/>
             ))
           ) : (
             <p className="text-center">AUCUNE ILLUSTRATION POUR LE MOMENT</p>

@@ -16,7 +16,7 @@ const Navigation = () => {
   });
   const [timeoutId, setTimeoutId] = useState(null);
 
-  // En responsive la gestion du toogle de la Navbar apparemment du fait de l'utilisation de balises HashLink
+  // En responsive la gestion du toogle de la Navbar 
   const closeNavbar = () => setExpanded(false);
   useEffect(() => {
     if (expanded && window.innerWidth <= 991) {

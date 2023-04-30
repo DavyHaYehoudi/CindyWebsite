@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 
 const ContactButton = () => {
   const [animate, setAnimate] = useState(false);

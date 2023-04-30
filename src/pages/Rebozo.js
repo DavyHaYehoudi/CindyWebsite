@@ -17,7 +17,7 @@ const Rebozo = () => {
         accroche="Plus qu'un soin, une expérience sensorielle inoubliable"
         id="rebozoPage"
       />
-      <div className="rebozo_img_Bg" ></div>
+      <div className="rebozo_img_Bg bg-img" ></div>
       <section className="containerRebozo">
         <div className="section1">
           <p>

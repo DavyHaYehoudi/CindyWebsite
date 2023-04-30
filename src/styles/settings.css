@@ -36,7 +36,7 @@
   --marginBlock: 1.25rem;
 
   /* background image */
-  --height-Bg-img: 500px;
+  --height-Bg-img: 50vh;
 }
 
 body {
@@ -46,7 +46,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
-
+/******************** LINKS ********************/
 a {
   text-decoration: none !important;
   color: var(--five-color) !important;
@@ -57,10 +57,25 @@ a:visited {
 a:hover {
   color: var(--four-color) !important;
 }
+/******************** IMAGES ********************/
 img {
   border-radius: var(--br);
   max-width: 100%;
 }
+.bg-img {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.setImages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.setImages img {
+  margin: var(--marginBlock);
+}
+/******************** TITLES ********************/
 h1,
 h2,
 h3 {
@@ -75,13 +90,11 @@ h2 {
   color: var(--five-color);
   font-weight: 700 !important;
 }
+/******************** LISTS ********************/
 ul {
   list-style-type: none;
 }
-blockquote {
-  font-family: var(--ter-font);
-  font-weight: 800;
-}
+/******************** BUTTONS ********************/
 .Button {
   color: var(--five-color);
   background-color: rgba(95, 79, 79, 0.7);
@@ -92,6 +105,7 @@ blockquote {
 .Button:hover {
   border: 2px var(--five-color) solid;
 }
+/******************** TABLES ********************/
 .tab-content {
   min-height: 500px;
   display: flex;
@@ -103,17 +117,24 @@ blockquote {
   max-width: 1200px;
   margin: var(--marginBlock) auto;
 }
+.custom-tabs-fill .nav-link {
+  margin: 0;
+}
+/******************** OTHERS ********************/
 .all-scroll {
   cursor: all-scroll;
 }
+blockquote {
+  font-family: var(--ter-font);
+  font-weight: 800;
+}
 
-/******************** Bandeau ********************/
+/******************** HEADBAND ********************/
 .bandeau {
   background-color: var(--main-color);
   color: var(--five-color);
   border: 1px solid var(--five-color);
-  padding: 3.5rem 1.25rem;
-  padding-top: 150px;
+  padding: 9.3rem 1.25rem 1.25rem 3.5rem;
 }
 .accroche {
   font-family: var(--ter-font);
@@ -124,7 +145,7 @@ blockquote {
   border-color: var(--five-color);
   width: 10%;
 }
-/******************** Couple image - paragraphe  ********************/
+/******************** IMAGE-PARAGRAPH COUPLE  ********************/
 .image-paragraph {
   display: flex;
   align-items: center;

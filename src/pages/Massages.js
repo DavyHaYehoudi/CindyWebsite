@@ -44,7 +44,7 @@ const Massages = () => {
           accroche="Apaisez les tensions pour libérer votre esprit"
           id="massages"
         />
-        <div className="massage_img_Bg"></div>
+        <div className="massage_img_Bg bg-img"></div>
         <div className="remarques containerText">
           Les séances de massages commencent toutes par un échange de quelques
           minutes sur vos attentes ainsi que vos éventuelles sensibilités (ex:

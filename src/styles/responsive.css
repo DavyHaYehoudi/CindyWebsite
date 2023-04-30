@@ -1,4 +1,7 @@
 @media screen and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
   .socialZone {
     display: flex;
     justify-content: center;
@@ -11,18 +14,28 @@
     min-height: inherit;
   }
   .btn-testimony {
-    font-size: 50%;
+    font-size: 60%;
+  }
+  .form input,textarea{
+    width: 100%;
+  }
+  .infoContact,.form{
+    width: 100%;
+    margin: 5px;
   }
 }
-@media screen and (min-width: 501px) and (max-width: 768px){
+@media screen and (min-width: 501px) and (max-width: 1024px){
+  html {
+    font-size: 14px;
+  }
   .btn-testimony {
-    font-size: 50%;
+    font-size: 60%;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px){
 
-}
 @media screen and (max-width: 1250px) {
+
+  
   .footer_block1,
   .footer_block2,
   .footer_block3 {
@@ -45,25 +58,4 @@
   .adage2 {
     width: 100%;
   }
-  /* .hero,
-  .massage_img_Bg,
-  .consultation_img_Bg,
-  .rebozo_img_Bg {
-    background-size: contain;
-    background-repeat: no-repeat;
-  } */
 }
-@media screen and (max-width: 1900px){
-  .hero,
-  .massage_img_Bg,
-  .consultation_img_Bg,
-  .rebozo_img_Bg {
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-
-/* @media screen and (max-width: 480px)
-@media screen and (min-width: 481px) and (max-width: 768px)
-@media screen and (min-width: 769px) and (max-width: 1024px)
-@media screen and (min-width: 1025px) */

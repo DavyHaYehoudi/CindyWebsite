@@ -11,7 +11,7 @@
 .infoContact {
   margin: var(--interSection);
   background-color: var(--main-color);
-  height: 450px;
+  height: 28.125rem;
   border-radius: var(--br);
   padding: var(--paddingBlock);
   color: var(--five-color);
@@ -20,8 +20,8 @@
   justify-content: space-around;
 }
 .form {
-  width: 550px;
-  height:450px;
+  width: 34.375rem;
+  height:28.125rem;
   padding: 1.6rem 1rem;
   background-color: var(--main-color);
   color: var(--five-color);
@@ -32,8 +32,8 @@
 .form input,
 textarea {
   border-radius: var(--br);
-  width: 400px;
-  height: 50px;
+  width: 25rem;
+  height: 3.125rem;
   border: 1px solid var(--main-color);
   margin: 0.5rem !important;
 }

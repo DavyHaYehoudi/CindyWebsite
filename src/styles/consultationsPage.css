@@ -3,8 +3,6 @@
   width: 100%;
   height: var(--height-Bg-img);
   background-image: url("/public/images/consultationBg.jpg");
-  background-size: cover;
-  background-attachment: fixed;
 }
 .tabs {
   background-color: var(--main-color);

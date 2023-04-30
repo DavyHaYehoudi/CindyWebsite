@@ -25,7 +25,7 @@ const Consultations = () => {
         accroche="Retrouvez et préservez votre santé"
         id="consultations"
       />
-      <div className="consultation_img_Bg"></div>
+      <div className="consultation_img_Bg bg-img"></div>
 
       <div>
         <Tabbs

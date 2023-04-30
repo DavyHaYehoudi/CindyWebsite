@@ -11,7 +11,7 @@ import { all_testimonies } from "../textes/temoignages/temoignages";
 const Home = () => {
   return (
     <div className="homePage" >
-      <div className="hero" id="homePage">
+      <div className="hero bg-img" id="homePage">
         <h1>
           <i>Cindy PANTOUSTIER</i>
           <br />

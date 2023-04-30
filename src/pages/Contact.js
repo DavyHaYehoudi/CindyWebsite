@@ -96,7 +96,7 @@ const Contact = () => {
               Les données ont bien été envoyées, je reviens vers vous rapidement
             </p>
           )}
-          <fieldset className={successForm && "d-none"}>
+          <fieldset className={successForm ? "d-none":""}>
             <legend>Formulaire de contact</legend>
 
             <input

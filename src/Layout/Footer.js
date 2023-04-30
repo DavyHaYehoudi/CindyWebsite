@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="sub-footer1">
         <div className="footer_block1">
           <HashLink to='/#homePage'>
-            <img src={logo} className="mx-2" />
+            <img src={logo} alt="logo" className="mx-2" />
             2023 Cindy Pantoustier - Naturopathe
           </HashLink>
         </div>
