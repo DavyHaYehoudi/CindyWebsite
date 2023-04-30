@@ -150,8 +150,8 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: var(--interSection) 0;
-  padding: var(--paddingheightSection) var(--paddingLateralSection);
+  /* margin: var(--interSection) 0; */
+  /* padding: var(--paddingheightSection) var(--paddingLateralSection); */
   background-color: var(--main-color);
   color: var(--five-color);
 }
