@@ -7,10 +7,13 @@
       rgba(255, 255, 255, 0.5)
     ),
     url("/public/images/homeBg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 50px ;
+  padding: 50px;
 }
 .homePage h1 {
   color: var(--five-color);
@@ -62,6 +65,7 @@
 
 .followMe {
   text-align: center;
+  padding: var(--paddingBlock);
 }
 .followMeText {
   font-size: var(--fs-5);

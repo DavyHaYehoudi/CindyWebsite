@@ -1,11 +1,38 @@
+@media screen and (max-width: 380px) {
+  h1,h2{
+    font-size: var(--fs-3) !important;
+  }
+  .homePage h1 i {
+    font-size: var(--fs-3);
+  }
+  .subtitle_homePage {
+    font-size: var(--fs-2);
+  }
+  .bg-img {
+    height: 20vh !important;
+  }
+  .bandeau {
+    padding: 9.3rem 1.25rem 1.25rem 1rem;
+  }
+  .contactButton{
+    font-size: var(--fs-2);
+  }
+}
+
 @media screen and (max-width: 500px) {
-  html {
+  /* html {
     font-size: 14px;
+  } */
+  .hero {
+    height: 90vh;
   }
   .socialZone {
     display: flex;
     justify-content: center;
     width: 100%;
+  }
+  .lateralBar{
+    display: none;
   }
   .contactButton {
     max-width: 320px;
@@ -16,26 +43,45 @@
   .btn-testimony {
     font-size: 60%;
   }
-  .form input,textarea{
+  .form input,
+  textarea {
     width: 100%;
   }
-  .infoContact,.form{
+  .infoContact,
+  .form {
     width: 100%;
     margin: 5px;
   }
-}
-@media screen and (min-width: 501px) and (max-width: 1024px){
-  html {
-    font-size: 14px;
+  .bg-img {
+    height: 30vh;
   }
+}
+@media screen and (min-width: 501px) and (max-width: 1024px) {
   .btn-testimony {
     font-size: 60%;
   }
+  .bg-img {
+    height: 40vh;
+  }
 }
 
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  .bg-img {
+    height: 60vh;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1250px) {
+  .bg-img {
+    height: 70vh;
+  }
+}
 @media screen and (max-width: 1250px) {
+  .bg-img {
+    background-size: contain;
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+  }
 
-  
   .footer_block1,
   .footer_block2,
   .footer_block3 {

@@ -97,7 +97,7 @@ const Navigation = () => {
                     href="consultations#consultations"
                     onClick={closeNavbar}
                   >
-                    Haut de page
+                    Présentation
                   </NavDropdown.Item>
                 )}
                 <NavDropdown.Item
@@ -137,7 +137,7 @@ const Navigation = () => {
                     href="massages#massages"
                     onClick={closeNavbar}
                   >
-                    Haut de page
+                    Présentation
                   </NavDropdown.Item>
                 )}
                 <NavDropdown.Item
