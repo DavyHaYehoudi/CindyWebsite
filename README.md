@@ -23,4 +23,12 @@ Serveur SMTP de Ovh.net : `ssl0.ovh.net`
 Port SMTP : `465`  
 Sécurité SMTP : `SSL`  
 Nom d'utilisateur SMTP : adresse mail de connexion à OVH  
-Mot de passe SMTP : celui de connexion à OVH 
+Mot de passe SMTP : celui de connexion à OVH   
+
+## Hébergement  
+
+Firebase   
+Dans .firebaserc :   
+"default": "naturopathie-preprod", avec la commande 
+`firebase deploy `    
+"prod":"cindy-naturopathie" avec la commande `firebase deploy --project cindy-naturopathie ` 
