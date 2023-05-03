@@ -17,10 +17,14 @@ const Rebozo = () => {
         accroche="Plus qu'un soin, une expérience sensorielle inoubliable"
         id="rebozoPage"
       />
-      <div className="rebozo_img_Bg bg-img" ></div>
+      <div className="rebozo_img_Bg bg-img"></div>
       <section className="containerRebozo">
         <div className="section1">
           <p>
+            Le soin se déroule <b>à votre domicile</b> dans une pièce de votre
+            choix.
+            <br />
+            <br />
             C'est dans une ambiance <b>chaleureuse et relaxante</b> que Julia et
             moi-même vous offrons ce soin.
             <br />
@@ -34,7 +38,7 @@ const Rebozo = () => {
             </blockquote>
             <cite>Cindy Pantoustier</cite>
             <p className="rebozoTarifs">
-              Durée : <b>4h</b> 
+              Durée : <b>3h</b> (<b>+1h</b> de préparation)
               <br />
               Tarif : <b>290€</b> (espèces, chèques ou Paypal)
             </p>
@@ -85,10 +89,6 @@ const Rebozo = () => {
               <img src={serrage} alt="serrage" />
             </div>
             <p className="containerText">
-              Le soin se déroule <b>à votre domicile</b> dans une pièce de votre
-              choix.
-              <br />
-              <br />
               Les trois <b>bougies</b> illuminent l'espace, la <b>musique</b>{" "}
               accompagne le rituel, l'odeur du <b>Palo Santo</b> purifie
               l'atmosphère et dégage un sentiment de <b>bien-être immédiat.</b>
@@ -153,14 +153,14 @@ const Rebozo = () => {
               terminée pour les accouchements par césarienne. Le rituel est
               adapté en fonction du vécu de chacune. Cependant, Julia et
               moi-même conseillons de le faire lorsque vous et votre enfant
-              pouvez être séparés durant 4h (durée approximative du soin).
+              pouvez être séparés durant 3h (durée approximative du soin).
             </p>
           </div>
         </article>
         <div className="containerText mentions">
           <blockquote>
-            " Bonjour, je souhaiterai partager mon expérience avec vous, car j'ai
-            eu l’opportunité et la chance de recevoir ce soin par Cindy et
+            " Bonjour, je souhaiterai partager mon expérience avec vous, car
+            j'ai eu l’opportunité et la chance de recevoir ce soin par Cindy et
             Julia, et je peux vous dire que c'était un moment très intense,
             magique et d’introspection positive. Elles sont douces, à l'écoute,
             elles accompagnent très bien le moment et le soin est juste

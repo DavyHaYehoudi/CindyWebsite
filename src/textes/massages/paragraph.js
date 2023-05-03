@@ -126,7 +126,8 @@ Le forfait de 5 massages = <b>210€</b>
 `
 
 export const massage5=`MASSAGE AUX POCHONS D'HERBES AROMATIQUES
-
+<br />
+<br />
 Originaire d'Asie, ce soin ancestral s'effectue à l'aide de pochons remplis de plantes médicinales et aromatiques.
 <br />
 <br />
