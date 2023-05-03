@@ -4,9 +4,3 @@
   height: var(--height-Bg-img);
   background-image: url("/public/images/consultationBg.jpg");
 }
-.tabs {
-  background-color: var(--main-color);
-}
-.tab {
-  color: var(--four-color) !important;
-}

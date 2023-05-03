@@ -121,6 +121,13 @@ ul {
 .custom-tabs-fill .nav-link {
   margin: 0;
 }
+.tabs {
+  background-color: var(--main-color);
+}
+.tab {
+  color: var(--four-color) !important;
+}
+
 /******************** OTHERS ********************/
 .all-scroll {
   cursor: all-scroll;
