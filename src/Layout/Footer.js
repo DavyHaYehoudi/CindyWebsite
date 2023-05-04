@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../medias/icons/logo.png";
 import ContactButton from "../components/ContactButton";
 import { Link, useLocation } from "react-router-dom";
+import SocialButtons from "../components/SocialButtons";
 
 const Footer = () => {
   const location = useLocation();
@@ -15,6 +16,7 @@ const Footer = () => {
             2023 Cindy Pantoustier - Naturopathe
           </Link>
         </div>
+        <SocialButtons />
         {location.pathname !== "/contact" && (
           <div className="footer_block2">
             <ContactButton />{" "}

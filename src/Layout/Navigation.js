@@ -15,6 +15,7 @@ const Navigation = () => {
     massages: false,
   });
   const [timeoutId, setTimeoutId] = useState(null);
+  const [innerWidth, setInnerWidth] = useState(window.innerWidth);
 
   // En responsive la gestion du toogle de la Navbar 
   const closeNavbar = () => setExpanded(false);
@@ -25,6 +26,13 @@ const Navigation = () => {
       setIsMobile(false);
     }
   }, [expanded]);
+
+  // Pour estimer la largeur de l'écran
+  useEffect(() => {
+    const handleResize = () => setInnerWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   
 
   // Empêcher que le menu déroulé ne se ferme trop vite au hover du NavDropdown
@@ -195,7 +203,7 @@ const Navigation = () => {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <SocialButtons />
+          {innerWidth >991&&<SocialButtons />}
         </Container>
       </Navbar>
     </>

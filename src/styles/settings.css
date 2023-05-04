@@ -124,9 +124,8 @@ ul {
 .tabs {
   background-color: var(--main-color);
 }
-.tab {
-  color: var(--four-color) !important;
-}
+.tab.nav-link{
+  color: var(--four-color) !important;}
 
 /******************** OTHERS ********************/
 .all-scroll {

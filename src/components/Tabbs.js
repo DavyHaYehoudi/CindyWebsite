@@ -1,9 +1,11 @@
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
+import logo from "../medias/icons/logo.png"
 
 function Tabbs({ title, composant, illustrations, tarifs, id }) {
   // L'id dans ce composant Bootstrap ajoute derrière -tab-description, attention à l'ancre dans l'url de navigation
   return (
+    <>
     <Tabs defaultActiveKey="description" id={id} className="mb-3 tabs custom-tabs-fill" fill>
       <Tab eventKey="description" title={title} tabClassName="tab">
         {composant}
@@ -26,6 +28,8 @@ function Tabbs({ title, composant, illustrations, tarifs, id }) {
         ></div>
       </Tab>
     </Tabs>
+    <div className="m-5 text-center" ><img src={logo} alt="lotus du logo"  /> </div>
+    </>
   );
 }
 
