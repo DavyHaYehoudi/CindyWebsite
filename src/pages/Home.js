@@ -7,6 +7,7 @@ import FollowMe from "../components/FollowMe";
 import Adage from "../components/Adage";
 import Testimonies from "../components/Testimonies";
 import { all_testimonies } from "../textes/temoignages/temoignages";
+import logo from "../medias/icons/logo.png"
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
           </span>
         </h1>
       </div>
+      <div className="m-5 text-center" ><img src={logo} alt="lotus du logo"  /> </div>
       <ImageParagraph
         imageSrc={homenaturo}
         imageAlt="tablée de plusieurs bols d'ingrédients naturels"
