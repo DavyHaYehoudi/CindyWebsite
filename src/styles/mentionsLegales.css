@@ -16,8 +16,14 @@
   .linksML1{
     color: red !important;
   }
+  .linksML2{
+    color: red !important;
+  }
   .linksML2:visited{
     color: red !important;
+  }
+  .linksML3{
+    color: blue !important;
   }
   .linksML3:visited{
     color: blue !important;
