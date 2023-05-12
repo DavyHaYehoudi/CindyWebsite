@@ -39,6 +39,14 @@
   --height-Bg-img: 50vh;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+   /* Debugging horizontal scroll  */
+   /* box-shadow: 0 0 0 3px red inset;  */
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, var(--main-font) !important;
