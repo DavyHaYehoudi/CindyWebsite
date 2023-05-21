@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Footer from "./Layout/Footer";
 import MentionsLegales from "./pages/MentionsLegales";
 import Rebozo from "./pages/Rebozo";
+import Authentication from "./pages/Authentication";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/massages" element={<Massages />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/rebozo" element={<Rebozo />} />
+        <Route path="/private" element={<Authentication />} />
         <Route path="/mentions_legales" element={<MentionsLegales />} />
       </Routes>
       <Footer />
