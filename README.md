@@ -2,7 +2,8 @@
 
 Site de naturopathie de Cindy  
 Hébergé sur AWS par Webflow (18$/mois)  
-Migration envisagée sur Firebase (0$)  
+Migration sur Firebase (0$)  
+[site hébergé de Cindy](https://cindy-naturopathe.com/)  
 
 ## Formulaire
 
@@ -14,7 +15,7 @@ mot de passe : saisie automatique chrome (compte davysebbah@gmail.com)
 Le principe est de s'envoyer un mail à soi-même.  
 Les champs formulaires sont récupérés par le plugin `emailjs` puis envoyés depuis l'adresse mail `contact@cindy-naturopathe.com` vers la même adresse.  
 L'API demande 3 clés :  
-*La clé publique qu'on trouve dans les paramètre du compte emailjs  
+*La clé publique qu'on trouve dans les paramètres du compte emailjs  
 *La clé du template qu'on a créé sur la plateforme API  
 *La clé de service qui est la clé du service utilisé pour l'envoi du mail  
 <br />
@@ -28,6 +29,8 @@ Mot de passe SMTP : celui de connexion à OVH
 ## Hébergement  
 
 Firebase   
+[site hébergé de Cindy](https://cindy-naturopathe.com/)  
+<br/>
 Dans .firebaserc :   
 "default": "naturopathie-preprod", avec la commande 
 `firebase deploy `    
