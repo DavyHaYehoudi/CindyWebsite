@@ -10,7 +10,7 @@ function Authentication() {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [isLoginError, setLoginError] = useState(false);
-  const { isAuthenticated, setAuthenticated } = useContext(AuthAdminContext);
+  const { setAuthenticated } = useContext(AuthAdminContext);
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {

@@ -12,6 +12,7 @@ import Admin from "./pages/Admin";
 import AdminRoute from "./guard/AdminRoute";
 import { useContext } from "react";
 import { AuthAdminContext } from "./context/AuthAdminProvider";
+import Page404 from "./pages/Page404";
 
 function App() {
   const {isAuthenticated}=useContext(AuthAdminContext)
@@ -36,9 +37,9 @@ function App() {
             </AdminRoute>
           }
         />
-        {/* <Route path="/admin" element={<Admin />} /> */}
 
         <Route path="/mentions_legales" element={<MentionsLegales />} />
+        <Route path="/*" element={<Page404 />} />
       </Routes>
       <Footer />
     </>

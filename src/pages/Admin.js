@@ -5,7 +5,7 @@ import { AuthAdminContext } from "../context/AuthAdminProvider";
 import { auth } from "../firebase/config";
 
 const Admin = () => {
-  const { isAuthenticated, setAuthenticated } = useContext(AuthAdminContext);
+  const { setAuthenticated } = useContext(AuthAdminContext);
   const navigate = useNavigate();
   const logOut = async () => {
     try {
