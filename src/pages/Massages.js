@@ -34,6 +34,7 @@ import pochonill2 from "../medias/massages/pochons-ill2.jpg";
 import pochonill3 from "../medias/massages/pochons-ill3.jpg";
 import Tabbs from "../components/Tabbs";
 import TableComp from "../components/TableComp";
+import MassageSlider from "../components/MassageSlider";
 
 const Massages = () => {
   return (
@@ -45,6 +46,7 @@ const Massages = () => {
           id="massages"
         />
         <div className="massage_img_Bg bg-img"></div>
+        <MassageSlider />
         <div className="remarques containerText">
           Les séances de massages commencent toutes par un échange de quelques
           minutes sur vos attentes ainsi que vos éventuelles sensibilités (ex:
