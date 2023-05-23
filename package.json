@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build:preprod": "env-cmd -f .env.preprod react-scripts build",
-    "build:prod": "env-cmd -f .env.prod react-scripts build"
+    "build:production": "env-cmd -f .env.production react-scripts build"
   },
   "eslintConfig": {
     "extends": [
