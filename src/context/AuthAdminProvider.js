@@ -1,9 +1,9 @@
 import React, { createContext, useState } from "react";
 
-// Créez un contexte pour le statut d'authentification
+// Contexte pour le statut d'authentification
 const AuthAdminContext = createContext();
 
-// Créez le composant AuthProvider pour fournir le contexte d'authentification
+// Composant AuthProvider pour fournir le contexte d'authentification
 function AuthAdminProvider({ children }) {
   const [isAuthenticated, setAuthenticated] = useState(false);
   return (

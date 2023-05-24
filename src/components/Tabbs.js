@@ -2,7 +2,7 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import logo from "../medias/icons/logo.png"
 
-function Tabbs({ title, composant, illustrations, tarifs, id }) {
+function Tabbs({ file,title, composant, illustrations, tarifs, id }) {
   // L'id dans ce composant Bootstrap ajoute derrière -tab-description, attention à l'ancre dans l'url de navigation
   return (
     <>
@@ -14,7 +14,7 @@ function Tabbs({ title, composant, illustrations, tarifs, id }) {
         <div className="min-vh-25 setImages">
           {illustrations ? (
             illustrations.map((item, i) => (
-              <img key={i} src={item} alt={item} className=""/>
+              <img key={i} src={require(`../medias/${file}/${item}`)} alt={title} />
             ))
           ) : (
             <p className="text-center">AUCUNE ILLUSTRATION POUR LE MOMENT</p>

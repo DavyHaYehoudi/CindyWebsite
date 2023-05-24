@@ -1,17 +1,15 @@
 import React from "react";
 import ImageParagraph from "../components/ImageParagraph";
-import homenaturo from "../medias/home/home-naturo.jpg"
-import profilhome from "../medias/home/profil-home.jpg"
-import { paragraph1, paragraph2 } from "../textes/home/paragraph";
 import FollowMe from "../components/FollowMe";
 import Adage from "../components/Adage";
 import Testimonies from "../components/Testimonies";
 import { all_testimonies } from "../textes/temoignages/temoignages";
-import logo from "../medias/icons/logo.png"
+import logo from "../medias/icons/logo.png";
+import { dataHome } from "../textes/home/dataHome";
 
 const Home = () => {
   return (
-    <div className="homePage" >
+    <div className="homePage">
       <div className="hero" id="homePage">
         <h1>
           <i>Cindy PANTOUSTIER</i>
@@ -23,18 +21,22 @@ const Home = () => {
           </span>
         </h1>
       </div>
-      <div className="m-5 text-center" ><img src={logo} alt="lotus du logo"  /> </div>
+      <div className="m-5 text-center">
+        <img src={logo} alt="lotus du logo" />{" "}
+      </div>
       <ImageParagraph
-        imageSrc={homenaturo}
-        imageAlt="tablée de plusieurs bols d'ingrédients naturels"
+        file="home"
+        imageSrc={dataHome[0].img_main}
+        imageAlt={dataHome[0].title}
         imagePosition="left"
-        paragraphText={paragraph1}
+        paragraphText={dataHome[0].large_description}
       />
       <ImageParagraph
-        imageSrc={profilhome}
-        imageAlt="portrait de Cindy et de ses deux enfants"
+        file="home"
+        imageSrc={dataHome[1].img_main}
+        imageAlt={dataHome[1].title}
         imagePosition="right"
-        paragraphText={paragraph2}
+        paragraphText={dataHome[1].large_description}
       />
       <FollowMe />
       <Adage />

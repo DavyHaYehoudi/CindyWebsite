@@ -1,6 +1,6 @@
 export const dataMassage=[
     {
-        id:1,
+        id:"0",
         title:"MASSAGE DES 5 CONTINENTS®",
         img_main:"m5c-main.jpg",
         img_illustration:["m5c-ill1.jpg","m5c-ill2.jpg","m5c-ill3.jpg",],
@@ -24,7 +24,7 @@ export const dataMassage=[
         Le forfait de 3 massages : <b>225€</b>`
     },
     {
-        id:2,
+        id:"1",
         title:"MASSAGE DU VISAGE JAPONAIS",
         img_main:"kobido-main.jpg",
         img_illustration:["kobido-ill1.jpg","kobido-ill2.jpg","kobido-ill3.jpg"],
@@ -46,7 +46,7 @@ export const dataMassage=[
         Le forfait de 3 massages : <b>165€</b>`
     },
     {
-        id:3,
+        id:"2",
         title:"BELLY REVOLUTION ®",
         img_main:"Belly-main.png",
         img_illustration:["belly-ill1.jpg","belly-ill2.jpg","belly-ill3.jpg"],
@@ -82,7 +82,7 @@ export const dataMassage=[
         Le forfait de 3 massages : <b>160€</b>`
     },
     {
-        id:4,
+        id:"3",
         title:"MASSAGE DRAINANT METHODE VODDER",
         img_main:"vodder-main.jpg",
         img_illustration:["vodder-ill1.jpg","vodder-ill2.jpg","vodder-ill3.jpg"],
@@ -132,7 +132,7 @@ export const dataMassage=[
         Le forfait de 5 massages = <b>210€</b>`
     },
     {
-        id:5,
+        id:"4",
         title:"MASSAGE AUX POCHONS",
         img_main:"pochons-main.jpg",
         img_illustration:["pochons-ill1.jpg","pochons-ill2.jpg","pochons-ill3.jpg"],
