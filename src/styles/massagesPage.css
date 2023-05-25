@@ -8,43 +8,44 @@
   height: var(--height-Bg-img);
   background-image: url("/public/images/massageBg.jpg");
 }
-.massageNav-btn{
-  position: fixed;
-  right: 0;
-}
-.scroll-box {
-  background-color: rgba(95, 79, 79, 0.8);
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: var(--br);
-  animation: dragScrollBox 400ms ease 0s 1 normal forwards;
-  opacity: 0;
-}
-.scroll-box ul {
-  margin: 0;
-  padding: 0;
-}
-.scroll-box ul li {
-  margin: 15px;
-}
-.scroll-box ul li a:hover {
-  color: var(--main-color) !important;
-}
-@keyframes dragScrollBox {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
 
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+/********************** SLIDER **********************/
+.titleMassageSelected {
+  background-color: var(--main-color);
+  text-align: center;
+  padding: var(--paddingBlock);
 }
-.tabComp {
-  padding: 10px;
-  border-collapse: inherit;
+.slider-content-massage {
+  margin: 50px auto;
+  text-align: center;
+  width: 50%;
 }
-.reductBoxScrollMassage{
-  display: none;
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+.slick-prev,
+.slick-next {
+  background-color: var(--main-color) !important;
+  padding: 15px !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: var(--br);
+}
+.slick-prev {
+  left: -50px !important;
+}
+.slick-next {
+  right: -50px !important;
+}
+.card-massage {
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+  width: auto !important;
+  border-radius: var(--br);
+}
+.card-massage > img {
+  object-fit: contain;
 }
