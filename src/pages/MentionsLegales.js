@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { scrollToAnchor } from "../utils/anchor";
 
 const MentionsLegales = () => {
-
+  useEffect(() => {
+    scrollToAnchor("mleg");
+  }, []);
   return (
     <div className="pageML" id="mleg">
       <h1>MENTIONS LEGALES</h1>
@@ -19,12 +22,27 @@ const MentionsLegales = () => {
         Responsable publication : Cindy Pantoustier
         – contact@cindy-naturopathe.com‍
         <br />
-        Programmeur : Davy SEBBAH <Link to="mailto:d.sebbah@yahoo.fr" className="linksML1" >Envoyer un e-mail à d.sebbah@yahoo.fr</Link> 
+        Programmeur : Davy SEBBAH{" "}
+        <Link to="mailto:d.sebbah@yahoo.fr" className="linksML1">
+          Envoyer un e-mail à d.sebbah@yahoo.fr
+        </Link>
         <br />
-        <Link to="https://portfolio-fbdcb.web.app/" rel="noopener noreferrer"
-        target="_blanck" className="linksML2">Portfolio de Davy SEBBAH - Créateur d'applications et de sites Web </Link>
-        <Link to="https://cj-group.co/about-us/" rel="noopener noreferrer"
-        target="_blanck" className="linksML3">en partenariat avec le groupe CJ</Link>
+        <Link
+          to="https://portfolio-fbdcb.web.app/"
+          rel="noopener noreferrer"
+          target="_blanck"
+          className="linksML2"
+        >
+          Portfolio de Davy SEBBAH - Créateur d'applications et de sites Web{" "}
+        </Link>
+        <Link
+          to="https://cj-group.co/about-us/"
+          rel="noopener noreferrer"
+          target="_blanck"
+          className="linksML3"
+        >
+          en partenariat avec le groupe CJ
+        </Link>
         <br />
         Hébergeur: OVH - 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1
       </p>
