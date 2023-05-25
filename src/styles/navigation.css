@@ -24,20 +24,11 @@
   letter-spacing: 2px;
   margin: 0 10px;
 }
-.navlink{
-  border-bottom: 3px solid transparent;
-}
-.navlink:hover{
+.nav-link.active{
   border-bottom: 3px solid var(--four-color);
 }
 .navbar-collapse {
   flex-grow: inherit !important;
-}
-.dropdown-menu {
-  background-color: var(--main-color) !important;
-}
-.dropdown-menu a {
-  background-color: var(--main-color) !important;
 }
 .socialButtons {
   transition: transform 400ms ease !important;
