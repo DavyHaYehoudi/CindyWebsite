@@ -8,15 +8,13 @@
   height: var(--height-Bg-img);
   background-image: url("/public/images/massageBg.jpg");
 }
-.massageNav-btn {
-  position: fixed;
-  right: 0;
-}
-.tabComp {
-  padding: 10px;
-  border-collapse: inherit;
-}
 
+/********************** SLIDER **********************/
+.titleMassageSelected {
+  background-color: var(--main-color);
+  text-align: center;
+  padding: var(--paddingBlock);
+}
 .slider-content-massage {
   margin: 50px auto;
   text-align: center;
@@ -42,7 +40,6 @@
 .slick-next {
   right: -50px !important;
 }
-
 .card-massage {
   border: 1px solid var(--main-color);
   background-color: var(--main-color);
@@ -50,8 +47,5 @@
   border-radius: var(--br);
 }
 .card-massage > img {
-  background-color: var(--main-color);
-  height: 100%; 
-  object-fit: contain; 
+  object-fit: contain;
 }
-

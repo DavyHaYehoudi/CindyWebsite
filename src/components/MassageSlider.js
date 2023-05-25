@@ -1,38 +1,25 @@
-import React, { useContext } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { dataMassage } from "../textes/massages/dataMassage";
-import { MassageSelectContext } from "../context/MassageSelectProvider";
 
-const MassageSlider = () => {
-  const { massageId, setMassageId } = useContext(MassageSelectContext);
-  const handleSelect = (i) => {
-    setMassageId(i);
-  };
+const MassageSlider = ({ handleMassageSelected }) => {
   const settings = {
     dots: true,
     dotsClass: "slick-dots slick-thumb",
-    // autoplay: true,
-    speed: 600,
-    pauseOnHover: true,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     adaptiveHeight: true,
-    initialSlide: massageId,
+    beforeChange: (current, next) => handleMassageSelected(next),
   };
   return (
-    <div className="slider-content-massage">
+    <div className="slider-content-massage" id="slider">
       <Slider {...settings}>
         {dataMassage.map((item, i) => (
-          <div
-            className="card-massage"
-            id={item.id}
-            key={i}
-            onClick={() => handleSelect(item.id)}
-          >
+          <div className="card-massage" id={item.id} key={i}>
             <img
-              src={require(`../medias/massages/${item.img_main}`)}
+              src={require(`../medias/massages/${item.img_slider}`)}
               alt={item.title}
             />
           </div>

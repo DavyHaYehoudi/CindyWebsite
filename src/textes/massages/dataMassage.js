@@ -1,10 +1,11 @@
-export const dataMassage=[
-    {
-        id:"0",
-        title:"MASSAGE DES 5 CONTINENTS®",
-        img_main:"m5c-main.jpg",
-        img_illustration:["m5c-ill1.jpg","m5c-ill2.jpg","m5c-ill3.jpg",],
-        large_description:`Le M5C est un massage du corps offrant un <b>lâcher prise physique et mental</b> absolument inédit en reprenant de célèbres techniques du monde.
+export const dataMassage = [
+  {
+    id: "0",
+    title: "MASSAGE DES 5 CONTINENTS®",
+    img_main: "m5c-main.jpg",
+    img_illustration: ["m5c-ill1.jpg", "m5c-ill2.jpg", "m5c-ill3.jpg"],
+    img_slider: "m5c_slider.jpg",
+    large_description: `Le M5C est un massage du corps offrant un <b>lâcher prise physique et mental</b> absolument inédit en reprenant de célèbres techniques du monde.
         <br />
         <br />
         Il regroupe ainsi <b>le massage, l’aromathérapie et l’énergie du magnétisme</b> pour en faire une expérience unique. 
@@ -20,15 +21,16 @@ export const dataMassage=[
         <br />
         <br />
         <b>‍Détoxification, Revitalisation, Reconnexion</b> sont les maîtres mots de ce massage exceptionnel.`,
-        tarif:`Tarif = <b>85€ (1H15)</b><br />
-        Le forfait de 3 massages : <b>225€</b>`
-    },
-    {
-        id:"1",
-        title:"MASSAGE DU VISAGE JAPONAIS",
-        img_main:"kobido-main.jpg",
-        img_illustration:["kobido-ill1.jpg","kobido-ill2.jpg","kobido-ill3.jpg"],
-        large_description:`Le massage du visage que je propose s’inspire des techniques du célèbre <b>KOBIDO</b>. Il permet <b>d’apaiser le système nerveux, d’améliorer la qualité et l’aspect de la peau</b> en réduisant les effets du stress et du temps.
+    tarif: `Tarif = <b>85€ (1H15)</b><br />
+        Le forfait de 3 massages : <b>225€</b>`,
+  },
+  {
+    id: "1",
+    title: "MASSAGE DU VISAGE JAPONAIS",
+    img_main: "kobido-main.jpg",
+    img_illustration: ["kobido-ill1.jpg", "kobido-ill2.jpg", "kobido-ill3.jpg"],
+    img_slider: "kobido_slider.jpg",
+    large_description: `Le massage du visage que je propose s’inspire des techniques du célèbre <b>KOBIDO</b>. Il permet <b>d’apaiser le système nerveux, d’améliorer la qualité et l’aspect de la peau</b> en réduisant les effets du stress et du temps.
         <br />
         <br />
         Grâce aux multiples manœuvres telles que les percussions, les enveloppements, les pressions et les effleurages, la micro-circulation est alors relancée offrant une meilleure oxygénation des cellules et donc une peau en pleine santé.<br /> 
@@ -42,15 +44,16 @@ export const dataMassage=[
         <br />
         <br />
         Pratiqué de manière régulière, ce massage offre de l'éclat à la peau, redessine les traits et apaise le mental. Il est recommandé de pratiquer les premières séances rapprochées (une fois par semaine) afin que la mémoire du visage s’active, puis une à deux séances par mois pour entretenir les bienfaits du massage.`,
-        tarif:`Ce massage se pratique à la carte ou en cure : Tarif = <b>65€ (1H00)</b><br />
-        Le forfait de 3 massages : <b>165€</b>`
-    },
-    {
-        id:"2",
-        title:"BELLY REVOLUTION ®",
-        img_main:"Belly-main.png",
-        img_illustration:["belly-ill1.jpg","belly-ill2.jpg","belly-ill3.jpg"],
-        large_description:`Le Belly Revolution ® est un massage du ventre qui permet de <b>relâcher les tensions</b> du corps grâce à des techniques de <b>drainage, modelage, effleurage et à un procédé énergétique.</b>
+    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>65€ (1H00)</b><br />
+        Le forfait de 3 massages : <b>165€</b>`,
+  },
+  {
+    id: "2",
+    title: "BELLY REVOLUTION ®",
+    img_main: "Belly-main.png",
+    img_illustration: ["belly-ill1.jpg", "belly-ill2.jpg", "belly-ill3.jpg"],
+    img_slider: "belly_slider.jpg",
+    large_description: `Le Belly Revolution ® est un massage du ventre qui permet de <b>relâcher les tensions</b> du corps grâce à des techniques de <b>drainage, modelage, effleurage et à un procédé énergétique.</b>
         <br />
         <br />
         Quel rapport entre le ventre et les émotions ?
@@ -78,15 +81,16 @@ export const dataMassage=[
         Anti-coagulant en cours<br />
         Greffe d'organe<br />
         Personnes mineures<br />`,
-        tarif:`Ce massage se pratique à la carte ou en cure : Tarif = <b>60€ (45mn)</b><br />
-        Le forfait de 3 massages : <b>160€</b>`
-    },
-    {
-        id:"3",
-        title:"MASSAGE DRAINANT METHODE VODDER",
-        img_main:"vodder-main.jpg",
-        img_illustration:["vodder-ill1.jpg","vodder-ill2.jpg","vodder-ill3.jpg"],
-        large_description:`Qu’est-ce que la lymphe ?
+    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>60€ (45mn)</b><br />
+        Le forfait de 3 massages : <b>160€</b>`,
+  },
+  {
+    id: "3",
+    title: "MASSAGE DRAINANT METHODE VODDER",
+    img_main: "vodder-main.jpg",
+    img_illustration: ["vodder-ill1.jpg", "vodder-ill2.jpg", "vodder-ill3.jpg"],
+    img_slider: "vodder_slider.jpg",
+    large_description: `Qu’est-ce que la lymphe ?
         <br />
         <br />
         ‍La lymphe est un liquide corporel clair jouant un rôle essentiel dans la santé. Elle circule lentement dans notre corps via un réseau qui permet d’évacuer les déchets et d’assurer le bon fonctionnement des défenses immunitaires grâce aux ganglions lymphatiques. Dépourvu de système de pompage, le seul moyen de faire circuler la lymphe est de bouger !
@@ -128,15 +132,20 @@ export const dataMassage=[
         <br />
         Demander conseil à votre médecin traitant avant de recevoir ce massage
         `,
-        tarif:`Ce massage se pratique à la carte ou en cure : Tarif = <b>50€ (1H00)</b><br />
-        Le forfait de 5 massages = <b>210€</b>`
-    },
-    {
-        id:"4",
-        title:"MASSAGE AUX POCHONS",
-        img_main:"pochons-main.jpg",
-        img_illustration:["pochons-ill1.jpg","pochons-ill2.jpg","pochons-ill3.jpg"],
-        large_description:`MASSAGE AUX POCHONS D'HERBES AROMATIQUES
+    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>50€ (1H00)</b><br />
+        Le forfait de 5 massages = <b>210€</b>`,
+  },
+  {
+    id: "4",
+    title: "MASSAGE AUX POCHONS",
+    img_main: "pochons-main.jpg",
+    img_illustration: [
+      "pochons-ill1.jpg",
+      "pochons-ill2.jpg",
+      "pochons-ill3.jpg",
+    ],
+    img_slider: "pochons_slider.jpg",
+    large_description: `MASSAGE AUX POCHONS D'HERBES AROMATIQUES
         <br />
         <br />
         Originaire d'Asie, ce soin ancestral s'effectue à l'aide de pochons remplis de plantes médicinales et aromatiques.
@@ -147,7 +156,7 @@ export const dataMassage=[
         <br /> De plus, les odeurs qui se dégagent des pochons enivrent l'espace et vous transportent loin d'ici.
         <br />
         <br /> Je vous suggère de faire un gommage du corps avant votre rendez-vous, pour permettre une meilleure pénétration des principes actifs de l'huile de sésame ainsi que des plantes.  `,
-        tarif:`Tarif <b>85€</b><br /> Le forfait de 3 SOINS <b>225€</b>
-        Durée 1h30`
-    },
-]
+    tarif: `Tarif <b>85€</b><br /> Le forfait de 3 SOINS <b>225€</b>
+        Durée 1h30`,
+  },
+];
