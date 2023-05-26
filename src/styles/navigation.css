@@ -25,7 +25,7 @@
   margin: 0 10px;
 }
 .nav-link.active{
-  border-bottom: 3px solid var(--four-color);
+  border-bottom: 3px solid var(--five-color);
 }
 .navbar-collapse {
   flex-grow: inherit !important;
