@@ -4,6 +4,7 @@ export const dataConsultation=[
         title:"CONSULTATION DE NATUROPATHIE",
         img_main:"naturo-main.jpg",
         img_illustration:["naturo-ill1.jpg","naturo-ill2.jpg","naturo-ill3.jpg"],
+        img_slider: "naturo_slider.jpg",
         large_description:`<h2>CONSULTATION DE NATUROPATHIE</h2>
         <p><u><b>LA PREMIÈRE CONSULTATION DE NATUROPATHIE</b></u>
         <br />
@@ -32,6 +33,7 @@ export const dataConsultation=[
         title:"CONSULTATION DE FLEURS DE BACH",
         img_main:"fdb-main.jpg",
         img_illustration:["fdb-ill1.jpg","fdb-ill2.jpg","fdb-ill3.jpg"],
+        img_slider: "fdb_slider.jpg",
         large_description:`<h2>CONSULTATION DE FLEURS DE BACH</h2>
 
         <p>Élaborés par un célèbre médecin homéopathe en 1930 du nom d'Edward Bach, les élixirs floraux appelés plus communément Fleurs de Bach, sont des remèdes 100% naturels qui permettent de retrouver une paix intérieure. Ce sont 38 extraits de plantes et d’arbres poussant à l’état sauvage préparés selon un procédé spécifique. Les fleurs permettent de <b>rétablir un équilibre émotionnel sans effets secondaires.</b> Peur, colère, manque de confiance en soi, déprime etc... Toutes ces émotions sont alors remises à leur place <b>de manière douce et profonde.</b> Je vous aide à clarifier vos émotions puis, <b>ensemble</b>, nous sélectionnons les fleurs adéquates  et nous préparons votre mélange ce qui vous implique pleinement dans le processus d'évolution.  

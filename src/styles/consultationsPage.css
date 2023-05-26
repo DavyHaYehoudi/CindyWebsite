@@ -4,3 +4,18 @@
   height: var(--height-Bg-img);
   background-image: url("/public/images/consultationBg.jpg");
 }
+.slider-content-consultation{
+  margin: 50px auto;
+  text-align: center;
+  width: 50%;
+}
+.card-consultation{
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+  width: auto !important;
+  border-radius: var(--br);
+}
+.card-consultation>img{
+  object-fit: cover;
+  width: 800px;
+}

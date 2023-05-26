@@ -44,7 +44,7 @@
     width: 100%;
     margin: 5px;
   }
-  .slider-content-massage {
+  .slider-content-massage,.slider-content-consultation {
     width: 90%;
   }
   .slick-prev,

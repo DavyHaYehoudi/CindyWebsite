@@ -1,12 +1,15 @@
-import React, { useContext } from "react";
+import React, { useState } from "react";
 import ImageParagraph from "../components/ImageParagraph";
 import Headband from "../components/Headband";
 import Tabbs from "../components/Tabbs";
 import { dataConsultation } from "../textes/consultations/dataConsultation";
-import { ConsultationSelectContext } from "../context/ConsultationSelectProvider";
+import ConsultationSlider from "../components/ConsultationSlider";
 
 const Consultations = () => {
-  const {consultationId}=useContext(ConsultationSelectContext)
+  const [consultationId, setConsultationId] = useState("0");
+  const handleConsultationSelected = (id) => {
+    setConsultationId(id);
+  };
   return (
     <div>
       <Headband
@@ -16,10 +19,15 @@ const Consultations = () => {
         classTitle="fs-2"
       />
       <div className="consultation_img_Bg bg-img"></div>
-
+      <h2 className={"titleMassageSelected"}>
+          {dataConsultation[consultationId].title}{" "}
+        </h2>
+      <ConsultationSlider
+        handleConsultationSelected={handleConsultationSelected}
+      />
       <div>
         <Tabbs
-        file="consultations"
+          file="consultations"
           title={dataConsultation[consultationId].title}
           id={dataConsultation[consultationId].id}
           composant={
@@ -34,20 +42,6 @@ const Consultations = () => {
           illustrations={dataConsultation[consultationId].img_illustration}
           tarifs={dataConsultation[consultationId].tarif}
         />
-        {/* <Tabbs
-          title="Consultation de naturopathie"
-          id="naturopathie"
-          composant={
-            <ImageParagraph
-              imageSrc={naturo}
-              imageAlt="confection des ingrédients naturels"
-              imagePosition="right"
-              paragraphText={paragraph1}
-            />
-          }
-          illustrations={[naturoill1, naturoill2, naturoill3]}
-          tarifs={tarifs1}
-        /> */}
         <p
           style={{
             backgroundColor: "var(--main-color)",
@@ -69,20 +63,6 @@ const Consultations = () => {
           </b>
         </p>
       </div>
-      {/* <Tabbs
-        title="Consultation de fleurs de Bach"
-        id="fleursdebach"
-        composant={
-          <ImageParagraph
-            imageSrc={fdb}
-            imageAlt="fleurs de Bach dans une fiole"
-            imagePosition="left"
-            paragraphText={paragraph2}
-          />
-        }
-        illustrations={[fdbill1, fdbill2, fdbill3]}
-        tarifs={tarifs2}
-      /> */}
     </div>
   );
 };
