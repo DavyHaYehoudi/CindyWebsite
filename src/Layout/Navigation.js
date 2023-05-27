@@ -16,12 +16,17 @@ const Navigation = () => {
     consultations: false,
     massages: false,
   });
-const handleMouseEnter=(dropdown)=>{
-  setShowDropdown(prev=>({...prev,[dropdown]:true} ))
-}
-const handleMouseLeave=(dropdown)=>{
-  setShowDropdown(prev=>({...prev,[dropdown]:false}))
-}
+  const [timeoutId, setTimeoutId] = useState(null);
+  const handleMouseEnter = (dropdown) => {
+    clearTimeout(timeoutId);
+    setShowDropdown((prev) => ({ ...prev, [dropdown]: true }));
+  };
+  const handleMouseLeave = (dropdown) => {
+    const id = setTimeout(() => {
+      setShowDropdown((prev) => ({ ...prev, [dropdown]: false }));
+    }, 30);
+    setTimeoutId(id);
+  };
   // Pour estimer la largeur de l'écran, notamment pour les icônes réseaux sociaux
   useEffect(() => {
     const handleResize = () => setInnerWidth(window.innerWidth);
@@ -60,8 +65,8 @@ const handleMouseLeave=(dropdown)=>{
                 title="CONSULTATIONS"
                 id="nav-dropdown"
                 show={showDropdown.consultations}
-                onMouseEnter={()=>handleMouseEnter("consultations")}
-                onMouseLeave={()=>handleMouseLeave("consultations")}
+                onMouseEnter={() => handleMouseEnter("consultations")}
+                onMouseLeave={() => handleMouseLeave("consultations")}
               >
                 <LinkContainer to="/consultations/naturopathie">
                   <NavDropdown.Item eventKey="0">
@@ -78,8 +83,8 @@ const handleMouseLeave=(dropdown)=>{
                 title="MASSAGES"
                 id="nav-dropdown"
                 show={showDropdown.massages}
-                onMouseEnter={()=>handleMouseEnter("massages")}
-                onMouseLeave={()=>handleMouseLeave("massages")}
+                onMouseEnter={() => handleMouseEnter("massages")}
+                onMouseLeave={() => handleMouseLeave("massages")}
               >
                 <LinkContainer to="/massages/5-continents">
                   <NavDropdown.Item eventKey="0">
