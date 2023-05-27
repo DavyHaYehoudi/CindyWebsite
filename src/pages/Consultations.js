@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import ImageParagraph from "../components/ImageParagraph";
+import React, { useContext, useEffect} from "react";
 import Headband from "../components/Headband";
-import Tabbs from "../components/Tabbs";
 import { dataConsultation } from "../textes/consultations/dataConsultation";
 import ConsultationSlider from "../components/ConsultationSlider";
+import { scrollToAnchor } from "../utils/anchor";
+import { ConsultationSelectContext } from "../context/ConsultationSelectProvider";
 
 const Consultations = () => {
-  const [consultationId, setConsultationId] = useState("0");
-  const handleConsultationSelected = (id) => {
-    setConsultationId(id);
-  };
+  const {consultationId}=useContext(ConsultationSelectContext)
+  useEffect(() => {
+    scrollToAnchor("consultations");
+  }, []);
   return (
     <div>
       <Headband
@@ -20,28 +20,19 @@ const Consultations = () => {
       />
       <div className="consultation_img_Bg bg-img"></div>
       <h2 className={"titleMassageSelected"}>
-          {dataConsultation[consultationId].title}{" "}
-        </h2>
-      <ConsultationSlider
-        handleConsultationSelected={handleConsultationSelected}
-      />
+        {dataConsultation[consultationId].title}{" "}
+      </h2>
+      <ConsultationSlider consultationId={consultationId} />
       <div>
-        <Tabbs
-          file="consultations"
-          title={dataConsultation[consultationId].title}
-          id={dataConsultation[consultationId].id}
-          composant={
-            <ImageParagraph
-              file="consultations"
-              imageSrc={dataConsultation[consultationId].img_main}
-              imageAlt={dataConsultation[consultationId].title}
-              imagePosition="right"
-              paragraphText={dataConsultation[consultationId].large_description}
-            />
-          }
-          illustrations={dataConsultation[consultationId].img_illustration}
-          tarifs={dataConsultation[consultationId].tarif}
-        />
+      <div className="consultation-tarif-content" dangerouslySetInnerHTML={{
+            __html: dataConsultation[consultationId].tarif,
+          }}></div>
+        <article
+          className="consultation-descript-content"
+          dangerouslySetInnerHTML={{
+            __html: dataConsultation[consultationId].large_description,
+          }}
+        ></article>
         <p
           style={{
             backgroundColor: "var(--main-color)",

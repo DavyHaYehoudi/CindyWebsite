@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { AuthAdminProvider } from "./context/AuthAdminProvider";
 import { BrowserRouter } from "react-router-dom";
 import { MassageSelectProvider } from "./context/MassageSelectProvider";
+import { ConsultationSelectProvider } from "./context/ConsultationSelectProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -14,8 +15,9 @@ root.render(
   <BrowserRouter>
     <AuthAdminProvider>
       <MassageSelectProvider>
-
+        <ConsultationSelectProvider>
           <App />
+        </ConsultationSelectProvider>
       </MassageSelectProvider>
     </AuthAdminProvider>
   </BrowserRouter>

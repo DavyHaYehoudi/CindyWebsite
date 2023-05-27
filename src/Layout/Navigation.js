@@ -7,11 +7,13 @@ import { useContext, useEffect, useState } from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { MassageSelectContext } from "../context/MassageSelectProvider";
+import { ConsultationSelectContext } from "../context/ConsultationSelectProvider";
 
 const Navigation = () => {
   const [expanded, setExpanded] = useState(false);
   const [innerWidth, setInnerWidth] = useState(window.innerWidth);
   const { setMassageId } = useContext(MassageSelectContext);
+  const { setConsultationId } = useContext(ConsultationSelectContext);
   const [showDropdown, setShowDropdown] = useState({
     consultations: false,
     massages: false,
@@ -38,6 +40,7 @@ const Navigation = () => {
   const handleNavSelect = (eventKey) => {
     setExpanded(false);
     setMassageId(eventKey);
+    setConsultationId(eventKey);
   };
   return (
     <>
@@ -70,12 +73,12 @@ const Navigation = () => {
               >
                 <LinkContainer to="/consultations/naturopathie">
                   <NavDropdown.Item eventKey="0">
-                    Consultation naturopathie
+                    Consultation de naturopathie
                   </NavDropdown.Item>
                 </LinkContainer>
                 <LinkContainer to="/consultations/fleurs-de-bach">
                   <NavDropdown.Item eventKey="1">
-                    Consultation fleurs de Bach
+                    Consultation de fleurs de Bach
                   </NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>

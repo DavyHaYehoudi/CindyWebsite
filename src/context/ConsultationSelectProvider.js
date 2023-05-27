@@ -5,7 +5,7 @@ const ConsultationSelectContext = createContext();
 
 // Composant ConsultationSelectProvider pour fournir le contexte de sélection
 function ConsultationSelectProvider({ children }) {
-  const [consultationId, setConsultationId] = useState("1");
+  const [consultationId, setConsultationId] = useState("0");
   return (
     <ConsultationSelectContext.Provider value={{ consultationId, setConsultationId }}>
       {children}
