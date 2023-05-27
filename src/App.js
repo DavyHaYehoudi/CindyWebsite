@@ -15,16 +15,16 @@ import { AuthAdminContext } from "./context/AuthAdminProvider";
 import Page404 from "./pages/Page404";
 
 function App() {
-  const {isAuthenticated}=useContext(AuthAdminContext)
-  console.log("On est authentifié ? :",isAuthenticated);
+  const { isAuthenticated } = useContext(AuthAdminContext);
+  console.log("On est authentifié ? :", isAuthenticated);
 
   return (
     <>
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/consultations" element={<Consultations />} />
-        <Route path="/massages" element={<Massages />} />
+        <Route path="/consultations/*" element={<Consultations />} />
+        <Route path="/massages/*" element={<Massages />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/rebozo" element={<Rebozo />} />
         <Route path="/auth" element={<Authentication />} />

@@ -3,14 +3,12 @@ import ImageParagraph from "../components/ImageParagraph";
 import Tabbs from "../components/Tabbs";
 import MassageSlider from "../components/MassageSlider";
 import { dataMassage } from "../textes/massages/dataMassage";
-import { useState } from "react";
+import { useContext } from "react";
 import logo from "../medias/icons/logo.png";
+import { MassageSelectContext } from "../context/MassageSelectProvider";
 
 const Massages = () => {
-  const [massageId, setMassageId] = useState("0");
-  const handleMassageSelected = (id) => {
-    setMassageId(id);
-  };
+  const { massageId } = useContext(MassageSelectContext);
 
   return (
     <>
@@ -24,7 +22,7 @@ const Massages = () => {
         <h2 className={"titleMassageSelected"}>
           {dataMassage[massageId].title}{" "}
         </h2>
-        <MassageSlider handleMassageSelected={handleMassageSelected} />
+        <MassageSlider massageId={massageId} />
       </div>
       <Tabbs
         file="massages"
