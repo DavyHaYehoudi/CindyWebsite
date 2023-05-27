@@ -3,8 +3,7 @@ export const dataMassage = [
     id: "0",
     title: "MASSAGE DES 5 CONTINENTS®",
     img_main: "m5c-main.jpg",
-    img_illustration: ["m5c-ill1.jpg", "m5c-ill2.jpg", "m5c-ill3.jpg"],
-    img_slider: "m5c_slider.jpg",
+    img_illustration: ["m5c-main.jpg","m5c_slider.jpg","m5c-ill1.jpg", "m5c-ill2.jpg", "m5c-ill3.jpg"],
     large_description: `Le M5C est un massage du corps offrant un <b>lâcher prise physique et mental</b> absolument inédit en reprenant de célèbres techniques du monde.
         <br />
         <br />
@@ -28,8 +27,7 @@ export const dataMassage = [
     id: "1",
     title: "MASSAGE DU VISAGE JAPONAIS",
     img_main: "kobido-main.jpg",
-    img_illustration: ["kobido-ill1.jpg", "kobido-ill2.jpg", "kobido-ill3.jpg"],
-    img_slider: "kobido_slider.jpg",
+    img_illustration: ["kobido-main.jpg","kobido_slider.jpg","kobido-ill1.jpg", "kobido-ill2.jpg", "kobido-ill3.jpg"],
     large_description: `Le massage du visage que je propose s’inspire des techniques du célèbre <b>KOBIDO</b>. Il permet <b>d’apaiser le système nerveux, d’améliorer la qualité et l’aspect de la peau</b> en réduisant les effets du stress et du temps.
         <br />
         <br />
@@ -51,8 +49,7 @@ export const dataMassage = [
     id: "2",
     title: "BELLY REVOLUTION ®",
     img_main: "Belly-main.png",
-    img_illustration: ["belly-ill1.jpg", "belly-ill2.jpg", "belly-ill3.jpg"],
-    img_slider: "belly_slider.jpg",
+    img_illustration: ["Belly-main.png","belly_slider.jpg","belly-ill1.jpg", "belly-ill2.jpg", "belly-ill3.jpg"],
     large_description: `Le Belly Revolution ® est un massage du ventre qui permet de <b>relâcher les tensions</b> du corps grâce à des techniques de <b>drainage, modelage, effleurage et à un procédé énergétique.</b>
         <br />
         <br />
@@ -88,8 +85,7 @@ export const dataMassage = [
     id: "3",
     title: "MASSAGE DRAINANT METHODE VODDER",
     img_main: "vodder-main.jpg",
-    img_illustration: ["vodder-ill1.jpg", "vodder-ill2.jpg", "vodder-ill3.jpg"],
-    img_slider: "vodder_slider.jpg",
+    img_illustration: ["vodder-main.jpg","vodder_slider.jpg","vodder-ill1.jpg", "vodder-ill2.jpg", "vodder-ill3.jpg"],
     large_description: `Qu’est-ce que la lymphe ?
         <br />
         <br />
@@ -139,12 +135,11 @@ export const dataMassage = [
     id: "4",
     title: "MASSAGE AUX POCHONS",
     img_main: "pochons-main.jpg",
-    img_illustration: [
+    img_illustration: ["pochons-main.jpg","pochons_slider.jpg",
       "pochons-ill1.jpg",
       "pochons-ill2.jpg",
       "pochons-ill3.jpg",
     ],
-    img_slider: "pochons_slider.jpg",
     large_description: `MASSAGE AUX POCHONS D'HERBES AROMATIQUES
         <br />
         <br />

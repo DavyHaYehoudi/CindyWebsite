@@ -40,7 +40,7 @@ const Footer = () => {
       <div className="sub-footer2">
         <p>
           {" "}
-          <Link to="/mentions_legales#mleg">Mentions légales</Link>{" "}
+          <Link to="/mentions_legales">Mentions légales</Link>{" "}
         </p>
       </div>
     </div>

@@ -13,6 +13,7 @@ import AdminRoute from "./guard/AdminRoute";
 import { useContext } from "react";
 import { AuthAdminContext } from "./context/AuthAdminProvider";
 import Page404 from "./pages/Page404";
+import MassagesAll from "./pages/MassagesAll";
 
 function App() {
   const { isAuthenticated } = useContext(AuthAdminContext);
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/consultations/*" element={<Consultations />} />
         <Route path="/massages/*" element={<Massages />} />
+        <Route path="/massages/all" element={<MassagesAll />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/rebozo" element={<Rebozo />} />
         <Route path="/auth" element={<Authentication />} />

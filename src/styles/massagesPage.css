@@ -47,7 +47,26 @@
   border-radius: var(--br);
 }
 .card-massage > img {
-  object-fit: cover;
+  object-fit: contain;
   width: 800px;
   height: 500px;
+}
+/********************** DESCRIPTION **********************/
+.massage-descript-content {
+  background-color: var(--main-color);
+  color: var(--five-color);
+  padding: var(--paddingBlock);
+  font-weight: 400;
+  text-align: center;
+}
+.massage-tarif-content{
+  padding: var(--paddingBlock);
+  font-weight: 400;
+  text-align: center;
+}
+/********************** ALL MASSAGES **********************/
+#comparatif td a{
+  color: var(--main-color) !important;
+  font-weight:bold;
+  text-decoration:var(--four-color)  !important;
 }

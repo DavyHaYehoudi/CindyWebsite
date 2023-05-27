@@ -1,15 +1,15 @@
 import Headband from "../components/Headband";
-import ImageParagraph from "../components/ImageParagraph";
-import Tabbs from "../components/Tabbs";
 import MassageSlider from "../components/MassageSlider";
 import { dataMassage } from "../textes/massages/dataMassage";
-import { useContext } from "react";
-import logo from "../medias/icons/logo.png";
+import { useContext, useEffect } from "react";
 import { MassageSelectContext } from "../context/MassageSelectProvider";
+import { scrollToAnchor } from "../utils/anchor";
 
 const Massages = () => {
   const { massageId } = useContext(MassageSelectContext);
-
+  useEffect(() => {
+    scrollToAnchor("massages");
+  }, []);
   return (
     <>
       <div>
@@ -18,28 +18,20 @@ const Massages = () => {
           accroche="Apaisez les tensions pour libérer votre esprit"
           id="massages"
         />
-        <div className="massage_img_Bg bg-img"></div>
         <h2 className={"titleMassageSelected"}>
           {dataMassage[massageId].title}{" "}
         </h2>
         <MassageSlider massageId={massageId} />
+        <div className="massage-tarif-content" dangerouslySetInnerHTML={{
+            __html: dataMassage[massageId].tarif,
+          }}></div>
+        <article
+          className="massage-descript-content"
+          dangerouslySetInnerHTML={{
+            __html: dataMassage[massageId].large_description,
+          }}
+        ></article>
       </div>
-      <Tabbs
-        file="massages"
-        title={dataMassage[massageId].title}
-        tarifs={dataMassage[massageId].tarif}
-        id={dataMassage[massageId].id}
-        illustrations={dataMassage[massageId].img_illustration}
-        composant={
-          <ImageParagraph
-            file="massages"
-            imageSrc={dataMassage[massageId].img_main}
-            imageAlt={dataMassage[massageId].title}
-            imagePosition="right"
-            paragraphText={dataMassage[massageId].large_description}
-          />
-        }
-      />
       <div className="remarques containerText">
         Les séances de massages commencent toutes par un échange de quelques
         minutes sur vos attentes ainsi que vos éventuelles sensibilités (ex:
@@ -48,9 +40,6 @@ const Massages = () => {
         bien-être. Une infusion vous est proposée à la fin de la séance et si
         vous le souhaitez, quelques conseils naturo personnalisés peuvent vous
         être suggérés.
-      </div>
-      <div className="m-5 text-center">
-        <img src={logo} alt="lotus du logo" />{" "}
       </div>
     </>
   );

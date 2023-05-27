@@ -27,7 +27,7 @@
 .dropdown-menu{
   background-color: var(--main-color) !important;
 }
-.dropdown-item.active{
+.dropdown-item.active, .dropdown-item:active{
   background-color: var(--main-color) !important;
   color: var(--four-color) !important;
 }
