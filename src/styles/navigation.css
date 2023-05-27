@@ -24,12 +24,20 @@
   letter-spacing: 2px;
   margin: 0 10px;
 }
+.dropdown-menu{
+  background-color: var(--main-color) !important;
+}
+.dropdown-item.active{
+  background-color: var(--main-color) !important;
+  color: var(--four-color) !important;
+}
 .nav-link.active{
-  border-bottom: 3px solid var(--five-color);
+  color: var(--four-color) !important;
 }
 .navbar-collapse {
   flex-grow: inherit !important;
 }
+
 .socialButtons {
   transition: transform 400ms ease !important;
 }
