@@ -14,6 +14,9 @@
     text-align: center;
     font-size: var(--fs-2);
   }
+  .sub-footer2 a{
+    text-decoration:underline !important;
+  }
   .footer_block1,
   .footer_block3 {
     font-weight: 600;

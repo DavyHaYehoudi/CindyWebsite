@@ -101,7 +101,7 @@ const Navigation = () => {
                 </LinkContainer>
                 <LinkContainer to="/massages/belly-revolution">
                   <NavDropdown.Item eventKey="2">
-                    Belly révolution ®
+                    Belly revolution ®
                   </NavDropdown.Item>
                 </LinkContainer>
                 <LinkContainer to="/massages/drainant-vodder">

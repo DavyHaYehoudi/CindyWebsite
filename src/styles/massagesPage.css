@@ -48,21 +48,24 @@
 }
 .card-massage > img {
   object-fit: cover;
-  width: 800px;
+  width: 600px;
   height: 500px;
 }
 /********************** DESCRIPTION **********************/
 .massage-descript-content {
   background-color: var(--main-color);
   color: var(--five-color);
-  padding: var(--paddingBlock);
   font-weight: 400;
-  text-align: center;
 }
 .massage-tarif-content{
   padding: var(--paddingBlock);
   font-weight: 400;
   text-align: center;
+}
+.massage-descript-body{
+  max-width: 1200px;
+  margin: auto;
+  padding: var(--paddingBlock);
 }
 /********************** ALL MASSAGES **********************/
 #comparatif td a{

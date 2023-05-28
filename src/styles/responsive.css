@@ -44,12 +44,16 @@
     width: 100%;
     margin: 5px;
   }
-  .slider-content-massage,.slider-content-consultation {
+  .slider-content-massage,
+  .slider-content-consultation {
     width: 90%;
   }
   .slick-prev,
   .slick-next {
     display: none !important;
+  }
+  .card-massage > img,.card-consultation > img {
+    height: 300px;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 1024px) {
@@ -93,4 +97,5 @@
   .adage2 {
     width: 100%;
   }
+ 
 }

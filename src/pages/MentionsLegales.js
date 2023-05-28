@@ -71,7 +71,7 @@ const MentionsLegales = () => {
         De la même façon, les mentions légales peuvent être modifiées à tout
         moment : elles s’imposent néanmoins à l’utilisateur qui est invité à s’y
         référer le plus souvent possible afin d’en prendre
-        connaissance.www.cindy-naturopathe.com propose des articles, vidéos,
+        connaissance.<br />www.cindy-naturopathe.com propose des articles, vidéos,
         ainsi que de l’actualité sur la santé et le bien-être dans un but
         purement informatif.
         <br />

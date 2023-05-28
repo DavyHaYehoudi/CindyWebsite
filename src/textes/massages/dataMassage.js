@@ -49,7 +49,7 @@ export const dataMassage = [
     id: "2",
     title: "BELLY REVOLUTION ®",
     img_main: "Belly-main.png",
-    img_illustration: ["Belly-main.png","belly_slider.jpg","belly-ill1.jpg", "belly-ill2.jpg", "belly-ill3.jpg"],
+    img_illustration: ["belly_slider.jpg","belly-ill1.jpg", "belly-ill2.jpg", "belly-ill3.jpg"],
     large_description: `Le Belly Revolution ® est un massage du ventre qui permet de <b>relâcher les tensions</b> du corps grâce à des techniques de <b>drainage, modelage, effleurage et à un procédé énergétique.</b>
         <br />
         <br />

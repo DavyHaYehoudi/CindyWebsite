@@ -1,4 +1,4 @@
-import React, { useContext, useEffect} from "react";
+import React, { useContext, useEffect } from "react";
 import Headband from "../components/Headband";
 import { dataConsultation } from "../textes/consultations/dataConsultation";
 import ConsultationSlider from "../components/ConsultationSlider";
@@ -6,7 +6,7 @@ import { scrollToAnchor } from "../utils/anchor";
 import { ConsultationSelectContext } from "../context/ConsultationSelectProvider";
 
 const Consultations = () => {
-  const {consultationId}=useContext(ConsultationSelectContext)
+  const { consultationId } = useContext(ConsultationSelectContext);
   useEffect(() => {
     scrollToAnchor("consultations");
   }, []);
@@ -24,15 +24,20 @@ const Consultations = () => {
       </h2>
       <ConsultationSlider consultationId={consultationId} />
       <div>
-      <div className="consultation-tarif-content" dangerouslySetInnerHTML={{
-            __html: dataConsultation[consultationId].tarif,
-          }}></div>
-        <article
-          className="consultation-descript-content"
+        <div
+          className="consultation-tarif-content"
           dangerouslySetInnerHTML={{
-            __html: dataConsultation[consultationId].large_description,
+            __html: dataConsultation[consultationId].tarif,
           }}
-        ></article>
+        ></div>
+        <article className="consultation-descript-content">
+          <div
+            className="consultation-descript-body"
+            dangerouslySetInnerHTML={{
+              __html: dataConsultation[consultationId].large_description,
+            }}
+          ></div>{" "}
+        </article>
         <p
           style={{
             backgroundColor: "var(--main-color)",

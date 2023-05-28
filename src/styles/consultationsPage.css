@@ -17,19 +17,22 @@
 }
 .card-consultation>img{
   object-fit: cover;
-  width: 800px;
-  height: 500px;
+  width: 600px;
+  height: 400px; 
 }
 /********************** DESCRIPTION **********************/
 .consultation-descript-content {
   background-color: var(--main-color);
   color: var(--five-color);
-  padding: var(--paddingBlock);
   font-weight: 400;
-  text-align: center;
 }
 .consultation-tarif-content{
   padding: var(--paddingBlock);
   font-weight: 400;
   text-align: center;
+}
+.consultation-descript-body{
+  max-width: 1200px;
+  margin: auto;
+  padding: var(--paddingBlock);
 }

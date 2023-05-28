@@ -22,15 +22,20 @@ const Massages = () => {
           {dataMassage[massageId].title}{" "}
         </h2>
         <MassageSlider massageId={massageId} />
-        <div className="massage-tarif-content" dangerouslySetInnerHTML={{
-            __html: dataMassage[massageId].tarif,
-          }}></div>
-        <article
-          className="massage-descript-content"
+        <div
+          className="massage-tarif-content"
           dangerouslySetInnerHTML={{
-            __html: dataMassage[massageId].large_description,
+            __html: dataMassage[massageId].tarif,
           }}
-        ></article>
+        ></div>
+        <article className="massage-descript-content">
+          <div
+            className="massage-descript-body"
+            dangerouslySetInnerHTML={{
+              __html: dataMassage[massageId].large_description,
+            }}
+          ></div>{" "}
+        </article>
       </div>
       <div className="remarques containerText">
         Les séances de massages commencent toutes par un échange de quelques
