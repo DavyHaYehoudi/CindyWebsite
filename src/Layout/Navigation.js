@@ -54,7 +54,7 @@ const Navigation = () => {
           <LinkContainer to="/">
             <Navbar.Brand className="navbar-brand">
               <img src={logo} alt="logo" className="mx-2 logo" />
-              BIENVENUE
+              <span> BIENVENUE</span>
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

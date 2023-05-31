@@ -1,7 +1,7 @@
 export const dataHome=[
     {
         id:"0",
-        title:"",
+        title:"fruits et légumes dans des assiettes en plein air",
         img_main:"home-naturo.jpg",
         img_illustration:[],
         large_description:`<h2>LA NATUROPATHIE OU LE CHEMIN VERS LA NATURE</h2>
@@ -36,7 +36,7 @@ export const dataHome=[
     },
     {
         id:"1",
-        title:"",
+        title:"portrait de famille de Cindy et ses deux enfants",
         img_main:"profil-home.jpg",
         img_illustration:[],
         large_description:`<h2>MON PARCOURS</h2>

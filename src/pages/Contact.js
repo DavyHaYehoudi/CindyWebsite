@@ -51,9 +51,11 @@ const Contact = () => {
         accroche="Soyez acteur de votre vie"
         id="contact"
       />
-      <p className="textContact">
-        Les informations saisies sur cette page sont confidentielles et
-        sécurisées
+      <p className="textContact" >
+        <span className="textContactContent">
+          ⚠️ Les informations saisies sur cette page sont confidentielles et
+          sécurisées
+        </span>
       </p>
       <div className="zoneContact">
         <div className="infoContact">
@@ -63,7 +65,7 @@ const Contact = () => {
               <FontAwesomeIcon
                 icon={faMobileScreen}
                 alt="icône d'un mobile"
-                size="3x"
+                size="2x"
               />{" "}
               06 18 01 05 04
             </Link>
@@ -92,7 +94,7 @@ const Contact = () => {
               <FontAwesomeIcon
                 icon={faLocationDot}
                 alt="icône de localisation"
-                size="3x"
+                size="2x"
               />{" "}
               <p className="mx-1">
                 555, avenue de la république

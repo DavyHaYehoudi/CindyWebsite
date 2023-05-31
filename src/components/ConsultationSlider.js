@@ -18,7 +18,7 @@ const ConsultationSlider = ({consultationId}) => {
           <div className="card-consultation" id={item.id} key={i}>
             <img
               src={require(`../medias/consultations/${item}`)}
-              alt={item.title}
+              alt={dataConsultation[consultationId].title}
             />
           </div>
         ))}

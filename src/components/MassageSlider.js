@@ -19,7 +19,7 @@ const MassageSlider = ({ massageId }) => {
           <div className="card-massage" id={item.id} key={i}>
             <img
               src={require(`../medias/massages/${item}`)}
-              alt={item.title}
+              alt={dataMassage[massageId].title}
             />
           </div>
         ))}

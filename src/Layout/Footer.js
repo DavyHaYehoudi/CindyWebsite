@@ -8,12 +8,12 @@ const Footer = () => {
   const location = useLocation();
 
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="sub-footer1">
         <div className="footer_block1">
-          <Link to='/#homePage'>
+          <Link to='/#homePage'className="footer_logo" >
             <img src={logo} alt="logo" className="mx-2" />
-            2023 Cindy Pantoustier - Naturopathe
+            <span>2023 Cindy Pantoustier - Naturopathe</span> 
           </Link>
         </div>
         <SocialButtons />
@@ -43,7 +43,7 @@ const Footer = () => {
           <Link to="/mentions_legales">Mentions légales</Link>{" "}
         </p>
       </div>
-    </div>
+    </footer>
   );
 };
 
