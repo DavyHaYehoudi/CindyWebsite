@@ -22,7 +22,7 @@ function Testimonies({ name, testimonies }) {
   return (
     <div className="">
       <button
-        className="Button btn-testimony"
+        className="Button btn-testimony px-2"
         id="btn-testimony"
         onClick={toggleShow}
       >
