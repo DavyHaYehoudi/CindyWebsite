@@ -13,7 +13,7 @@ const SocialButtons = () => {
         rel="noopener noreferrer"
         target="_blanck"
       >
-        <img src={instagram} alt="instagram" />
+        <img src={instagram} alt="instagram" width="48" height="48" />
       </Button>
       <Button
         className="socialButtons"
@@ -22,7 +22,7 @@ const SocialButtons = () => {
         rel="noopener noreferrer"
         target="_blanck"
       >
-        <img src={facebook} alt="facebook" />
+        <img src={facebook} alt="facebook" width="48" height="48" />
       </Button>
     </div>
   );

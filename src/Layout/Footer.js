@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="sub-footer1">
         <div className="footer_block1">
           <Link to='/#homePage'className="footer_logo" >
-            <img src={logo} alt="logo" className="mx-2" />
+            <img src={logo} alt="logo" className="mx-2" width="40" height="40" />
             <span>2023 Cindy Pantoustier - Naturopathe</span> 
           </Link>
         </div>

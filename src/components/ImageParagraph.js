@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ImageParagraph({ file,imageSrc, imageAlt, imagePosition, paragraphText }) {
+function ImageParagraph({ file,imageSrc, imageAlt, imagePosition, paragraphText}) {
   return (
     <section className={`image-paragraph ${imagePosition}`}>
       <img src={require(`../medias/${file}/${imageSrc}`)} alt={imageAlt} />

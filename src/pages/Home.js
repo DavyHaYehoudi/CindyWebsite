@@ -22,7 +22,7 @@ const Home = () => {
         </h1>
       </div>
       <div className="m-5 text-center">
-        <img src={logo} alt="lotus du logo" />{" "}
+        <img src={logo} alt="lotus du logo" width="40" height="40" />{" "}
       </div>
       <ImageParagraph
         file="home"
@@ -30,6 +30,7 @@ const Home = () => {
         imageAlt={dataHome[0].title}
         imagePosition="left"
         paragraphText={dataHome[0].large_description}
+        
       />
       <ImageParagraph
         file="home"
@@ -37,6 +38,7 @@ const Home = () => {
         imageAlt={dataHome[1].title}
         imagePosition="right"
         paragraphText={dataHome[1].large_description}
+       
       />
       <FollowMe />
       <Adage />

@@ -17,7 +17,7 @@ const FollowMe = () => {
         rel="noopener noreferrer"
         target="_blanck"
       >
-        <img src={instagram512} alt="icône instagram" />
+        <img src={instagram512} alt="icône instagram" width="256" height="256"/>
       </Link>
       <p>
         @cindy_naturo

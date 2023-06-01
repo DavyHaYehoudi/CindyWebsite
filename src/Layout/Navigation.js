@@ -53,7 +53,7 @@ const Navigation = () => {
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand className="navbar-brand">
-              <img src={logo} alt="logo" className="mx-2 logo" />
+              <img src={logo} alt="logo" className="mx-2 logo" width="40" height="40"/>
               <span> BIENVENUE</span>
             </Navbar.Brand>
           </LinkContainer>
@@ -66,7 +66,7 @@ const Navigation = () => {
             >
               <NavDropdown
                 title="CONSULTATIONS"
-                id="nav-dropdown"
+                // id="nav-dropdown"
                 show={showDropdown.consultations}
                 onMouseEnter={() => handleMouseEnter("consultations")}
                 onMouseLeave={() => handleMouseLeave("consultations")}
@@ -84,7 +84,7 @@ const Navigation = () => {
               </NavDropdown>
               <NavDropdown
                 title="MASSAGES"
-                id="nav-dropdown"
+                // id="nav-dropdown"
                 show={showDropdown.massages}
                 onMouseEnter={() => handleMouseEnter("massages")}
                 onMouseLeave={() => handleMouseLeave("massages")}
