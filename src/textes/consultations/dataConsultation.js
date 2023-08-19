@@ -5,27 +5,13 @@ export const dataConsultation=[
         img_main:"naturo-main.jpg",
         img_illustration:["naturo-main.jpg","naturo_slider.jpg","naturo-ill1.jpg","naturo-ill2.jpg","naturo-ill3.jpg"],
         large_description:`
-        <p><u><b>LA PREMIÈRE CONSULTATION DE NATUROPATHIE</b></u>
+        <p><u><b>LA CONSULTATION DE NATUROPATHIE</b></u>
         <br />
         <br />
-        ‍La première consultation naturopathique est une parfaite occasion pour <b>faire le point sur vous-même.</b> Elle commence par un questionnaire qui est une étude approfondie de votre hygiène de vie: habitudes alimentaires, activité physique, sommeil, gestion émotionnelle etc... Une ou plusieurs techniques sont effectuées pour indiquer les éventuelles carences et surcharges : <b>iridologie, réflexologie, bilan oriental et morphotypologie.</b><br />
-        Ensemble, nous construisons votre programme qui regroupe des conseils personnalisés pour répondre au mieux à vos attentes. 
-        ‍<br />
-        <br />
-        
-        <u>‍<b>LA CONSULTATION DE SUIVI</b></u>
-        <br />
-        <br />
-        ‍La consultation de suivi permet de faire un bilan sur <b>votre évolution</b> et d'ajuster le programme initial en fonction des résultats obtenus. De nouvelles mesures complémentaires sont alors proposées. 
-        
-        </p>`,
-        tarif:`<p>LA PREMIÈRE CONSULTATION DE NATUROPATHIE
-        <br />Tarif : <b>60€ (1h30)</b>
-        <br />
-        <br />
-        ‍LA CONSULTATION DE SUIVI
-        <br />Tarif : <b>40€ (45 mn)</b>
-        </p>`
+        ‍La consultation naturopathique est une parfaite occasion pour <b>faire le point sur vous-même.</b> Elle commence par un questionnaire qui est une étude approfondie de votre hygiène de vie: habitudes alimentaires, activité physique, sommeil, gestion émotionnelle etc... Une ou plusieurs techniques sont effectuées pour indiquer les éventuelles carences et surcharges : <b>iridologie, réflexologie, bilan oriental et morphotypologie.</b><br />
+        Ensemble, nous construisons votre programme qui regroupe des conseils personnalisés pour répondre au mieux à vos attentes.`,
+        tarif:`<p>LA CONSULTATION DE NATUROPATHIE
+        <br />Tarif : <b>60€ (1h30)</b></p>`
     },
     {
         id:"1",

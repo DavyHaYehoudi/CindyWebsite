@@ -20,8 +20,7 @@ export const dataMassage = [
         <br />
         <br />
         <b>‍Détoxification, Revitalisation, Reconnexion</b> sont les maîtres mots de ce massage exceptionnel.`,
-    tarif: `Tarif = <b>85€ (1H15)</b><br />
-        Le forfait de 3 massages : <b>225€</b>`,
+    tarif: `Tarif = <b>85€ (1H15)</b>`,
   },
   {
     id: "1",
@@ -42,8 +41,8 @@ export const dataMassage = [
         <br />
         <br />
         Pratiqué de manière régulière, ce massage offre de l'éclat à la peau, redessine les traits et apaise le mental. Il est recommandé de pratiquer les premières séances rapprochées (une fois par semaine) afin que la mémoire du visage s’active, puis une à deux séances par mois pour entretenir les bienfaits du massage.`,
-    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>65€ (1H00)</b><br />
-        Le forfait de 3 massages : <b>165€</b>`,
+    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>70€ (75 min)</b><br />
+        Le forfait de 3 massages : <b>180€</b>`,
   },
   {
     id: "2",
@@ -128,8 +127,8 @@ export const dataMassage = [
         <br />
         Demander conseil à votre médecin traitant avant de recevoir ce massage
         `,
-    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>50€ (1H00)</b><br />
-        Le forfait de 5 massages = <b>210€</b>`,
+    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>55€ (1H00)</b><br />
+        Le forfait de 5 massages = <b>220€</b>`,
   },
   {
     id: "4",
