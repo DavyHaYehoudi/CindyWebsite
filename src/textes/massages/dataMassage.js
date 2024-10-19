@@ -3,7 +3,13 @@ export const dataMassage = [
     id: "0",
     title: "MASSAGE DES 5 CONTINENTS®",
     img_main: "m5c-main.jpg",
-    img_illustration: ["m5c-main.jpg","m5c_slider.jpg","m5c-ill1.jpg", "m5c-ill2.jpg", "m5c-ill3.jpg"],
+    img_illustration: [
+      "m5c-main.jpg",
+      "m5c_slider.jpg",
+      "m5c-ill1.jpg",
+      "m5c-ill2.jpg",
+      "m5c-ill3.jpg",
+    ],
     large_description: `Le M5C est un massage du corps offrant un <b>lâcher prise physique et mental</b> absolument inédit en reprenant de célèbres techniques du monde.
         <br />
         <br />
@@ -24,14 +30,20 @@ export const dataMassage = [
   },
   {
     id: "1",
-    title: "MASSAGE DU VISAGE JAPONAIS",
-    img_main: "kobido-main.jpg",
-    img_illustration: ["kobido-main.jpg","kobido_slider.jpg","kobido-ill1.jpg", "kobido-ill2.jpg", "kobido-ill3.jpg"],
+    title: "MASSAGE DU VISAGE SKINTAO EXCELLENCE®",
+    img_main: "skintao-main.jpg",
+    img_illustration: [
+      "skintao-main.jpg",
+      "skintao_slider.jpg",
+      "skintao-ill1.jpg",
+      "skintao-ill2.jpg",
+      "skintao-ill3.jpg",
+    ],
     large_description: `Le massage du visage que je propose s’inspire des techniques du célèbre <b>KOBIDO</b>. Il permet <b>d’apaiser le système nerveux, d’améliorer la qualité et l’aspect de la peau</b> en réduisant les effets du stress et du temps.
         <br />
         <br />
         Grâce aux multiples manœuvres telles que les percussions, les enveloppements, les pressions et les effleurages, la micro-circulation est alors relancée offrant une meilleure oxygénation des cellules et donc une peau en pleine santé.<br /> 
-        Je travaille avec une huile végétale de Rose Musquée bio, connu pour son action hydratante et anti-âge.
+        Je travaille avec une huile végétale de jojoba ou d'abricot biologique en fonction de votre type de peau.
         <br />
         <br />
         <b>‍Le teint en ressort lumineux et la peau repulpée.</b>
@@ -41,14 +53,19 @@ export const dataMassage = [
         <br />
         <br />
         Pratiqué de manière régulière, ce massage offre de l'éclat à la peau, redessine les traits et apaise le mental. Il est recommandé de pratiquer les premières séances rapprochées (une fois par semaine) afin que la mémoire du visage s’active, puis une à deux séances par mois pour entretenir les bienfaits du massage.`,
-    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>70€ (75 min)</b><br />
+    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>70€ (60 min)</b> et cure BOOST <b>35€ (30 min)</b><br />
         Le forfait de 3 massages : <b>180€</b>`,
   },
   {
     id: "2",
     title: "BELLY REVOLUTION ®",
     img_main: "Belly-main.png",
-    img_illustration: ["belly_slider.jpg","belly-ill1.jpg", "belly-ill2.jpg", "belly-ill3.jpg"],
+    img_illustration: [
+      "belly_slider.jpg",
+      "belly-ill1.jpg",
+      "belly-ill2.jpg",
+      "belly-ill3.jpg",
+    ],
     large_description: `Le Belly Revolution ® est un massage du ventre qui permet de <b>relâcher les tensions</b> du corps grâce à des techniques de <b>drainage, modelage, effleurage et à un procédé énergétique.</b>
         <br />
         <br />
@@ -77,14 +94,20 @@ export const dataMassage = [
         Anti-coagulant en cours<br />
         Greffe d'organe<br />
         Personnes mineures<br />`,
-    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>60€ (45mn)</b><br />
+    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>60€ (50 min)</b><br />
         Le forfait de 3 massages : <b>160€</b>`,
   },
   {
     id: "3",
     title: "MASSAGE DRAINANT METHODE VODDER",
     img_main: "vodder-main.jpg",
-    img_illustration: ["vodder-main.jpg","vodder_slider.jpg","vodder-ill1.jpg", "vodder-ill2.jpg", "vodder-ill3.jpg"],
+    img_illustration: [
+      "vodder-main.jpg",
+      "vodder_slider.jpg",
+      "vodder-ill1.jpg",
+      "vodder-ill2.jpg",
+      "vodder-ill3.jpg",
+    ],
     large_description: `Qu’est-ce que la lymphe ?
         <br />
         <br />
@@ -127,14 +150,16 @@ export const dataMassage = [
         <br />
         Demander conseil à votre médecin traitant avant de recevoir ce massage
         `,
-    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>55€ (1H00)</b><br />
-        Le forfait de 5 massages = <b>220€</b>`,
+    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>60€ (50 min)</b><br />
+        Le forfait de 5 massages = <b>275€</b>`,
   },
   {
     id: "4",
     title: "MASSAGE AUX POCHONS",
     img_main: "pochons-main.jpg",
-    img_illustration: ["pochons-main.jpg","pochons_slider.jpg",
+    img_illustration: [
+      "pochons-main.jpg",
+      "pochons_slider.jpg",
       "pochons-ill1.jpg",
       "pochons-ill2.jpg",
       "pochons-ill3.jpg",
@@ -152,5 +177,24 @@ export const dataMassage = [
         <br /> Je vous suggère de faire un gommage du corps avant votre rendez-vous, pour permettre une meilleure pénétration des principes actifs de l'huile de sésame ainsi que des plantes.  `,
     tarif: `Tarif <b>85€</b><br /> Le forfait de 3 SOINS <b>225€</b>
         Durée 1h30`,
+  },
+  {
+    id: "5",
+    title: "MASSAGE DU DOS RELAXANT",
+    img_main: "dos-relax-main.png",
+    img_illustration: [
+      "dos-relax-main.png",
+      "dos-relax_slider.png",
+      "dos-relax-ill1.png",
+      "dos-relax-ill2.png",
+      "dos-relax-ill3.png",
+    ],
+    large_description: `MASSAGE DU DOS RELAXANT
+        <br />
+        <br />
+        Véritable évasion sensorielle grâce aux huiles essentielles, aux pierres volcaniques chaudes et aux gestuelles enveloppantes ciblant le dos, la nuque et le visage.
+        <br />
+       `,
+    tarif: `Tarifs <b>40€ (30 min) - 55€ (45 min)</b>`,
   },
 ];

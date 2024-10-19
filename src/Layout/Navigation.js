@@ -94,9 +94,9 @@ const Navigation = () => {
                     Massage des 5 continents ®
                   </NavDropdown.Item>
                 </LinkContainer>
-                <LinkContainer to="/massages/visage-japonais">
+                <LinkContainer to="/massages/visage-skintao">
                   <NavDropdown.Item eventKey="1">
-                    Massage du visage japonais
+                    Massage du visage SKINTAO EXCELLENCE®
                   </NavDropdown.Item>
                 </LinkContainer>
                 <LinkContainer to="/massages/belly-revolution">
@@ -112,6 +112,11 @@ const Navigation = () => {
                 <LinkContainer to="/massages/pochons">
                   <NavDropdown.Item eventKey="4">
                     Massage aux pochons
+                  </NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/massages/dos-relaxant">
+                  <NavDropdown.Item eventKey="5">
+                    Massage du dos relaxant
                   </NavDropdown.Item>
                 </LinkContainer>
                 <NavDropdown.Divider />

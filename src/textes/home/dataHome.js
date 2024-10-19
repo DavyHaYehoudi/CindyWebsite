@@ -59,7 +59,7 @@ export const dataHome=[
         J'ai donc décidé de me former auprès de différents organismes réputés afin de vous offrir une expérience unique en la matière.
         ‍<br />
         ‍<br /> 
-        <b>Massage drainant méthode Vodder, Belly Revolution®, massage des 5 Continents®, massage aux pochons d'herbes et massage du visage japonais façon Kobido</b> vous attendent dans un espace dédié et propice à la détente.
+        <b>Massage drainant méthode Vodder, Belly Revolution®, massage des 5 Continents®, massage aux pochons d'herbes, massage du visage SKINTAO EXCELLENCE® et massage relaxant du dos</b> vous attendent dans un espace dédié et propice à la détente.
         ‍‍<br />
         ‍<br /> 
          Au plaisir de vous rencontrer.

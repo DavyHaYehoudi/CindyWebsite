@@ -52,6 +52,6 @@ export const dataConsultation=[
         ‍
         
         </p>`,
-        tarif:`<p>Tarif : <b>40€ (45mn)<br />30€</b> pour les enfants</p>`
+        tarif:`<p>Tarif : <b>45€ (1H)<br />30€</b> pour les enfants</p>`
     }
 ]
