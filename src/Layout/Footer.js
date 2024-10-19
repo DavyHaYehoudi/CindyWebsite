@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="footer_block1">
           <Link to='/#homePage'className="footer_logo" >
             <img src={logo} alt="logo" className="mx-2" width="40" height="40" />
-            <span>2023 Cindy Pantoustier - Naturopathe</span> 
+            <span>2024 Cindy Pantoustier - Naturopathe</span> 
           </Link>
         </div>
         <SocialButtons />
@@ -25,14 +25,9 @@ const Footer = () => {
         <div className="footer_block3">
           <p>Adresse du cabinet :</p>
           <p>
-            555, avenue de la république
+            93, chemin du colombier
             <br />
             83 560 Vinon-sur-Verdon
-            <br />
-            <span className="footer_adr_precision">
-              Dans le centre de kinésithérapie,
-              <br /> face à la pharmacie
-            </span>{" "}
           </p>
           <p className="footer_tel">06 18 01 05 04</p>
         </div>

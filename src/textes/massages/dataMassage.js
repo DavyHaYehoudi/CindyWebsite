@@ -39,22 +39,24 @@ export const dataMassage = [
       "skintao-ill2.jpg",
       "skintao-ill3.jpg",
     ],
-    large_description: `Le massage du visage que je propose s’inspire des techniques du célèbre <b>KOBIDO</b>. Il permet <b>d’apaiser le système nerveux, d’améliorer la qualité et l’aspect de la peau</b> en réduisant les effets du stress et du temps.
+    large_description: ` <b>Le Skintao est au visage ce que le fitness est au corps : remodelant, raffermissant et entretenant.</b>
         <br />
         <br />
-        Grâce aux multiples manœuvres telles que les percussions, les enveloppements, les pressions et les effleurages, la micro-circulation est alors relancée offrant une meilleure oxygénation des cellules et donc une peau en pleine santé.<br /> 
-        Je travaille avec une huile végétale de jojoba ou d'abricot biologique en fonction de votre type de peau.
+        Le massage facial Skintao ® agit comme un véritable soin anti-âge de par ses multiples manœuvres telles que les percussions, les enveloppements, les pressions et les effleurages. La micro-circulation est relancée offrant une meilleure oxygénation et un apport en nutriments essentiels aux cellules.
         <br />
         <br />
-        <b>‍Le teint en ressort lumineux et la peau repulpée.</b>
+        C'est un savoir-faire inspiré de la culture japonaise qui permet de tonifier et de repulper l'ensemble du visage de façon à atténuer les rides, à procurer un effet liftant et à favoriser un joli teint naturel.
         <br />
         <br />
-        J’intègre au cours du massage différents outils : Gua Sha en jade blanc qui permet d’améliorer l’élasticité de la peau, Gua Sha en obsidienne noire connue pour apaiser les peaux tiraillées ainsi que des ventouses pour redéfinir les contours du visage et détendre les muscles.
+       ‍<b>Le teint en ressort lumineux et la peau repulpée.</b>
         <br />
         <br />
-        Pratiqué de manière régulière, ce massage offre de l'éclat à la peau, redessine les traits et apaise le mental. Il est recommandé de pratiquer les premières séances rapprochées (une fois par semaine) afin que la mémoire du visage s’active, puis une à deux séances par mois pour entretenir les bienfaits du massage.`,
-    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>70€ (60 min)</b> et cure BOOST <b>35€ (30 min)</b><br />
-        Le forfait de 3 massages : <b>180€</b>`,
+       J’intègre au cours du massage différents outils : Gua Sha en jade blanc qui permet d’améliorer l’élasticité de la peau, Gua Sha en obsidienne noire connue pour apaiser les peaux tiraillées ainsi que des ventouses pour redéfinir les contours du visage et détendre les muscles.
+         <br />
+        <br />
+        Pratiqué de manière régulière, ce massage retarde les signes du vieillissement et offre un effet liftant dans la durée. Il est recommandé de pratiquer les premières séances rapprochées en cure « BOOST » (deux fois par semaine pendant un mois) afin que la mémoire du visage s’active, puis une séance par mois pour entretenir les bienfaits du massage.
+        `,
+    tarif: `Ce massage se pratique à la carte ou en cure : Tarif = <b>70€ (1H)</b> et cure BOOST <b>35€ (30 min)</b>`,
   },
   {
     id: "2",
@@ -192,7 +194,10 @@ export const dataMassage = [
     large_description: `MASSAGE DU DOS RELAXANT
         <br />
         <br />
-        Véritable évasion sensorielle grâce aux huiles essentielles, aux pierres volcaniques chaudes et aux gestuelles enveloppantes ciblant le dos, la nuque et le visage.
+        Le modelage du dos est une véritable évasion sensorielle grâce aux huiles essentielles minutieusement choisies, aux pierres volcaniques chaudes qui calment les tensions musculaires et aux gestuelles enveloppantes ciblant le dos, la nuque et le visage.
+        <br />
+        <br />
+        Prenez le temps de choisir la combinaison parfaite des huiles essentielles que vous souhaitez recevoir en fonction de vos attentes: relaxante, détoxifiante, tonifiante ou bien décontractante.
         <br />
        `,
     tarif: `Tarifs <b>40€ (30 min) - 55€ (45 min)</b>`,

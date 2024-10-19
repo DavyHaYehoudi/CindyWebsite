@@ -52,8 +52,6 @@ function TableComp() {
           </td>
           <td>
             Ce massage se pratique à la carte ou en cure : Tarif = 70€ (60 min) et cure BOOST 35€ (30 min)
-            <br />
-            Le forfait de 3 massages : 180€
           </td>
         </tr>
         <tr
@@ -96,7 +94,7 @@ function TableComp() {
             Le forfait de 5 massages : 275€
           </td>
         </tr>
-        <tr
+        {/* <tr
           onMouseEnter={() => handleMouseEnter(4)}
           onMouseLeave={handleMouseLeave}
           className={hoveredRow === 4 ? "hovered-row" : ""}
@@ -108,13 +106,13 @@ function TableComp() {
             </Link>{" "}
           </td>
           <td>Tarif = 85€ (1H30)</td>
-        </tr>
+        </tr> */}
         <tr
           onMouseEnter={() => handleMouseEnter(5)}
           onMouseLeave={handleMouseLeave}
           className={hoveredRow === 5 ? "hovered-row" : ""}
         >
-          <td>6</td>
+          <td>5</td>
           <td>
             <Link to="/massages/dos-relaxant" onClick={() => setMassageId("5")}>
               Massage du dos relaxant

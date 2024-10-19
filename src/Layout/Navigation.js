@@ -96,7 +96,7 @@ const Navigation = () => {
                 </LinkContainer>
                 <LinkContainer to="/massages/visage-skintao">
                   <NavDropdown.Item eventKey="1">
-                    Massage du visage SKINTAO EXCELLENCE®
+                    Massage du visage SKINTAO EXCELLENCE ®
                   </NavDropdown.Item>
                 </LinkContainer>
                 <LinkContainer to="/massages/belly-revolution">
@@ -109,11 +109,11 @@ const Navigation = () => {
                     Massage drainant méthode Vodder
                   </NavDropdown.Item>
                 </LinkContainer>
-                <LinkContainer to="/massages/pochons">
+                {/* <LinkContainer to="/massages/pochons">
                   <NavDropdown.Item eventKey="4">
                     Massage aux pochons
                   </NavDropdown.Item>
-                </LinkContainer>
+                </LinkContainer> */}
                 <LinkContainer to="/massages/dos-relaxant">
                   <NavDropdown.Item eventKey="5">
                     Massage du dos relaxant
