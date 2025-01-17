@@ -53,7 +53,7 @@ const Contact = () => {
       />
       <p className="textContact" >
         <span className="textContactContent">
-          ⚠️ Les informations saisies sur cette page sont confidentielles et
+          🔒 Les informations saisies sur cette page sont confidentielles et
           sécurisées
         </span>
       </p>
@@ -86,7 +86,7 @@ const Contact = () => {
           </div>
           <div>
             <Link
-              to="https://www.google.com/maps/place/555+Av.+de+la+R%C3%A9publique,+83560+Vinon-sur-Verdon,+France/@43.7237412,5.8085825,17z/data=!3m1!4b1!4m5!3m4!1s0x12cbd3fe914b43cf:0x375d962996198d12!8m2!3d43.7237412!4d5.8107712"
+              to="https://www.google.com/maps/place/93+Chem.+du+Colombier,+83560+Vinon-sur-Verdon/@43.7326681,5.8175684,17z/data=!3m1!4b1!4m6!3m5!1s0x12cbd15be7b4e201:0xa5daeeeaf9e536c0!8m2!3d43.7326643!4d5.8201487!16s%2Fg%2F11c1dxz0xj?authuser=0&entry=ttu&g_ep=EgoyMDI1MDExNC4wIKXMDSoASAFQAw%3D%3D"
               rel="noopener noreferrer"
               target="_blanck"
               className="d-flex"
@@ -97,7 +97,7 @@ const Contact = () => {
                 size="2x"
               />{" "}
               <p className="mx-1">
-                555, avenue de la république
+                93, chemin du Colombier
                 <br />
                 83 560 Vinon-sur-Verdon{" "}
               </p>

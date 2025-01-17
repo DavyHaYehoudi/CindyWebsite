@@ -6,14 +6,14 @@ import SocialButtons from "../components/SocialButtons";
 
 const Footer = () => {
   const location = useLocation();
-
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="footer">
       <div className="sub-footer1">
         <div className="footer_block1">
           <Link to='/#homePage'className="footer_logo" >
             <img src={logo} alt="logo" className="mx-2" width="40" height="40" />
-            <span>2024 Cindy Pantoustier - Naturopathe</span> 
+            <span>{currentYear} Cindy Pantoustier - Naturopathe</span> 
           </Link>
         </div>
         <SocialButtons />
