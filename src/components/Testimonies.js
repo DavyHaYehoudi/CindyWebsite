@@ -29,10 +29,10 @@ function Testimonies({ name, testimonies }) {
         {name}
       </button>
 
-      <Offcanvas show={show} onHide={handleClose} placement="end" scroll="true">
+      <Offcanvas show={show} onHide={handleClose} placement="start" scroll="true">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title className="title-testimony">
-            Témoignages
+            Temoignages
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>

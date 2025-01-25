@@ -53,7 +53,13 @@ const Navigation = () => {
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand className="navbar-brand">
-              <img src={logo} alt="logo" className="mx-2 logo" width="40" height="40"/>
+              <img
+                src={logo}
+                alt="logo"
+                className="mx-2 logo"
+                width="40"
+                height="40"
+              />
               <span> BIENVENUE</span>
             </Navbar.Brand>
           </LinkContainer>
@@ -136,6 +142,11 @@ const Navigation = () => {
           </Navbar.Collapse>
           {innerWidth > 991 && <SocialButtons />}
         </Container>
+        <div className="btn-rdv">
+          <a href="https://calendly.com/cindynaturo?fbclid=PAZXh0bgNhZW0CMTEAAaYzQ7aWX2-ZE_nijoxRm2D2QoZFw6olZVNWe2i1pVcSi0X9P-rs8uXgkS0_aem_eryBFmwPfzkrVjv2jQEW_w" target="blanck"  >
+            Prendre Rdv
+          </a>{" "}
+        </div>
       </Navbar>
     </>
   );

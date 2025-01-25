@@ -3,37 +3,46 @@
   font-family: var(--sec-font);
   padding: 5px !important;
 }
+
 .container {
   max-width: 1200px !important;
   border: 1px solid var(--five-color);
   border-radius: var(--br);
   box-shadow: 1px 1px 1px var(--five-color);
 }
+
 .navbar-brand {
   font-size: var(--fs-4) !important;
   display: flex;
   align-items: center;
 }
+
 .nav-link,
 .navbar-brand {
   color: var(--five-color) !important;
 }
+
 .nav-link {
   font-size: var(--fs-1) !important;
   font-weight: 700 !important;
   letter-spacing: 2px;
   margin: 0 10px;
 }
-.dropdown-menu{
+
+.dropdown-menu {
   background-color: var(--main-color) !important;
 }
-.dropdown-item.active, .dropdown-item:active{
+
+.dropdown-item.active,
+.dropdown-item:active {
   background-color: var(--main-color) !important;
   color: var(--four-color) !important;
 }
-.nav-link.active{
+
+.nav-link.active {
   color: var(--four-color) !important;
 }
+
 .navbar-collapse {
   flex-grow: inherit !important;
 }
@@ -41,12 +50,62 @@
 .socialButtons {
   transition: transform 400ms ease !important;
 }
+
 .socialButtons:hover {
   transform: scale(1.05);
 }
+
 .navbar-toggler {
   background-color: var(--five-color) !important;
 }
+
 .navbar-toggler {
   box-shadow: inherit !important;
+}
+
+.btn-rdv a {
+  position: fixed;
+  right: 15px;
+  top: 115px;
+  padding: 8px 15px;
+  background-color: var(--five-color);
+  color: var(--main-color) !important;
+  border: none;
+  border-radius: var(--br);
+  font-size: var(--fs-1);
+  transition: transform 400ms ease;
+  cursor: pointer;
+  animation: verticalShake 10s ease 0s infinite normal forwards;
+}
+
+.btn-rdv a:hover {
+  background-color: azure;
+  transform: scale(1.05);
+}
+@keyframes verticalShake {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateY(-8px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateY(8px);
+	}
+
+	80% {
+		transform: translateY(6.4px);
+	}
+
+	90% {
+		transform: translateY(-6.4px);
+	}
 }
