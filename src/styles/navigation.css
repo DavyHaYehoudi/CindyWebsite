@@ -2,6 +2,7 @@
   min-height: 100px;
   font-family: var(--sec-font);
   padding: 5px !important;
+  z-index: 2100;
 }
 
 .container {
