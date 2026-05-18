@@ -63,6 +63,42 @@
   margin: auto;
 }
 
+.annonceMaternite {
+  background-color: var(--huit-color);
+  border: 1px solid var(--main-color);
+  border-left: 6px solid var(--main-color);
+  border-radius: var(--br);
+  color: var(--six-color);
+  max-width: 800px;
+  margin: 2.5rem auto 0;
+  padding: 1.75rem 2rem;
+  text-align: center;
+  font-size: var(--fs-2);
+  line-height: 1.6;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+.annonceMaternite p {
+  margin: 0.5rem 0;
+}
+.annonceTitle {
+  color: var(--four-color) !important;
+  font-size: var(--fs-4) !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem;
+  letter-spacing: normal;
+}
+.annonceContact {
+  margin-top: 1.25rem !important;
+  font-weight: 600;
+}
+.annonceContact a {
+  color: var(--four-color) !important;
+  text-decoration: underline !important;
+}
+.annonceContact a:hover {
+  color: var(--main-color) !important;
+}
+
 .followMe {
   text-align: center;
   padding: var(--paddingBlock);
