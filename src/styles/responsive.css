@@ -21,6 +21,14 @@
   .hero {
     height: 90vh;
   }
+  .annonceMaternite {
+    margin: 1.5rem 1rem 0;
+    padding: 1.25rem 1rem;
+    font-size: var(--fs-1);
+  }
+  .annonceTitle {
+    font-size: var(--fs-3) !important;
+  }
   .socialZone {
     display: flex;
     justify-content: center;
